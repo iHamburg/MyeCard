@@ -91,11 +91,11 @@
 	}
 }
 - (void)saveOthers:(NSCoder *)coder{
-	L();
+//	L();
 	
 //	[coder encodeInt:self.coverBGIndex forKey:@"coverBGIndex"];
 
-	NSLog(@"card.coverMaskPhotos # %@",self.coverMaskPhotos);
+//	NSLog(@"card.coverMaskPhotos # %@",self.coverMaskPhotos);
 
 	
 	// preview image

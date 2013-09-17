@@ -309,12 +309,7 @@ static CGFloat _hAdBanner;
 	
 	
 	[self initBanner];
-	
-//	if (isUpdateOpen) {
-//		// show whatsnew alert
-//		
-////		UIAlertView *whatsNewAlert = [[UIAlertView alloc]initWithTitle:@"What's new" message:<#(NSString *)#> delegate:<#(id)#> cancelButtonTitle:<#(NSString *)#> otherButtonTitles:<#(NSString *), ...#>, nil]
-//	}
+
 	
 
 }
@@ -364,7 +359,7 @@ static CGFloat _hAdBanner;
 	}
 
 //如果popVC显示的话，VC会在popVC被dismiss后dealloc
-//    self.infoVC = nil;
+
 	self.loveVC = nil;
 	self.zettelVC = nil;
 	self.settingVC = nil;

@@ -16,7 +16,7 @@
 
 + (ASIHTTPRequest*)requestUpdateMsg:(id)delegate{
 	
-	NSString *testServerStr = @"http://localhost/xappsoft/mobile/updateApp.php";
+//	NSString *testServerStr = @"http://localhost/xappsoft/mobile/updateApp.php";
 	NSString *serverStr = @"http://www.xappsoft.de/mobile/updateApp.php";
 	
 	NSString *str=[serverStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];

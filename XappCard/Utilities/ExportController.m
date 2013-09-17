@@ -147,7 +147,6 @@
 
 
 - (void)saveImageInAlbum:(UIImage*)img{
-//	numOfPhotosToSave = 1;
 	
 	ALAssetsLibrary* library  = [[ALAssetsLibrary alloc] init];
     

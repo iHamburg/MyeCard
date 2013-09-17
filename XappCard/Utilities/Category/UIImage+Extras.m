@@ -51,29 +51,29 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWi
     CGContextRestoreGState(context);
 }
 
-
-+ (id) createRoundedRectImage:(UIImage*)image size:(CGSize)size
-{
-    // the size of CGContextRef
-    int w = size.width;
-    int h = size.height;
-    
-    UIImage *img = image;
-    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-    CGContextRef context = CGBitmapContextCreate(NULL, w, h, 8, 4 * w, colorSpace, kCGImageAlphaPremultipliedFirst);
-    CGRect rect = CGRectMake(0, 0, w, h);
-    
-    CGContextBeginPath(context);
-   // addRoundedRectToPath(context, rect, 10, 10);
-    addRoundedRectToPath(context, rect, 12, 12);
-    CGContextClosePath(context);
-    CGContextClip(context);
-    CGContextDrawImage(context, CGRectMake(0, 0, w, h), img.CGImage);
-    CGImageRef imageMasked = CGBitmapContextCreateImage(context);
-    CGContextRelease(context);
-    CGColorSpaceRelease(colorSpace);
-    return [UIImage imageWithCGImage:imageMasked];
-}
+//
+//+ (id) createRoundedRectImage:(UIImage*)image size:(CGSize)size
+//{
+//    // the size of CGContextRef
+//    int w = size.width;
+//    int h = size.height;
+//    
+//    UIImage *img = image;
+//    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+//    CGContextRef context = CGBitmapContextCreate(NULL, w, h, 8, 4 * w, colorSpace, kCGImageAlphaPremultipliedFirst);
+//    CGRect rect = CGRectMake(0, 0, w, h);
+//    
+//    CGContextBeginPath(context);
+//   // addRoundedRectToPath(context, rect, 10, 10);
+//    addRoundedRectToPath(context, rect, 12, 12);
+//    CGContextClosePath(context);
+//    CGContextClip(context);
+//    CGContextDrawImage(context, CGRectMake(0, 0, w, h), img.CGImage);
+//    CGImageRef imageMasked = CGBitmapContextCreateImage(context);
+//    CGContextRelease(context);
+//    CGColorSpaceRelease(colorSpace);
+//    return [UIImage imageWithCGImage:imageMasked];
+//}
 - (UIImage*)imageByScalingAndCroppingForSize:(CGSize)targetSize
 {
     UIImage *sourceImage = self;

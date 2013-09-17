@@ -198,9 +198,7 @@ static inline NSString * TKKeyPathFromOperationState(TKOperationState state) {
 	self.state = TKOperationStateFinished;
 	
 
-	
-
-	
+    
 	if(!self.error && self.temporaryFileDownloadPath){
 		
 		

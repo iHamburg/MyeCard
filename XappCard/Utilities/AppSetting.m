@@ -36,7 +36,7 @@ static id sharedInstance;
 - (void)load{
 
 	[super load];
-	keys = [NSArray arrayWithObjects:@"fontName", @"fontColor",nil];
+	keys = [NSMutableArray arrayWithObjects:@"fontName", @"fontColor",nil];
 }
 
 + (void)save{

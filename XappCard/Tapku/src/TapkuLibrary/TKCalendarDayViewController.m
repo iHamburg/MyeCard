@@ -66,6 +66,7 @@
 																	  title:@"First"
 																   location:@"Test Location"];
 	
+    
 	TKCalendarDayEventView *eventViewSecond = [TKCalendarDayEventView eventViewWithFrame:CGRectZero
 																				  id:nil
 															 			   startDate:[NSDate date] 
