@@ -97,117 +97,178 @@ static CGFloat _hAdBanner;
 	static id sharedInstance;
 	if (sharedInstance == nil) {
 		
-		if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-			sharedInstance = [[RootViewController alloc] initWithNibName:@"RootViewController_iPhone" bundle:nil];
-		} else {
-			sharedInstance = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
-		}
-	}
+//		if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+////			sharedInstance = [[RootViewController alloc] initWithNibName:@"RootViewController_iPhone" bundle:nil];
+//            NSLog(@"without nib");
+//            sharedInstance = [[RootViewController alloc] init];
+//		} else {
+//			sharedInstance = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
+//		}
+
+	   sharedInstance = [[RootViewController alloc] init];
+    }
 	
 	return sharedInstance;
 	
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
-	if(self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]){
-//		L();
-		
-		// Toolbar Button
-		fixed = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-		
-		fixed.width = isPad?10:0;
-		flexible = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
-		
-		//BB for Cover
-		UIBarButtonItem *addB = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_cards.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
-		addB.title = LString(@"Cards Dock");
-		addB.tag = ToolbarTagAdd;
-		
-		UIBarButtonItem *switchB = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_content.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
-		switchB.title = NSLocalizedString(@"iToContent", nil);
-		switchB.tag = ToolbarTagSwitch;
+- (void)loadToolbarItems {
+    // Toolbar Button
+    fixed = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    
+    fixed.width = isPad?11:2;
+    flexible = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    
+    //BB for Cover
+    UIBarButtonItem *addB = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_cards.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
+//    addB.title = LString(@"Cards Dock");
+    addB.tag = ToolbarTagAdd;
+    
+    UIBarButtonItem *switchB = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_content.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
+//    UIBarButtonItem *switchB = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:nil];
+//    switchB.title = NSLocalizedString(@"iToContent", nil);
+    
+    switchB.tag = ToolbarTagSwitch;
+    
+    
+    coverPhotoBB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_background.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
+//    coverPhotoBB.title = NSLocalizedString(@"iCoverPhoto", nil);
+    coverPhotoBB.tag = ToolbarTagCoverPhoto;
+    
+    coverTextBB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_text.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
+//    coverTextBB = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(toolbarButtonClicked:)];
+    coverTextBB.tag = ToolbarTagCoverText;
+//    coverTextBB.title = NSLocalizedString(@"iText", nil);
+    
+    UIBarButtonItem *chooseB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_choose.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
+//    chooseB.title = NSLocalizedString(@"iChoose", nil);
+    chooseB.tag = ToolbarTagChooseCover;
+    
+    
+    UIButton *info = [UIButton buttonWithType:UIButtonTypeInfoLight];
+    [info addTarget:self action:@selector(toolbarButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIBarButtonItem *infoB = [[UIBarButtonItem alloc] initWithCustomView:info];
+    
+    info.tag = ToolbarTagInfo;
+    
+    // BB for Content
+    UIBarButtonItem *switchContentB = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_cover.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
+//    switchContentB.title = NSLocalizedString(@"iToCover", nil);
+//    switchB = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:uibarbutt target:<#(id)#> action:<#(SEL)#>]
+    switchContentB.tag = ToolbarTagSwitch;
+    
+    photoBB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_photo.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
+//    photoBB.title = NSLocalizedString(@"iPhoto", nil);
+    photoBB.tag = ToolbarTagContentPhoto;
+    
+    contentTextBB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_text.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
+//    contentTextBB.title = NSLocalizedString(@"iText", nil);
 
-		
-		coverPhotoBB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_background.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
-		coverPhotoBB.title = NSLocalizedString(@"iCoverPhoto", nil);
-		coverPhotoBB.tag = ToolbarTagCoverPhoto;
-		
-		coverTextBB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_text.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
-		coverTextBB.tag = ToolbarTagCoverText;
-		coverTextBB.title = NSLocalizedString(@"iText", nil);
-		
-		UIBarButtonItem *chooseB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_choose.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
-		chooseB.title = NSLocalizedString(@"iChoose", nil);
-		chooseB.tag = ToolbarTagChooseCover;
-		
-		UIBarButtonItem *infoB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_information.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
-		infoB.tag = ToolbarTagInfo;
-		
-		// BB for Content
-		UIBarButtonItem *switchContentB = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_cover.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
-		switchContentB.title = NSLocalizedString(@"iToCover", nil);
-		switchContentB.tag = ToolbarTagSwitch;
-		
-		photoBB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_photo.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
-		photoBB.title = NSLocalizedString(@"iPhoto", nil);
-		photoBB.tag = ToolbarTagContentPhoto;
-		
-		contentTextBB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_text.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
-		contentTextBB.title = NSLocalizedString(@"iText", nil);
-		contentTextBB.tag = ToolbarTagContentText;
-		
-		UIBarButtonItem *zettelB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_zettel.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
-		zettelB.title = NSLocalizedString(@"iZettel", nil);
-		zettelB.tag = ToolbarTagZettel;
-		
-		UIBarButtonItem *loveB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_love.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
-		loveB.title = NSLocalizedString(@"iLove", nil);
-		loveB.tag = ToolbarTagLove;
-		
-		UIBarButtonItem *actionB = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_action2.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
-		actionB.title = NSLocalizedString(@"iAction", nil);
-		actionB.tag = ToolbarTagAction;
-		
-		UIBarButtonItem *settingB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_setting.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
-		settingB.title = NSLocalizedString(@"iSetting", nil);
-		settingB.tag = ToolbarTagSetting;
-		
-		float width = isPad?70:45;
-		switchB.width= width;
-		coverPhotoBB.width = width;
-		coverTextBB.width = width;
-		chooseB.width = width;
-		switchContentB.width = width;
-		photoBB.width = width;
-		contentTextBB.width = width;
-		zettelB.width = width;
-		loveB.width = width;
-		actionB.width = width;
-		settingB.width = width;
-		
-		coverItems = [NSArray arrayWithObjects:fixed,addB,flexible,switchB,fixed,coverPhotoBB,fixed,coverTextBB,
-					  fixed,chooseB,flexible,infoB,fixed,nil];
-		
-		contentItems =  [NSArray arrayWithObjects:fixed,addB,flexible,switchContentB,fixed,photoBB,fixed,contentTextBB,
-						 fixed,zettelB,fixed,loveB,fixed,actionB,fixed,settingB,flexible,infoB,fixed,nil];
-	}
-	return self;
+//    contentTextBB = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(toolbarButtonClicked:)];
+    contentTextBB.tag = ToolbarTagContentText;
+    
+    UIBarButtonItem *zettelB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_zettel.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
+
+//    zettelB.title = NSLocalizedString(@"iZettel", nil);
+    zettelB.tag = ToolbarTagZettel;
+    
+    UIBarButtonItem *loveB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_love.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
+//    loveB.title = NSLocalizedString(@"iLove", nil);
+    loveB.tag = ToolbarTagLove;
+    
+//    UIBarButtonItem *actionB = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_action2.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
+//    actionB.title = NSLocalizedString(@"iAction", nil);
+    UIBarButtonItem *actionB = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(toolbarButtonClicked:)];
+    actionB.tag = ToolbarTagAction;
+    
+    UIBarButtonItem *settingB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_setting.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
+//    settingB = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:uibar target:<#(id)#> action:<#(SEL)#>]
+//    settingB.title = NSLocalizedString(@"iSetting", nil);
+    settingB.tag = ToolbarTagSetting;
+    
+    float width = isPad?70:45;
+    switchB.width= width;
+    coverPhotoBB.width = width;
+    coverTextBB.width = width;
+    chooseB.width = width;
+    switchContentB.width = width;
+    photoBB.width = width;
+    contentTextBB.width = width;
+    zettelB.width = width;
+    loveB.width = width;
+    actionB.width = width;
+    settingB.width = width;
+    
+    coverItems = [NSArray arrayWithObjects:fixed,addB,flexible,switchB,fixed,coverPhotoBB,fixed,coverTextBB,
+                  fixed,chooseB,flexible,infoB,fixed,nil];
+    
+    contentItems =  [NSArray arrayWithObjects:fixed,addB,flexible,switchContentB,fixed,photoBB,fixed,contentTextBB,
+                     fixed,zettelB,fixed,loveB,fixed,settingB,flexible,actionB,fixed,fixed,infoB,fixed,nil];
+    
+//    toolbar.backgroundColor = [UIColor blackColor];
+}
+
+
+- (void)loadView{
+    r = [UIScreen mainScreen].bounds;
+	r = CGRectApplyAffineTransform(r, CGAffineTransformMakeRotation(90 * M_PI / 180));
+	r.origin = CGPointZero;
+	
+    self.view = [[UIView alloc] initWithFrame:r];
+  
+    
+	w = r.size.width;
+	h = r.size.height;
+
+    CGFloat hToolbar = isPad?44:32;
+    toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, h-hToolbar, w, hToolbar)];
+    toolbar.barStyle = UIBarStyleBlack;
+//    if ([toolbar respondsToSelector:@selector(setBarTintColor:)]) {
+//        toolbar.barTintColor = [UIColor blackColor];
+//    }
+
+//    toolbar.tintColor = [UIColor whiteColor];
+//    toolbar.backgroundColor = [UIColor blackColor];
+//    toolbar.translucent = YES;
+    
+    [self.view addSubview:toolbar];
+    
+//      NSLog(@"toolbar # %@",toolbar);
+}
+- (void)registerNotifications
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self
+											 selector:@selector(willDismissPopOverViewController)
+												 name:NotifiRootDismiss object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self
+											 selector:@selector(handleNotificationOpenTextViewController:)
+												 name:NotifiRootOpenTextLabelVC object:nil];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self
+											 selector:@selector(handleNotificationResignActive:)
+												 name:UIApplicationWillResignActiveNotification
+											   object: [UIApplication sharedApplication]];
+	[[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleDidBecomeActive:) name:UIApplicationDidBecomeActiveNotification object:[UIApplication sharedApplication]];
 }
 
 - (void)viewDidLoad
 {
+    L();
+    
 	[super viewDidLoad];
+
 
 	[self checkVersion];
 	
 	card = [Controller sharedController].firstCard;
 	
-	r = [UIScreen mainScreen].bounds;
-	r = CGRectApplyAffineTransform(r, CGAffineTransformMakeRotation(90 * M_PI / 180));
-	r.origin = CGPointZero;
-	
-	w = r.size.width;
-	h = r.size.height;
+//	r = [UIScreen mainScreen].bounds;
+//	r = CGRectApplyAffineTransform(r, CGAffineTransformMakeRotation(90 * M_PI / 180));
+//	r.origin = CGPointZero;
+//	
+//    self.view.frame = r;
+    
 	
 	//iphone
 	containerRect = CGRectMake(0, 0, 480, 320);
@@ -236,6 +297,9 @@ static CGFloat _hAdBanner;
 	
 	
 	self.view.backgroundColor = [UIColor blackColor];
+    
+    [self loadToolbarItems];
+
 	
 	container = [[UIView alloc]initWithFrame:containerRect];
 	container.backgroundColor = [UIColor blackColor];
@@ -264,8 +328,7 @@ static CGFloat _hAdBanner;
 	
 	
 	self.textLabelVC.view.alpha = 1;
-	self.zettelVC.view.alpha = 1;
-	self.loveVC.view.alpha = 1;
+
 	self.settingVC.view.alpha = 1;
 
 
@@ -277,22 +340,9 @@ static CGFloat _hAdBanner;
 		
 	} 
 
-
-	
 	[self.view insertSubview:container belowSubview:toolbar];
 
-	[[NSNotificationCenter defaultCenter] addObserver:self
-											 selector:@selector(willDismissPopOverViewController)
-												 name:NotifiRootDismiss object:nil];
-	[[NSNotificationCenter defaultCenter] addObserver:self
-											 selector:@selector(handleNotificationOpenTextViewController:)
-												 name:NotifiRootOpenTextLabelVC object:nil];
-	
-	[[NSNotificationCenter defaultCenter] addObserver:self
-											 selector:@selector(handleNotificationResignActive:)
-												 name:UIApplicationWillResignActiveNotification
-											   object: [UIApplication sharedApplication]];
-	[[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleDidBecomeActive:) name:UIApplicationDidBecomeActiveNotification object:[UIApplication sharedApplication]];
+	[self registerNotifications];
 	
 	actionActionSheet = [[UIActionSheet alloc] initWithTitle:nil
 													delegate:self
@@ -311,6 +361,12 @@ static CGFloat _hAdBanner;
 	[self initBanner];
 
 	
+//    if (isPhone) {
+//        
+//		toolbar.frame = CGRectMake(0, 320-32, toolbar.width, 32);
+//        
+//	}
+    
 
 }
 
@@ -324,11 +380,11 @@ static CGFloat _hAdBanner;
 	[self.view insertSubview:container belowSubview:toolbar];
 	
 	
-	if (isPhone) {
-	
-		toolbar.frame = CGRectMake(0, 320-32, toolbar.width, 32);
-	
-	}
+//	if (isPhone) {
+//	
+//		toolbar.frame = CGRectMake(0, 320-32, toolbar.width, 32);
+//	
+//	}
 	
 	
 	[self test];
@@ -344,8 +400,10 @@ static CGFloat _hAdBanner;
 }
 
 - (NSUInteger)supportedInterfaceOrientations{
-	//	L();
-	return UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight;
+	L();
+   
+//	return UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight;
+    return  UIInterfaceOrientationMaskLandscape;
 }
 
 - (void)didReceiveMemoryWarning
@@ -458,7 +516,7 @@ static CGFloat _hAdBanner;
 
 // photo and text will be opened from another locatoin, so it's reasonable, add methode to handle these functions
 - (IBAction)toolbarButtonClicked:(id)sender{
-	NSLog(@"rootmode : %d",[[Controller sharedController]rootMode]);
+//	NSLog(@"rootmode : %d",[[Controller sharedController]rootMode]);
 	
 	int tag = [sender tag];
 	
@@ -482,8 +540,8 @@ static CGFloat _hAdBanner;
 	else{
 		[self dismissModalViewControllerAnimated:YES];
 	}
+    
 	// set menu unvisiable
-	
 	[[UIMenuController sharedMenuController] setMenuVisible:NO animated:YES];
 	
 	
@@ -533,7 +591,11 @@ static CGFloat _hAdBanner;
 		[contentVC hideStep:2];
 		
 		self.photoSource = RPSContent;
-		[self popViewController:imgPicker withStatus:PS_OneImage sender:sender];
+//		[self popViewController:imgPicker withStatus:PS_OneImage sender:sender];
+        UIImagePickerController *imgPicker2 = [[UIImagePickerController alloc] init];
+        imgPicker2.delegate = self;
+        imgPicker2.allowsEditing = NO;
+        [self presentViewController:imgPicker2 animated:YES completion:nil];
 		
 	}
 	else if(tag == ToolbarTagContentText) {
@@ -807,6 +869,9 @@ static CGFloat _hAdBanner;
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
 	
 	L();
+//    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    
 	NSURL *url = [info objectForKey:@"UIImagePickerControllerReferenceURL"];
 	UIImage *originalImage = [info objectForKey:@"UIImagePickerControllerEditedImage"];
 	UIImage *editedImage = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
@@ -882,7 +947,11 @@ static CGFloat _hAdBanner;
 
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+   
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    
     [self willDismissPopOverViewController];
+
 }
 
 - (void)image: (UIImage *) image didFinishSavingWithError: (NSError *) error contextInfo: (void *) contextInfo{
@@ -1101,11 +1170,12 @@ static CGFloat _hAdBanner;
 		return;
 	}
 	
-	
 	self.textLabelVC.textWidget = widget;
 	
-
+    
 	[self popViewController:self.textLabelVC withStatus:PS_TextLabel sender:nil];
+    
+    
 }
 
 #pragma mark - PopOverVC
@@ -1144,7 +1214,8 @@ static CGFloat _hAdBanner;
 	CGFloat popWidth;
 	if (![vc isKindOfClass:[UINavigationController class]]) {
 		nav = [[UINavigationController alloc] initWithRootViewController:vc];
-		popHeight = vc.view.frame.size.height + 44;
+		popHeight = vc.view.frame.size.height + (isPad?44:32);
+//        popHeight = vc.view.frame.size.height;
 		popWidth  = vc.view.frame.size.width;
 	}
 	else { // 如果是imagepicker，默认是320x500
@@ -1167,13 +1238,16 @@ static CGFloat _hAdBanner;
 
 			CGSize size = self.view.bounds.size;
 
-			[popVC presentPopoverFromRect:CGRectMake(size.width/2, 400, 20, 20) inView:self.view permittedArrowDirections:0 animated:YES];
+			[popVC presentPopoverFromRect:CGRectMake(size.width/2, 600, 20, 20) inView:self.view permittedArrowDirections:0 animated:YES];
 		}
 						
 	}
 	else{
 		
-		[self presentModalViewController:nav animated:YES];
+		[self presentViewController:nav animated:YES completion:^{
+            
+        }];
+ 
 	}
 
 
@@ -1556,7 +1630,7 @@ static CGFloat _hAdBanner;
 	if (request == updateRequest) {
 		NSString *response = [request responseString];
 
-		NSLog(@"request finished # %@",response);
+//		NSLog(@"request finished # %@",response);
 
 		
 ///  通过ios5之后的原生JSON处理机制进行处理
@@ -1571,10 +1645,10 @@ static CGFloat _hAdBanner;
 		
 		NSDictionary* responseObj = [response JSONValue];
 		
-		NSLog(@"responseDict #%@, # %@",NSStringFromClass([responseObj class]),responseObj);
+//		NSLog(@"responseDict #%@, # %@",NSStringFromClass([responseObj class]),responseObj);
 
 		float updateVersion = [responseObj[@"version"] floatValue];
-		NSLog(@"thisversion # %f, updateversion # %f",thisVersion,updateVersion);
+//		NSLog(@"thisversion # %f, updateversion # %f",thisVersion,updateVersion);
 	
 		
 		if (updateVersion > thisVersion) {

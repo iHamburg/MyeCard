@@ -56,8 +56,9 @@ UIActionSheetDelegate,MFMailComposeViewControllerDelegate,UIAlertViewDelegate,UI
 	UIBarButtonItem *fixed,*flexible;
 	UIBarButtonItem *coverCameraBB;
 	
-	IBOutlet UIToolbar *coverToolbar;
-	IBOutlet UIToolbar *contentToolbar;
+    UIToolbar *toolbar2;
+//	IBOutlet UIToolbar *coverToolbar;
+//	IBOutlet UIToolbar *contentToolbar;
 	
 	UIView *container;
 	

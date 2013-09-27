@@ -25,7 +25,7 @@
 //	NSString *name = textWidget.font.fontName;
 	textView.font = [UIFont fontWithName:textWidget.fontName size:displayedFontSize];
 	
-	NSLog(@"textwidget # %@,textview.font # %@",textWidget,textView.font);
+//	NSLog(@"textwidget # %@,textview.font # %@",textWidget,textView.font);
 	
 	textView.textAlignment = textWidget.textAlignment;
 
@@ -49,22 +49,9 @@
 }
 
 
-- (void)loadView
+- (void)loadFontNames
 {
-
-	CGRect rect = CGRectMake(0, 0, 480, 288);
-	CGRect containerRect = CGRectMake(0, 0, 480, 288);
-	if(isPhoneRetina4){
-		rect = CGRectMake(0, 0, 568, 288);
-		containerRect = CGRectMake(44, 0, 480, 320);
-	}
-	self.view = [[UIView alloc] initWithFrame:rect];
-	self.view.backgroundColor = [UIColor blackColor];
-	self.title = NSLocalizedString(@"TextLabelTitel", nil);
-	displayedFontSize = 16;
-
-	
-	NSArray *array = [UIFont familyNames];
+    NSArray *array = [UIFont familyNames];
 	
 	NSString *familyName ;
 	
@@ -76,11 +63,28 @@
 	}
 	
 	[fontNames sortUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
-	
-	UIView *container = [[UIView alloc]initWithFrame:containerRect];
+}
 
+- (void)loadView
+{
+    [self loadFontNames];
+
+//    CGFloat h = kVersion>=7.0?320:288;
+     CGFloat h = 320;
+	CGRect rect = CGRectMake(0, 0, 480, h);
+	CGRect containerRect = CGRectMake(0, 0, 480, h);
 	
+    if(isPhoneRetina4){
+		rect = CGRectMake(0, 0, 568, h);
+		containerRect = CGRectMake(44, 0, 480, h);
+	}
+	self.view = [[UIView alloc] initWithFrame:rect];
 	self.view.backgroundColor = [UIColor blackColor];
+	self.title = NSLocalizedString(@"TextLabelTitel", nil);
+    
+	displayedFontSize = 16;
+
+	UIView *container = [[UIView alloc]initWithFrame:containerRect];
 	
 	// Navi
 	if (!isPad) {  // iphone
@@ -90,15 +94,28 @@
 	}
 	
 	// Subview
-	settingTV = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, 230, 90) style:UITableViewStyleGrouped];
+    CGFloat hSettingTv = 90;
+    if (kVersion>=7.0) {
+        hSettingTv = 60;
+    }
+	settingTV = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, 230, hSettingTv) style:UITableViewStyleGrouped];
 	settingTV.delegate = self;
 	settingTV.dataSource = self;
 	settingTV.backgroundColor = [UIColor clearColor];
 	settingTV.backgroundView = nil;
 	settingTV.scrollEnabled = NO;
 	
-	tableKeys = @[@"Text",@"Font outline"];
-	
+//	tableKeys = @[@"Text",@"Font outline"];
+    colorPlatteV = [[MyColorPlatteView alloc] initWithFrame:CGRectMake(10, CGRectGetMaxY(settingTV.frame)+5, 215, 188)];
+	colorPlatteV.delegate = self;
+    
+    if (kVersion >= 7.0) {
+        tableKeys = @[@"Text"];
+    }
+    else{
+        tableKeys = @[@"Text",@"Font outline"];
+    }
+    
 	NSArray *imgNames = @[@"icon_alignLeft.png",@"icon_alignCenter.png",@"icon_alignRight.png"];
 	
 	NSMutableArray *imgs = [NSMutableArray array];
@@ -112,21 +129,19 @@
 	textAlignSeg.frame = CGRectMake(0, 0, 120, 30);
 	[textAlignSeg addTarget:self action:@selector(segmentValueChanged:) forControlEvents:UIControlEventValueChanged];
 	
-	
 	strokeSwitch = [[UISwitch alloc]initWithFrame:CGRectMake(0, 0, 100, 50)];
 
 	
-	colorPlatteV = [[MyColorPlatteView alloc] initWithFrame:CGRectMake(10, 100, 215, 188)];
-	colorPlatteV.delegate = self;
-	
-	textView = [[UITextView alloc] initWithFrame:CGRectMake(250, 10, 220, 100)];
+    CGFloat yTV = 10;
+
+	textView = [[UITextView alloc] initWithFrame:CGRectMake(250, yTV, 220, 100)];
 	textView.backgroundColor = [UIColor whiteColor];
 	textView.layer.cornerRadius = 5;
 	textView.layer.masksToBounds = YES;
 	[textView setAutocorrectionType:UITextAutocorrectionTypeNo];
 	textView.delegate = self;
 	
-	fontV = [[FontScrollView alloc]initWithFrame:CGRectMake(240, 120, 240, 170)];
+	fontV = [[FontScrollView alloc]initWithFrame:CGRectMake(240, CGRectGetMaxY(textView.frame)+5, 240, 170)];
 	fontV.delegate = self;
 	fontV.fontNames = fontNames;
 	[fontV setup];
@@ -141,6 +156,8 @@
 
 	[self restoreFontInformation];
 	
+    L();
+      NSLog(@"textVC # %@, nav # %@",self.view,self.navigationController.view);
 	
 
 }
@@ -150,6 +167,9 @@
 	L();
 	[super viewDidAppear:animated];
 	[textView becomeFirstResponder];
+    
+    NSLog(@"textVC # %@, nav # %@",self.view,self.navigationController.view);
+    NSLog(@"settingTV # %@, colorPlatte # %@",settingTV,colorPlatteV);
 }
 
 
@@ -157,10 +177,19 @@
 #pragma mark -
 #pragma mark Table view data source
 
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 5;
+}
 // Customize the number of sections in the table view.
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 	
-    return 2;
+    return 1;
+//    if (kVersion>=7.0) {
+//        return 1;
+//    }
+//    else
+//        return 2;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

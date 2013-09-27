@@ -18,7 +18,6 @@
 
 @property (nonatomic, unsafe_unretained) RootViewController *rootVC;
 
-//- (void)initSubViews;
 - (void)initBarButtons;
 
 - (IBAction)cancel:(id)sender;

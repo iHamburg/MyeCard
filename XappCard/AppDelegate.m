@@ -73,7 +73,8 @@
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
 
-	
+//	[[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
+    
 	UILocalNotification *localNotif =
 	[launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
 	
