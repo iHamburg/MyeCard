@@ -43,7 +43,7 @@
 	textView.font = [UIFont fontWithName:fontName size:fontSize];
 	textView.editable = NO;
 	textView.userInteractionEnabled = NO;
-	textView.textAlignment = UITextAlignmentCenter;
+	textView.textAlignment = NSTextAlignmentCenter;
 	
 	
 	// 48x48
@@ -60,8 +60,10 @@
 	
 	[self addSubview:textView];
 	[self addSubview:overlayV];
-	[self addSubview:markIV];
+//	[self addSubview:markIV];
 	
+//    textView.backgroundColor = [UIColor redColor];
+//    self.backgroundColor = [UIColor blueColor];
 	
 }
 

@@ -45,6 +45,7 @@
 	
 	tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
 
+//    tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
 	
 	tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
 	tableView.dataSource = self;
@@ -79,7 +80,13 @@
 	[tableView reloadData];
 	
 	
-	
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    L();
+    [super viewDidAppear:animated];
+    
+    NSLog(@"tableview # %@",tableView);
 }
 
 - (void)viewDidDisappear:(BOOL)animated{
@@ -106,8 +113,25 @@
 
 - (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
 	return [sectionHeaders objectAtIndex:section];
+//    return @"abc";
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+//    if (kVersion >= 7.0) {
+//        return 45.0;
+//    }
+//    else{
+//        return []
+//    }
+    if (kVersion>=7.0) {
+        return 0;
+    }
+    else
+        return 40;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 0;
+}
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	

@@ -37,7 +37,6 @@
 - (Card*)cardWithName:(NSString*)name;
 
 
-//+ (BOOL)cardHasCover:(Card*)card;
 - (int)indexOfCard:(Card*)card;
 - (void)save;
 

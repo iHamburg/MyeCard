@@ -61,7 +61,7 @@
 // 没有调用controller的save all changed cards 是不会调用encode的
 
 - (void)willSaveView:(PictureWithFrameView*)pictureV{
-	L();
+//	L();
 
 	self.bounds = pictureV.bounds;
 	self.archorPoint = pictureV.layer.anchorPoint;

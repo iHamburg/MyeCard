@@ -19,7 +19,7 @@
 #endif
 
 #define SSupportEmailTitle @"Feedback for My eCard"
-#define SRecommendEmailTitle @"My eCard"
+#define SRecommendEmailTitle @"My eCard -- Amazing App for eCard Making!"
 
 
 #define SRateMsgPad @"If you like TinyKitchen and want more free updates, please rate or write your 5-star review on the App Store. This helps and takes less than a minute. Thank you!"

@@ -18,6 +18,7 @@
 
 - (void)setSize:(CGSize)size;
 - (void)setOrigin:(CGPoint)original;
+- (void)moveOrigin:(CGPoint)relativePoint;
 
 - (CGFloat)width;
 - (CGFloat)height;

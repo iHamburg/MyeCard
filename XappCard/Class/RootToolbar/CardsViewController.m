@@ -85,18 +85,16 @@
 - (void)viewDidAppear:(BOOL)animated{
 	[super viewDidAppear:animated];
 
+    [self layoutADBanner:[AdView sharedInstance]];
 
 }
+
 - (void)viewWillAppear:(BOOL)animated{
 	L();
 	[super viewWillAppear:animated];
+
 	[self setup];
 
-}
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
 
 
@@ -125,6 +123,50 @@
 	selectedIndex = _cardIndex;
 
 	[self setup];
+}
+
+
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+#pragma mark - Notification
+
+- (void)registerNotifications
+{
+    
+    
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleAdviewNotification:) name:NotificationAdChanged object:nil];
+    
+}
+
+- (void)handleAdviewNotification:(NSNotification*)notification{
+    [self layoutADBanner:notification.object];
+    
+}
+
+
+
+#pragma mark -  ADView
+
+
+- (void)layoutADBanner:(AdView *)banner{
+    
+    L();
+    [UIView animateWithDuration:0.25 animations:^{
+		
+		if (banner.isAdDisplaying) { // 从不显示到显示banner
+            
+			[banner setOrigin:CGPointMake(0, _h - banner.height)];
+			
+			[[[RootViewController sharedInstance] view] addSubview:banner];
+		}
+		else{
+			[banner setOrigin:CGPointMake(0, _h)];
+            
+		}
+		
+    }];
+    
 }
 
 

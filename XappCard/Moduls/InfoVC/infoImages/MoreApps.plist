@@ -74,5 +74,26 @@ Keep what you love and share your happiness.</string>
 		<key>FAppid</key>
 		<string>577925714</string>
 	</dict>
+	<key>instahat</key>
+	<dict>
+		<key>Title</key>
+		<string>InstaHat</string>
+		<key>Image</key>
+		<string>appIcon_InstaHat.png</string>
+		<key>Description</key>
+		<string>Ever want to know what you’d look like in a Fedora? Funny hat? Or cartoon hat for children or pets? With InstaHat you can try on many different hats on your iPhone, add awesome photo effects or frames, and share to see what your friends think of the new look.
+
+★ Features ★
+1. Over 120 different hats for everybody and also your pets
+2. Extremely simple to use
+3. Amazing photo effects and frames
+4. Shake your iPhone to change a hat, an effect or a frame
+5. Manually adjust the position, size and rotation of a hat
+</string>
+		<key>PAppid</key>
+		<string>597154228</string>
+		<key>FAppid</key>
+		<string>594492123</string>
+	</dict>
 </dict>
 </plist>

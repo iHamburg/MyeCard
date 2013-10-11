@@ -13,12 +13,13 @@
 #import "TextLabelViewController.h"
 #import "PictureWithFrameView.h"
 #import "SettingViewController.h"
-#import "InstructionViewController.h"
 #import "LoveViewController.h"
 #import "CardsViewController.h"
 #import "DateViewController.h"
 #import "CoverflowViewController.h"
-#import "Info2ViewController.h"
+
+#import "MEInfoViewController.h"
+#import "MEInstructionViewController.h"
 #import "ASIHTTPRequest.h"
 #import "JSON.h"
 #import "NetworkManager.h"
@@ -32,11 +33,11 @@
 @synthesize photoBB;
 @synthesize card;
 @synthesize popOverStatus,toolbar;
-@synthesize settingVC,loveVC,zettelVC,textLabelVC,cardsVC,dateVC,coverFlowVC,info2VC;
+@synthesize settingVC,loveVC,zettelVC,textLabelVC,cardsVC,dateVC,coverFlowVC,infoVC;
 @synthesize firstVersion,lastVersion,thisVersion,isFirstOpen,isUpdateOpen;
 
 
-static CGFloat _hAdBanner;
+//static CGFloat _hAdBanner;
 
 - (SettingViewController*)settingVC{
 	if (!settingVC) {
@@ -69,8 +70,9 @@ static CGFloat _hAdBanner;
 - (TextLabelViewController*)textLabelVC{
 	if (!textLabelVC) {
 		textLabelVC = [[TextLabelViewController alloc] init];
+    	textLabelVC.view.alpha = 1;
 		textLabelVC.rootVC = self;
-		textLabelVC.view.alpha = 1;
+	
 	}
 	return textLabelVC;
 }
@@ -96,14 +98,6 @@ static CGFloat _hAdBanner;
 +(id)sharedInstance{
 	static id sharedInstance;
 	if (sharedInstance == nil) {
-		
-//		if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-////			sharedInstance = [[RootViewController alloc] initWithNibName:@"RootViewController_iPhone" bundle:nil];
-//            NSLog(@"without nib");
-//            sharedInstance = [[RootViewController alloc] init];
-//		} else {
-//			sharedInstance = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
-//		}
 
 	   sharedInstance = [[RootViewController alloc] init];
     }
@@ -114,34 +108,33 @@ static CGFloat _hAdBanner;
 
 - (void)loadToolbarItems {
     // Toolbar Button
-    fixed = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    UIBarButtonItem* fixed = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
     
     fixed.width = isPad?11:2;
-    flexible = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    UIBarButtonItem* flexible = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    UIBarButtonItem *shareFixed = [[[UIBarButtonItem alloc] init]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    shareFixed.width = isPad?11:10;
+
     
     //BB for Cover
     UIBarButtonItem *addB = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_cards.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
-//    addB.title = LString(@"Cards Dock");
+
     addB.tag = ToolbarTagAdd;
     
     UIBarButtonItem *switchB = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_content.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
-//    UIBarButtonItem *switchB = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:nil];
-//    switchB.title = NSLocalizedString(@"iToContent", nil);
-    
+  
     switchB.tag = ToolbarTagSwitch;
     
     
     coverPhotoBB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_background.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
-//    coverPhotoBB.title = NSLocalizedString(@"iCoverPhoto", nil);
+
     coverPhotoBB.tag = ToolbarTagCoverPhoto;
     
     coverTextBB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_text.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
-//    coverTextBB = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(toolbarButtonClicked:)];
     coverTextBB.tag = ToolbarTagCoverText;
-//    coverTextBB.title = NSLocalizedString(@"iText", nil);
     
     UIBarButtonItem *chooseB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_choose.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
-//    chooseB.title = NSLocalizedString(@"iChoose", nil);
+
     chooseB.tag = ToolbarTagChooseCover;
     
     
@@ -154,8 +147,6 @@ static CGFloat _hAdBanner;
     
     // BB for Content
     UIBarButtonItem *switchContentB = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_cover.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
-//    switchContentB.title = NSLocalizedString(@"iToCover", nil);
-//    switchB = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:uibarbutt target:<#(id)#> action:<#(SEL)#>]
     switchContentB.tag = ToolbarTagSwitch;
     
     photoBB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_photo.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
@@ -176,15 +167,11 @@ static CGFloat _hAdBanner;
     UIBarButtonItem *loveB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_love.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
 //    loveB.title = NSLocalizedString(@"iLove", nil);
     loveB.tag = ToolbarTagLove;
-    
-//    UIBarButtonItem *actionB = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_action2.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
-//    actionB.title = NSLocalizedString(@"iAction", nil);
     UIBarButtonItem *actionB = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(toolbarButtonClicked:)];
     actionB.tag = ToolbarTagAction;
     
     UIBarButtonItem *settingB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_setting.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
-//    settingB = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:uibar target:<#(id)#> action:<#(SEL)#>]
-//    settingB.title = NSLocalizedString(@"iSetting", nil);
+
     settingB.tag = ToolbarTagSetting;
     
     float width = isPad?70:45;
@@ -204,7 +191,7 @@ static CGFloat _hAdBanner;
                   fixed,chooseB,flexible,infoB,fixed,nil];
     
     contentItems =  [NSArray arrayWithObjects:fixed,addB,flexible,switchContentB,fixed,photoBB,fixed,contentTextBB,
-                     fixed,zettelB,fixed,loveB,fixed,settingB,flexible,actionB,fixed,fixed,infoB,fixed,nil];
+                     fixed,zettelB,fixed,settingB,flexible,actionB,shareFixed,infoB,fixed,nil];
     
 //    toolbar.backgroundColor = [UIColor blackColor];
 }
@@ -216,67 +203,36 @@ static CGFloat _hAdBanner;
 	r.origin = CGPointZero;
 	
     self.view = [[UIView alloc] initWithFrame:r];
-  
+
+    
     
 	w = r.size.width;
 	h = r.size.height;
 
+    _r = r;
+    _w = w;
+    _h = h;
     CGFloat hToolbar = isPad?44:32;
     toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, h-hToolbar, w, hToolbar)];
     toolbar.barStyle = UIBarStyleBlack;
-//    if ([toolbar respondsToSelector:@selector(setBarTintColor:)]) {
-//        toolbar.barTintColor = [UIColor blackColor];
-//    }
 
-//    toolbar.tintColor = [UIColor whiteColor];
-//    toolbar.backgroundColor = [UIColor blackColor];
-//    toolbar.translucent = YES;
     
     [self.view addSubview:toolbar];
     
-//      NSLog(@"toolbar # %@",toolbar);
-}
-- (void)registerNotifications
-{
-    [[NSNotificationCenter defaultCenter] addObserver:self
-											 selector:@selector(willDismissPopOverViewController)
-												 name:NotifiRootDismiss object:nil];
-	[[NSNotificationCenter defaultCenter] addObserver:self
-											 selector:@selector(handleNotificationOpenTextViewController:)
-												 name:NotifiRootOpenTextLabelVC object:nil];
-	
-	[[NSNotificationCenter defaultCenter] addObserver:self
-											 selector:@selector(handleNotificationResignActive:)
-												 name:UIApplicationWillResignActiveNotification
-											   object: [UIApplication sharedApplication]];
-	[[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleDidBecomeActive:) name:UIApplicationDidBecomeActiveNotification object:[UIApplication sharedApplication]];
-}
-
-- (void)viewDidLoad
-{
-    L();
+    [AdView sharedInstance];
     
-	[super viewDidLoad];
-
-
-	[self checkVersion];
+    [self checkVersion];
 	
 	card = [Controller sharedController].firstCard;
 	
-//	r = [UIScreen mainScreen].bounds;
-//	r = CGRectApplyAffineTransform(r, CGAffineTransformMakeRotation(90 * M_PI / 180));
-//	r.origin = CGPointZero;
-//	
-//    self.view.frame = r;
     
-	
 	//iphone
 	containerRect = CGRectMake(0, 0, 480, 320);
 	toolbarRect = CGRectMake(0, h-32, w, 32);
 	bannerRect = CGRectMake(0, h-32, w, 32);
 	bannerOutRect = CGRectMake(0, h, w, 32);
 	containerWithBannerRect =containerRect;
-	toolbarWithBannerRect = toolbarRect;
+	toolbarWithBannerRect = CGRectMake(0, h-64, w, 32);
 	_hAdBanner = isPad?90:32;
 	
 	if (isPad) {
@@ -288,18 +244,16 @@ static CGFloat _hAdBanner;
 		bannerOutRect = CGRectMake(0, h, w, 66);
 	}
 	else if(isPhoneRetina4){ // iphone 5
-
+        
 		containerRect = CGRectMake(44, 0, 480, 320);
-		containerWithBannerRect =containerRect;
-		toolbarWithBannerRect = toolbarRect;
-
+        containerWithBannerRect =containerRect;
 	}
 	
 	
 	self.view.backgroundColor = [UIColor blackColor];
     
     [self loadToolbarItems];
-
+    
 	
 	container = [[UIView alloc]initWithFrame:containerRect];
 	container.backgroundColor = [UIColor blackColor];
@@ -328,65 +282,42 @@ static CGFloat _hAdBanner;
 	
 	
 	self.textLabelVC.view.alpha = 1;
-
+    
 	self.settingVC.view.alpha = 1;
-
-
+    
+    
 	
 	if (isPad) {
 		UIViewController *vc = [[UIViewController alloc] init];
 		popVC = [[UIPopoverController alloc] initWithContentViewController:vc];
 		popVC.delegate = self;
 		
-	} 
-
+	}
+    
 	[self.view insertSubview:container belowSubview:toolbar];
-
+    
 	[self registerNotifications];
 	
 	actionActionSheet = [[UIActionSheet alloc] initWithTitle:nil
 													delegate:self
 										   cancelButtonTitle:nil
 									  destructiveButtonTitle:nil
-										   otherButtonTitles:NSLocalizedString(@"emailPNG", nil),LString(@"send it later"),NSLocalizedString(@"Save PNG", nil),@"Facebook",nil];
-	
-	if (kVersion>=5.0) {
-		[actionActionSheet addButtonWithTitle:@"Twitter"];
-	}
+										   otherButtonTitles:NSLocalizedString(@"emailPNG", nil),LString(@"send it later"),NSLocalizedString(@"Save PNG", nil),@"Facebook",@"Twitter",nil];
 
+    
 	
 	[self preLoad];
-	
-	
-	[self initBanner];
-
-	
-//    if (isPhone) {
-//        
-//		toolbar.frame = CGRectMake(0, 320-32, toolbar.width, 32);
-//        
-//	}
-    
 
 }
 
 
-
 // 如果是iphone中调用了presentModalVC的话，viewdidAppear还是会不停出现的！！
 - (void)viewDidAppear:(BOOL)animated{
-	L();
+//	L();
 	[super viewDidAppear:animated];
 
 	[self.view insertSubview:container belowSubview:toolbar];
-	
-	
-//	if (isPhone) {
-//	
-//		toolbar.frame = CGRectMake(0, 320-32, toolbar.width, 32);
-//	
-//	}
-	
-	
+
 	[self test];
 
 }
@@ -400,9 +331,7 @@ static CGFloat _hAdBanner;
 }
 
 - (NSUInteger)supportedInterfaceOrientations{
-	L();
-   
-//	return UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight;
+//	L();
     return  UIInterfaceOrientationMaskLandscape;
 }
 
@@ -412,9 +341,7 @@ static CGFloat _hAdBanner;
     
 	// Release any cached data, images, etc that aren't in use.
 	
-	if (!instrumentVC.view.superview) {
-		instrumentVC = nil;
-	}
+
 
 //如果popVC显示的话，VC会在popVC被dismiss后dealloc
 
@@ -488,20 +415,20 @@ static CGFloat _hAdBanner;
 		
 		[self toInstruction];
 		
-		if (!isPaid() && !isIAPFullVersion) {
-			UIAlertView *alert = [[UIAlertView alloc]initWithTitle:LString(@"Tip") message:LString(@"UpdateMsg3.0") delegate:nil cancelButtonTitle:LString(@"I know about it") otherButtonTitles:nil];
-			[alert show];
-		}
+//		if (!isPaid() && !isIAPFullVersion) {
+//			UIAlertView *alert = [[UIAlertView alloc]initWithTitle:LString(@"Tip") message:LString(@"UpdateMsg3.0") delegate:nil cancelButtonTitle:LString(@"I know about it") otherButtonTitles:nil];
+//			[alert show];
+//		}
 		
 		return;
 	}
 	else if(isUpdateOpen){
 		
 		// 告诉那些free 没有 upgrade的user，只要upgrade to fullversion 就能 获得 所有coverset
-		if (!isPaid() && !isIAPFullVersion) {
-			UIAlertView *alert = [[UIAlertView alloc]initWithTitle:LString(@"Limited Time Only") message:LString(@"UpdateMsg3.0") delegate:nil cancelButtonTitle:LString(@"Cancel") otherButtonTitles:nil];
-			[alert show];
-		}
+//		if (!isPaid() && !isIAPFullVersion) {
+//			UIAlertView *alert = [[UIAlertView alloc]initWithTitle:LString(@"Limited Time Only") message:LString(@"UpdateMsg3.0") delegate:nil cancelButtonTitle:LString(@"Cancel") otherButtonTitles:nil];
+//			[alert show];
+//		}
 	}
 
 	
@@ -688,27 +615,21 @@ static CGFloat _hAdBanner;
 
 	NSString *coverImgName = card.coverImgName;
 
-//	int coverIndex = 0;
 
 	if (!ISEMPTY(coverImgName)) {
 
 		coverFlowVC.coverImgName = coverImgName;
 	}
 
-
-//	coverFlowVC.initialIndex = coverIndex;
-	
 	[self.view addSubview:coverFlowVC.view];
-	
-	[self.view addSubview:_adContainer];
+
+//    [self.view insertSubview:coverFlowVC.view belowSubview:[AdView sharedInstance]];
 }
 
 - (void)toCover:(BOOL)animated{
 	
 	L();
-	if (isPhone) {
-		[_adContainer removeFromSuperview];
-	}
+
 
 	[self setTBItems:RootModeCover];
 	
@@ -732,10 +653,8 @@ static CGFloat _hAdBanner;
 		
 	}
 	
-	[self.view addSubview:container];
-	[self.view addSubview:toolbar];
-	
-//	[self.view addSubview:_banner];
+//	[self.view addSubview:container];
+//	[self.view addSubview:toolbar];
 	
 	[self.coverFlowVC.view removeFromSuperview];
 	self.coverFlowVC = nil;
@@ -744,20 +663,17 @@ static CGFloat _hAdBanner;
 
 - (void)toCoverWithMask{
 	
-	if (isPhone) {
-		[_adContainer removeFromSuperview];
-	}
+
 	
 	[self setTBItems:RootModeCover];
 	[container addSubview:coverVC.view];
 
-	[self.view addSubview:container];
-	[self.view addSubview:toolbar];
+//	[self.view addSubview:container];
+//	[self.view addSubview:toolbar];
 	
 	
 	[self.coverFlowVC.view removeFromSuperview];
 	self.coverFlowVC = nil;
-	
 	
 	photoSource = RPSCover;
 	[self popViewController:imgPicker withStatus:PS_OneImage sender:coverPhotoBB];
@@ -765,10 +681,7 @@ static CGFloat _hAdBanner;
 	
 }
 - (void)toContent{
-	
-	if (isPhone) {
-		[_adContainer removeFromSuperview];
-	}
+
 	
 	[self setTBItems:RootModeContent];
 	
@@ -785,10 +698,10 @@ static CGFloat _hAdBanner;
 	
 	[UIView commitAnimations];
 	
-	[self.view addSubview:container];
-	[self.view addSubview:toolbar];
+//	[self.view addSubview:container];
+//	[self.view addSubview:toolbar];
 	
-//	[self.view addSubview:_banner];
+
 
 }
 
@@ -804,17 +717,14 @@ static CGFloat _hAdBanner;
 	
 	[self.view addSubview:self.cardsVC.view];
 	
-	[self.view addSubview:_adContainer];
 	
 }
 - (void)toInstruction{
 	
-	if (!instrumentVC) {
-		instrumentVC = [[InstructionViewController alloc]init];
-
-	}
-	
-	[self.view addSubview:instrumentVC.view];
+	instructionVC = [[MEInstructionViewController alloc] init];
+	instructionVC.view.alpha = 1;
+    instructionVC.delegate = self;
+	[self.view addSubview:instructionVC.view];
 	
 }
 
@@ -826,14 +736,15 @@ static CGFloat _hAdBanner;
 	}
 	
 	[self popViewController:dateVC withStatus:PS_SendLater sender:nil];
+    
 }
 
 - (void)toInfo{
-	if (!info2VC) {
-		info2VC = [[Info2ViewController alloc]init];
-		info2VC.view.alpha = 1;
-		info2VC.root = self;
-	}
+	
+    infoVC = [[MEInfoViewController alloc]init];
+    infoVC.view.alpha = 1;
+    infoVC.delegate = self;
+	
 	
 
 
@@ -842,7 +753,7 @@ static CGFloat _hAdBanner;
     [UIView setAnimationBeginsFromCurrentState:NO];
     [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.view cache:YES];
 	
-    [self.view addSubview:info2VC.view];
+    [self.view addSubview:infoVC.view];
     
     [UIView commitAnimations];
 
@@ -857,10 +768,11 @@ static CGFloat _hAdBanner;
     [UIView setAnimationBeginsFromCurrentState:NO];
     [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.view cache:YES];
 	
-    [info2VC.view removeFromSuperview];
+    [infoVC.view removeFromSuperview];
 	
     [UIView commitAnimations];
 
+    infoVC = nil;
 }
 
 
@@ -1114,9 +1026,50 @@ static CGFloat _hAdBanner;
 	
 }
 
+#pragma mark - Info
+- (void)infoVCWillClose:(InfoViewController *)infoVC_{
+    [self closeInfo];
+}
 
+#pragma mark - Instruction
+- (void)instructionVCWillDismiss:(InstructionViewController *)vc{
+    
+    [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        [instructionVC.view setOrigin:CGPointMake(-_w, 0)];
+    } completion:^(BOOL finished) {
+        
+        [self performSelector:@selector(removeInstruction) withObject:nil afterDelay:1];
+    }];
+}
+
+- (void)removeInstruction{
+    [instructionVC.view removeFromSuperview];
+    instructionVC = nil;
+}
 #pragma mark - Notification
+- (void)registerNotifications
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self
+											 selector:@selector(willDismissPopOverViewController)
+												 name:NotifiRootDismiss object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self
+											 selector:@selector(handleNotificationOpenTextViewController:)
+												 name:NotifiRootOpenTextLabelVC object:nil];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self
+											 selector:@selector(handleNotificationResignActive:)
+												 name:UIApplicationWillResignActiveNotification
+											   object: [UIApplication sharedApplication]];
+    
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleAdviewNotification:) name:NotificationAdChanged object:nil];
+    
+	[[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleDidBecomeActive:) name:UIApplicationDidBecomeActiveNotification object:[UIApplication sharedApplication]];
+}
 
+- (void)handleAdviewNotification:(NSNotification*)notification{
+    [self layoutADBanner:notification.object];
+    
+}
 
 - (void)handleNotificationOpenTextViewController: (NSNotification*)notification{
 	L();
@@ -1142,7 +1095,7 @@ static CGFloat _hAdBanner;
 
 
 - (void)handleNotificationResignActive: (NSNotification*)notification{
-	L();
+//	L();
 
 	
 	[self saveCard];
@@ -1545,73 +1498,49 @@ static CGFloat _hAdBanner;
 - (void)IAPDidFinished:(NSString*)identifier{
 	
 	//ads
-	L();
+//	L();
 	
 	[[SpriteManager sharedInstance]setupCoverImgNames];
 	[coverFlowVC setup];
 	
-	[self initBanner];
 
+    [AdView releaseSharedInstance];
 	
 }
 - (void)IAPDidRestored{
 	[[SpriteManager sharedInstance]setupCoverImgNames];
 	[coverFlowVC setup];
-	[self initBanner];
+
 	
 	self.card = [[Controller sharedController]firstCard];
-	
+
+    [AdView releaseSharedInstance];
 }
 
 
-#pragma mark -  ADBanner
+#pragma mark -  ADView
 
 
-- (void)initBanner{
-	
-	if (isPaid() || isIAPFullVersion) {
-		[_adContainer removeFromSuperview];
-		_adContainer.delegate = nil;
-		_adContainer = nil;
-	}
-	else{
-	
-		_adContainer = [[AdView alloc]initWithFrame:CGRectMake(0, h, w, _hAdBanner)];
-		_adContainer.delegate = self;
+- (void)layoutADBanner:(AdView *)banner{
+    
+    L();
+    [UIView animateWithDuration:0.25 animations:^{
 		
-		
-		RootMode mode = [[Controller sharedController]rootMode];
-		if (instrumentVC.view.superview) {
-			[self.view insertSubview:_adContainer belowSubview:instrumentVC.view];
-		}
-	    else if((mode == RootModeCover || mode == RootModeContent) && isPhone){ // iphone
-			
-		}
-		else{
-			[self.view addSubview:_adContainer];
-		}
-
-	}
-	
-}
-
-- (void)layoutBanner:(BOOL)loaded{
-	
-	[UIView animateWithDuration:0.25 animations:^{
-		
-		if (loaded) { // 从不显示到显示banner
+		if (banner.isAdDisplaying) { // 从不显示到显示banner
+            
+			[banner setOrigin:CGPointMake(0, _h - banner.height)];
 			container.frame = containerWithBannerRect;
 			toolbar.frame = toolbarWithBannerRect;
-			_adContainer.frame = bannerRect;
+			[self.view addSubview:banner];
 		}
 		else{
-			container.frame = containerRect;
+			[banner setOrigin:CGPointMake(0, _h)];
+            container.frame = containerRect;
 			toolbar.frame = toolbarRect;
-			_adContainer.frame = bannerOutRect;
 		}
 		
     }];
-
+    
 }
 
 
@@ -1685,6 +1614,8 @@ static CGFloat _hAdBanner;
 //	[self perfor]
 
 //	[UIDevice instanceMethodSignatureForSelector:nil];
+    
+//    [self toInstruction];
 }
 
 - (void)testUpdateAlert{

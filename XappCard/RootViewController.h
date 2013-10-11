@@ -13,6 +13,8 @@
 #import "Controller.h"
 #import "Card.h"
 #import "AdView.h"
+#import "InfoViewController.h"
+#import "InstructionViewController.h"
 
 #define kFirstVersionKey @"firstVersionKey"
 #define kLastVersionKey @"lastVersionKey"
@@ -23,14 +25,14 @@
 @class CoverViewController;
 @class ContentViewController;
 @class TextLabelViewController;
-@class InstructionViewController;
+//@class InstructionViewController;
 @class ZettelViewController;
 @class LoveViewController;
 @class SettingViewController;
 @class CardsViewController;
 @class DateViewController;
 @class CoverflowViewController;
-@class Info2ViewController;
+
 
 @class ASIHTTPRequest;
 /**
@@ -41,7 +43,7 @@
  
  */
 
-@interface RootViewController : UIViewController<AdViewDelegate,UIPopoverControllerDelegate, UIImagePickerControllerDelegate,
+@interface RootViewController : UIViewController<InstructionDelegate,InfoDelegate,UIPopoverControllerDelegate, UIImagePickerControllerDelegate,
 UIActionSheetDelegate,MFMailComposeViewControllerDelegate,UIAlertViewDelegate,UINavigationControllerDelegate, UIGestureRecognizerDelegate>{
 
 		
@@ -53,13 +55,11 @@ UIActionSheetDelegate,MFMailComposeViewControllerDelegate,UIAlertViewDelegate,UI
 	IBOutlet UIBarButtonItem *coverTextBB;
 	IBOutlet UIBarButtonItem *contentTextBB;
 	IBOutlet UIBarButtonItem *coverPhotoBB;
-	UIBarButtonItem *fixed,*flexible;
+
 	UIBarButtonItem *coverCameraBB;
 	
     UIToolbar *toolbar2;
-//	IBOutlet UIToolbar *coverToolbar;
-//	IBOutlet UIToolbar *contentToolbar;
-	
+
 	UIView *container;
 	
 	UIPopoverController *popVC;
@@ -68,16 +68,17 @@ UIActionSheetDelegate,MFMailComposeViewControllerDelegate,UIAlertViewDelegate,UI
 	CoverViewController *coverVC;
 	ContentViewController *contentVC;
 	TextLabelViewController *textLabelVC;
-	InstructionViewController *instrumentVC;
+
 	ZettelViewController *zettelVC;
 	LoveViewController *loveVC;
 	SettingViewController *settingVC;
 	CardsViewController *cardsVC;
 	DateViewController *dateVC;
 	CoverflowViewController *coverFlowVC;
-	Info2ViewController *info2VC;
+    
+	InfoViewController *infoVC;
+	InstructionViewController *instructionVC;
 	
-	AdView *_adContainer;
 	ASIHTTPRequest *updateRequest;
 	
 
@@ -107,7 +108,7 @@ UIActionSheetDelegate,MFMailComposeViewControllerDelegate,UIAlertViewDelegate,UI
 @property (nonatomic, strong) TextLabelViewController *textLabelVC;
 @property (nonatomic, strong) DateViewController *dateVC;
 @property (nonatomic, strong) CoverflowViewController *coverFlowVC;
-@property (nonatomic, strong) Info2ViewController *info2VC;
+@property (nonatomic, strong) InfoViewController *infoVC;
 
 @property (nonatomic, assign) RootPhotoSource photoSource;
 @property (nonatomic, assign) PopOverStatus popOverStatus;
@@ -162,7 +163,7 @@ UIActionSheetDelegate,MFMailComposeViewControllerDelegate,UIAlertViewDelegate,UI
 - (UIImage*)getEmailImage:(BOOL)coverEnabled inside:(BOOL)insideEnabled;
 - (UIImage*)getPreviewImage;
 
-- (void)initBanner;
+//- (void)initBanner;
 
 - (void)IAPDidFinished:(NSString*)identifier;
 - (void)IAPDidRestored;

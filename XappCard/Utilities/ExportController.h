@@ -27,4 +27,6 @@
 - (void)toRate;
 
 - (void)saveImageInAlbum:(UIImage*)img;
+
+- (void)linkToAppStoreWithID:(NSString*)appID;
 @end

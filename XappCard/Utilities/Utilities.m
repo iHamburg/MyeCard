@@ -8,6 +8,9 @@
 
 #import "Utilities.h"
 
+CGFloat _h,_w,_hAdBanner;
+CGRect _r,_containerRect;
+
 void saveArchived(id obj, NSString *name){
 	
 	NSMutableData *data = [[NSMutableData alloc] init];

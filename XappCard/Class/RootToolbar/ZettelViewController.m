@@ -16,17 +16,6 @@
 
 
 
-- (void)didReceiveMemoryWarning
-{
-    // Releases the view if it doesn't have a superview.
-	L();
-
-	
-    [super didReceiveMemoryWarning];
-        // Release any cached data, images, etc that aren't in use.
-	
-}
-
 
 #pragma mark - View lifecycle
 
@@ -37,9 +26,6 @@
 	
 	self.view = [[UIView alloc] initWithFrame:ROOTZETTELFRAME];   
 	self.view.backgroundColor = [UIColor whiteColor];
-
-	
-	
 
 	self.title = NSLocalizedString(@"ZettelTitel", nil);
 	
@@ -92,7 +78,7 @@
 			UILabel *catL = [[UILabel alloc] initWithFrame:CGRectMake(0, 10+height, 460, 50)];
 			catL.text = cat;
 			catL.font = [UIFont fontWithName:@"ChalkboardSE-Bold" size:30];
-			catL.textAlignment = UITextAlignmentCenter;
+			catL.textAlignment = NSTextAlignmentCenter;
 			catL.textColor = [UIColor darkGrayColor];
 			[scrollView addSubview:catL];
 			
@@ -101,14 +87,15 @@
 		
 		ZettelTextView *zettelV = [[ZettelTextView alloc] initWithFrame:CGRectMake(0, 10+height, 460, 100) text:[dict objectForKey:@"Text"]];
 		[zettelV heightAnpassen];
+        
+        zettelV.center = CGPointMake(self.view.width/2, zettelV.center.y);
 		
 		height += zettelV.bounds.size.height+10;
-		
-//		[zettelV setBackgroundColor:[UIColor redColor]];
 		
 		[zettelVs addObject:zettelV];
 		[scrollView addSubview:zettelV];
 	
+        NSLog(@"zettelV # %@",zettelV);
 		
 	}
 

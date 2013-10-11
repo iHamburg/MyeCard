@@ -87,7 +87,7 @@ static NSDateFormatter *formatter;
 	return aCard;
 }
 - (void)save{
-	L();
+//	L();
 	[AppSetting save];
 
 	

@@ -48,8 +48,17 @@
 	
 }
 
-- (void)setImage:(UIImage *)image{
+
+- (void)moveOrigin:(CGPoint)relativePoint{
+	CGRect frame = self.frame;
+	CGPoint origin = frame.origin;
+	origin.x+=relativePoint.x;
+	origin.y+=relativePoint.y;
+	frame.origin = origin;
+	self.frame = frame;
 }
+//- (void)setImage:(UIImage *)image{
+//}
 
 
 - (void)fadeIn {

@@ -9,6 +9,7 @@
 #import "TextLabelViewController.h"
 #import "TextLabelView.h"
 #import "CoverTextLabelView.h"
+#import "Category.h"
 
 
 @implementation TextLabelViewController
@@ -65,11 +66,26 @@
 	[fontNames sortUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
 }
 
+- (void)loadTextAlignSeg
+{
+    NSArray *imgNames = @[@"icon_alignLeft.png",@"icon_alignCenter.png",@"icon_alignRight.png"];
+	
+	NSMutableArray *imgs = [NSMutableArray array];
+	for (NSString *imgName in imgNames) {
+		UIImage *img = [UIImage imageNamed:imgName];
+        
+		[imgs addObject:img];
+		
+	}
+	textAlignSeg= [[UISegmentedControl alloc]initWithItems:imgs];
+	textAlignSeg.frame = CGRectMake(0, 0, 120, 30);
+	[textAlignSeg addTarget:self action:@selector(segmentValueChanged:) forControlEvents:UIControlEventValueChanged];
+}
+
 - (void)loadView
 {
     [self loadFontNames];
 
-//    CGFloat h = kVersion>=7.0?320:288;
      CGFloat h = 320;
 	CGRect rect = CGRectMake(0, 0, 480, h);
 	CGRect containerRect = CGRectMake(0, 0, 480, h);
@@ -95,9 +111,7 @@
 	
 	// Subview
     CGFloat hSettingTv = 90;
-    if (kVersion>=7.0) {
-        hSettingTv = 60;
-    }
+
 	settingTV = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, 230, hSettingTv) style:UITableViewStyleGrouped];
 	settingTV.delegate = self;
 	settingTV.dataSource = self;
@@ -116,18 +130,7 @@
         tableKeys = @[@"Text",@"Font outline"];
     }
     
-	NSArray *imgNames = @[@"icon_alignLeft.png",@"icon_alignCenter.png",@"icon_alignRight.png"];
-	
-	NSMutableArray *imgs = [NSMutableArray array];
-	for (NSString *imgName in imgNames) {
-		UIImage *img = [UIImage imageNamed:imgName];
-
-		[imgs addObject:img];
-		
-	}
-	textAlignSeg= [[UISegmentedControl alloc]initWithItems:imgs];
-	textAlignSeg.frame = CGRectMake(0, 0, 120, 30);
-	[textAlignSeg addTarget:self action:@selector(segmentValueChanged:) forControlEvents:UIControlEventValueChanged];
+	[self loadTextAlignSeg];
 	
 	strokeSwitch = [[UISwitch alloc]initWithFrame:CGRectMake(0, 0, 100, 50)];
 
@@ -157,19 +160,33 @@
 	[self restoreFontInformation];
 	
     L();
-      NSLog(@"textVC # %@, nav # %@",self.view,self.navigationController.view);
+    
+    NSLog(@"textVC # %@, nav # %@",self.view,self.navigationController.view);
 	
 
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    if (isPhone && (kVersion>=7.0)) {
+//        CGFloat h = 32;
+//        CGPoint point = CGPointMake(0, h);
+        [colorPlatteV setOrigin:CGPointMake(10, CGRectGetMaxY(settingTV.frame)+5)];
+        [textView setOrigin:CGPointMake(250, 42)];
+        [fontV setOrigin:CGPointMake(240, CGRectGetMaxY(textView.frame)+5)];
+    }
+    
+//    NSLog(@"fontV # %@",fontV);
+}
 
 - (void)viewDidAppear:(BOOL)animated{
 	L();
 	[super viewDidAppear:animated];
 	[textView becomeFirstResponder];
     
-    NSLog(@"textVC # %@, nav # %@",self.view,self.navigationController.view);
-    NSLog(@"settingTV # %@, colorPlatte # %@",settingTV,colorPlatteV);
+//    NSLog(@"textVC # %@, nav # %@",self.view,self.navigationController.view);
+//    NSLog(@"settingTV # %@, colorPlatte # %@",settingTV,colorPlatteV);
 }
 
 
@@ -184,12 +201,12 @@
 // Customize the number of sections in the table view.
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 	
-    return 1;
-//    if (kVersion>=7.0) {
-//        return 1;
-//    }
-//    else
-//        return 2;
+//    return 1;
+    if (kVersion>=7.0) {
+        return 1;
+    }
+    else
+        return 2;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

@@ -8,7 +8,7 @@
 
 #import "ExportController.h"
 #import "RootViewController.h"
-#import "Info2ViewController.h"
+//#import "Info2ViewController.h"
 #import "ALAssetsLibrary+CustomPhotoAlbum.h"
 #import "Utilities.h"
 
@@ -162,5 +162,13 @@
 	}];
 	
 	
+}
+
+#pragma mark -
+
+- (void)linkToAppStoreWithID:(NSString*)appID{
+    NSURL *url = [NSURL urlWithAppID:appID];
+    
+    [[UIApplication sharedApplication]openURL:url];
 }
  @end

@@ -23,18 +23,23 @@
 {
 	NSLog(@"applicaiton did lauch");
 	NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
-// 如果不是debug， startsesseion
+
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(
+														 NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSLog(@"docuPath # %@",documentsDirectory);
+
 
 #ifndef DEBUG
-	NSString *flurryKey;
-	if (isPaid()) {
-		flurryKey = @"6X45D5WMW1G3VQLZ88W1";
-	}
-	else{
-		flurryKey = @"WM5K3RC9BSBH92XZNKPC";
-	}
+//	NSString *flurryKey;
+//	if (isPaid()) {
+//		flurryKey = @"6X45D5WMW1G3VQLZ88W1";
+//	}
+//	else{
+//		flurryKey = @"WM5K3RC9BSBH92XZNKPC";
+//	}
 
-	[Flurry startSession:flurryKey];  // 如果不是测试版本，激活flurry
+	[Flurry startSession:@"WM5K3RC9BSBH92XZNKPC"];  // 如果不是测试版本，激活flurry
 	
 #endif
 	
@@ -65,7 +70,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 
-//	NSLog(@"window # %@",self.window);
 	
 	self.viewController = [RootViewController sharedInstance];
 

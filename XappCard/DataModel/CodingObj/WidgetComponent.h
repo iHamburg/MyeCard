@@ -31,4 +31,5 @@
 + (UIMenuItem*)unlockItem;
 + (UIMenuItem*)editItem;
 + (UIMenuItem*)cropItem;
+
 @end

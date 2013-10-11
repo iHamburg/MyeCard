@@ -224,8 +224,6 @@
     return [super canPerformAction:action withSender:sender];
 	
 }
-//
-//
 
 
 #pragma mark - Notification
