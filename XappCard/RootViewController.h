@@ -25,7 +25,6 @@
 @class CoverViewController;
 @class ContentViewController;
 @class TextLabelViewController;
-//@class InstructionViewController;
 @class ZettelViewController;
 @class LoveViewController;
 @class SettingViewController;

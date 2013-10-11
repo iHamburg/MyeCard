@@ -308,7 +308,6 @@
 	}
 	else if(version == AppVersionIAP){
 
-//		[[MyStoreObserver sharedInstance]showBuyRestoreAlert:kIAPFullVersion delegate:self];
 		
 		[[MyStoreObserver sharedInstance]showFullVersionAlert];
 	}
