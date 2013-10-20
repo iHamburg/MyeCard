@@ -15,7 +15,7 @@
 
 - (BOOL)available{
 
-	if ([name isEqualToString:SFreeCatName] ||[name isEqualToString:SAllCatName]) {
+	if ([name isEqualToString:SFreeCatName] ||[name isEqualToString:SAllCatName]||[name isEqualToString:@"anniversary"]) {
 		return YES;
 	}
 	else {

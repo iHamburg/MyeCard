@@ -7,8 +7,7 @@
 //
 
 #import "TextLabelViewController.h"
-#import "TextLabelView.h"
-#import "CoverTextLabelView.h"
+//#import "TextLabelView.h"
 #import "Category.h"
 
 
@@ -25,8 +24,6 @@
 	textView.textColor = textWidget.textColor;
 //	NSString *name = textWidget.font.fontName;
 	textView.font = [UIFont fontWithName:textWidget.fontName size:displayedFontSize];
-	
-//	NSLog(@"textwidget # %@,textview.font # %@",textWidget,textView.font);
 	
 	textView.textAlignment = textWidget.textAlignment;
 
@@ -170,23 +167,21 @@
     [super viewWillAppear:animated];
     
     if (isPhone && (kVersion>=7.0)) {
-//        CGFloat h = 32;
-//        CGPoint point = CGPointMake(0, h);
+
         [colorPlatteV setOrigin:CGPointMake(10, CGRectGetMaxY(settingTV.frame)+5)];
         [textView setOrigin:CGPointMake(250, 42)];
         [fontV setOrigin:CGPointMake(240, CGRectGetMaxY(textView.frame)+5)];
     }
     
 //    NSLog(@"fontV # %@",fontV);
+    [textView becomeFirstResponder];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
 	L();
 	[super viewDidAppear:animated];
-	[textView becomeFirstResponder];
+	
     
-//    NSLog(@"textVC # %@, nav # %@",self.view,self.navigationController.view);
-//    NSLog(@"settingTV # %@, colorPlatte # %@",settingTV,colorPlatteV);
 }
 
 
@@ -385,9 +380,9 @@
 - (void)editTextLabelView:(TextLabelView*)_textLabelView{
 
 	
-	text = _textLabelView.text;
-	selectedFontName = _textLabelView.fontName;
-	selectedColor = _textLabelView.color;
+//	text = _textLabelView.text;
+//	selectedFontName = _textLabelView.fontName;
+//	selectedColor = _textLabelView.color;
 	textLabelView = _textLabelView;
 	mode = 1;
 	

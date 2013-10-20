@@ -8,6 +8,7 @@
 
 #import "CardsViewController.h"
 #import "DateViewController.h"
+#import "AdView.h"
 @interface CardsViewController ()
 
 @end
@@ -98,10 +99,6 @@
 }
 
 
-- (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-	return UIInterfaceOrientationIsLandscape(interfaceOrientation);
-	
-}
 
 - (void)setup{
 	
@@ -158,7 +155,7 @@
             
 			[banner setOrigin:CGPointMake(0, _h - banner.height)];
 			
-			[[[RootViewController sharedInstance] view] addSubview:banner];
+			[[[MERootViewController sharedInstance] view] addSubview:banner];
 		}
 		else{
 			[banner setOrigin:CGPointMake(0, _h)];

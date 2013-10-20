@@ -15,8 +15,6 @@
 @property (nonatomic, strong) UIColor *fontColor;
 @property (nonatomic, assign) float fontSize;
 @property (nonatomic, assign) float fontSizeFaktor;
-
-// since 2.8
 @property (nonatomic, assign) int textAlignment;
 @property (nonatomic, strong) UIColor *backgroundColor, *strokeColor;
 - (id)initWithTextWidget:(id)textWidget;

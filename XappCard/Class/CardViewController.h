@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "RootViewController.h"
+#import "MERootViewController.h"
 #import "MyView.h"
 #import "CardEditView.h"
 
@@ -18,7 +18,7 @@
 	
 	Card *card;
 	UIImageView *bgV;
-	RootViewController __unsafe_unretained *rootVC;
+	MERootViewController __unsafe_unretained *rootVC;
 	MyView *controllView;
 	
 	CGFloat w,h;
@@ -26,7 +26,7 @@
 }
 
 @property (nonatomic, strong) Card *card;
-@property (nonatomic, unsafe_unretained) RootViewController *rootVC;
+@property (nonatomic, unsafe_unretained) MERootViewController *rootVC;
 @property (nonatomic, strong) MyView *controllView;
 
 - (void)setup;

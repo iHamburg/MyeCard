@@ -4,7 +4,7 @@
 #import "CoverViewController.h"
 #import "MyStoreObserver.h"
 #import "Utilities.h"
-#import "RootViewController.h"
+#import "MERootViewController.h"
 
 
 #define kTagLock 111
@@ -21,7 +21,7 @@
 
 	CoverCategory *coverCategory;
 	
-	RootViewController *rootVC;
+	MERootViewController *rootVC;
 	
 	int availableCoverNum;
 	

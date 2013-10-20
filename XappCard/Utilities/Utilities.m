@@ -8,7 +8,7 @@
 
 #import "Utilities.h"
 
-CGFloat _h,_w,_hAdBanner;
+CGFloat _h,_w;
 CGRect _r,_containerRect;
 
 void saveArchived(id obj, NSString *name){
@@ -48,4 +48,19 @@ BOOL isPaid(void){
 #endif
 	return flag;
 }
+
+
+NSArray* getAllFontNames(void){
+    NSArray *array = [UIFont familyNames];
+    NSMutableArray* fontNames_ = [NSMutableArray array];
+    
+    for(NSString *familyName in array)
+    {
+        [fontNames_ addObject:familyName];
+    }
+    [fontNames_ sortUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    
+    return fontNames_;
+}
+
 

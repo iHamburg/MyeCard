@@ -74,7 +74,7 @@
     L();
     portfolioTextImageV.hidden = YES;
 
-	[[RootViewController sharedInstance]pickProfile];
+	[[MERootViewController sharedInstance]pickProfile];
 
 	
 }

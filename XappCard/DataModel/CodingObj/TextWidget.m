@@ -93,6 +93,7 @@
 		self.textAlignment = v.textAlignment;
 		bgColor = v.backgroundColor;
 		strokeColor = v.strokeColor;
+        
 //		NSLog(@"fontname:%@,self.fontSize:%f, fontSize:%f,load with coding text:%@",fontName, self.fontSize,fontSize,self.font);
 	}
 	return self;

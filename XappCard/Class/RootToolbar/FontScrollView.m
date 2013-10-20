@@ -61,7 +61,8 @@
 	numLabelInPage = NumLabelInRow *NumLabelInRow;
 	numPages = [fontNames count]/numLabelInPage +1;
 	pageControl.numberOfPages = numPages;
-//	NSLog(@"num pages:%d",numPages);
+
+    NSLog(@"fontNames # %@, count # %d",fontNames,fontNames.count);
 	
 	for (int i = 0; i<[fontNames count]; i++) {
 		int page = i/numLabelInPage;
@@ -71,15 +72,15 @@
 		l.backgroundColor = [UIColor whiteColor];
 		l.userInteractionEnabled = YES;
 		l.tag = i+1;
-		l.text = FontDisplayString;
+//		l.text = FontDisplayString;
+        l.text = fontNames[i];
 		l.font = [UIFont fontWithName:fontNames[i] size:hLabel/2.2];
 		l.textAlignment = NSTextAlignmentCenter;
-		l.textColor = [UIColor orangeColor];
+
 		[l addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(handleTap:)]];
 		l.layer.cornerRadius = 3;
 		l.shadowColor = [UIColor colorWithWhite:0 alpha:0.44];
 		l.shadowOffset = CGSizeMake(0, 1);
-
 		
 		[scrollView addSubview:l];
 		

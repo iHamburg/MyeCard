@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "RootViewController.h"
+#import "MERootViewController.h"
 #import "Flurry.h"
 #import "Controller.h"
 
@@ -71,7 +71,7 @@
     // Override point for customization after application launch.
 
 	
-	self.viewController = [RootViewController sharedInstance];
+	self.viewController = [MERootViewController sharedInstance];
 
 
     self.window.rootViewController = self.viewController;

@@ -4,7 +4,7 @@
 #import "CoverCategoryScrollView.h"
 #import "CoverPackageViewController.h"
 #import "EcardCoverView.h"
-
+#import "AdView.h"
 
 @implementation CoverflowViewController
 @synthesize coverVC, coverflow, initialIndex, coverImgName;
@@ -37,7 +37,6 @@
 	[coverflow setNumberOfCovers:[coverCategory.coverImgNames count]];
 	[coverflow bringCoverAtIndexToFront:initialIndex animated:NO];
 
-	
 }
 
 
@@ -46,7 +45,7 @@
 - (void) loadView{
 	L();
 	
-	rootVC = [RootViewController sharedInstance];
+	rootVC = [MERootViewController sharedInstance];
 	
 	CGRect r = [UIScreen mainScreen].bounds;
 	r = CGRectApplyAffineTransform(r, CGAffineTransformMakeRotation(90 * M_PI / 180.));
@@ -84,8 +83,6 @@
 	[self.view addSubview:step1V];
 	[self.view addSubview:categoryScrollView];
 
-
-	
 	
 	coverCategory = [[SpriteManager sharedInstance]coverCategorys][0];
 	[coverflow setNumberOfCovers:[coverCategory.coverImgNames count]];
@@ -108,7 +105,7 @@
 - (void) viewDidAppear:(BOOL)animated{
 	L();
 	[super viewDidAppear:animated];
-	self.view.frame = rootVC.r;
+	self.view.frame = _r;
 
     [self layoutADBanner:[AdView sharedInstance]];
 }
@@ -161,7 +158,7 @@
             
 			[banner setOrigin:CGPointMake(0, _h - banner.height)];
 			
-			[[[RootViewController sharedInstance] view] addSubview:banner];
+			[[[MERootViewController sharedInstance] view] addSubview:banner];
 		}
 		else{
 			[banner setOrigin:CGPointMake(0, _h)];
@@ -208,7 +205,6 @@
 		}
 
 	}
-
 	
 	NSString *acoverImgName = [coverCategory coverImgNameWithIndex:index];
 	

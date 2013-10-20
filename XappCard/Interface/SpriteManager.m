@@ -7,7 +7,7 @@
 //
 
 #import "SpriteManager.h"
-#import "RootViewController.h"
+#import "MERootViewController.h"
 
 
 @implementation SpriteManager
@@ -87,6 +87,7 @@
 		_coverEasterImgNames = materialDict[@"Cover_Easter"];
 		_coverMotherImgNames = materialDict[@"Cover_Muttertag"];
 		coverFathersDayImgNames = materialDict[@"Cover_FathersDay"];
+        coverHalloween2013ImgNames = materialDict[@"Cover_Halloween2013"];
 		// Cover Category
 		coverCategorys = [NSMutableArray array];
 
@@ -126,6 +127,22 @@
 		
 	}
 	
+    coverCat = [[CoverCategory alloc]init];
+	coverCat.name = @"Halloween 2013";
+	coverCat.coverImgNames = [NSMutableArray arrayWithArray:coverHalloween2013ImgNames];
+	[coverCategorys addObject:coverCat];
+	
+    
+	coverCat = [[CoverCategory alloc]init];
+	coverCat.name = @"Halloween";
+	coverCat.coverImgNames = [NSMutableArray arrayWithArray:coverHalloweenImgNames];
+	[coverCategorys addObject:coverCat];
+    
+    coverCat = [[CoverCategory alloc]init];
+	coverCat.name = @"anniversary";
+	coverCat.coverImgNames = [NSMutableArray arrayWithArray:coverAnniversaryImgNames];
+	[coverCategorys addObject:coverCat];
+    
 	coverCat = [[CoverCategory alloc]init];
 	coverCat.name = @"Fathers Day";
 	coverCat.coverImgNames = [NSMutableArray arrayWithArray:coverFathersDayImgNames];
@@ -156,10 +173,6 @@
 	coverCat.coverImgNames = [NSMutableArray arrayWithArray:coverChristmasImgNames];
 	[coverCategorys addObject:coverCat];
 	
-	coverCat = [[CoverCategory alloc]init];
-	coverCat.name = @"Halloween";
-	coverCat.coverImgNames = [NSMutableArray arrayWithArray:coverHalloweenImgNames];
-	[coverCategorys addObject:coverCat];
 	
 	coverCat = [[CoverCategory alloc]init];
 	coverCat.name = @"Thanksgiving";

@@ -17,6 +17,11 @@
 #define isPhone  (UI_USER_INTERFACE_IDIOM() != UIUserInterfaceIdiomPad)
 #define isPhoneRetina4 ([UIDevice resolution] == UIDeviceResolution_iPhoneRetina4)
 
+
+#define isIOS7 (kVersion >= 7.0)
+#define isIOS6 (kVersion >= 6.0)
+
+
 #define isIAPFullVersion [[NSUserDefaults standardUserDefaults] boolForKey:kIAPFullVersion]
 #define isIAPHalloween [[NSUserDefaults standardUserDefaults] boolForKey:kIAPHalloween]
 #define isIAPThanksgiving [[NSUserDefaults standardUserDefaults] boolForKey:kIAPThanksgiving]

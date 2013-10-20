@@ -113,11 +113,33 @@
 		2609D58A1805A7D50019C242 /* MEInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2609D5881805A7D50019C242 /* MEInfoViewController.m */; };
 		2609D58D1805AC7B0019C242 /* MEInstructionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2609D58C1805AC7B0019C242 /* MEInstructionViewController.m */; };
 		2609D58E1805AC7B0019C242 /* MEInstructionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2609D58C1805AC7B0019C242 /* MEInstructionViewController.m */; };
+		260DC29B1807CEBC00E7CADA /* LRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 260DC2961807CEBC00E7CADA /* LRootViewController.m */; };
+		260DC29C1807CEBC00E7CADA /* LRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 260DC2961807CEBC00E7CADA /* LRootViewController.m */; };
+		260DC29D1807CEBC00E7CADA /* PRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 260DC2981807CEBC00E7CADA /* PRootViewController.m */; };
+		260DC29E1807CEBC00E7CADA /* PRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 260DC2981807CEBC00E7CADA /* PRootViewController.m */; };
+		260DC29F1807CEBC00E7CADA /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 260DC29A1807CEBC00E7CADA /* RootViewController.m */; };
+		260DC2A01807CEBC00E7CADA /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 260DC29A1807CEBC00E7CADA /* RootViewController.m */; };
+		261B92271810FDB00085FC3C /* LandScapeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 261B92261810FDB00085FC3C /* LandScapeNavigationController.m */; };
+		261B92281810FDB00085FC3C /* LandScapeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 261B92261810FDB00085FC3C /* LandScapeNavigationController.m */; };
+		261B922D181100690085FC3C /* METextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 261B922C181100690085FC3C /* METextViewController.m */; };
+		261B922E181100690085FC3C /* METextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 261B922C181100690085FC3C /* METextViewController.m */; };
 		26476DC117F6BA71000E533D /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26476DC017F6BA71000E533D /* libGoogleAdMobAds.a */; };
 		26476DC217F6BA72000E533D /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26476DC017F6BA71000E533D /* libGoogleAdMobAds.a */; };
 		26476DC417F6BFAD000E533D /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26F6E18717F5C1D400E919BD /* Images-2.xcassets */; };
+		2663B044180AAD1400F785A6 /* ExportController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2663B043180AAD1400F785A6 /* ExportController.m */; };
+		2663B045180AAD1400F785A6 /* ExportController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2663B043180AAD1400F785A6 /* ExportController.m */; };
 		266F117617F7084C0024F620 /* Default~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 266F117517F7084C0024F620 /* Default~ipad.png */; };
 		266F117717F7084C0024F620 /* Default~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 266F117517F7084C0024F620 /* Default~ipad.png */; };
+		26BDF0E31810EEAF00B09C74 /* ColorLineScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BDF0D61810EEAF00B09C74 /* ColorLineScrollView.m */; };
+		26BDF0E41810EEAF00B09C74 /* ColorLineScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BDF0D61810EEAF00B09C74 /* ColorLineScrollView.m */; };
+		26BDF0E71810EEAF00B09C74 /* FontNameLineScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BDF0DA1810EEAF00B09C74 /* FontNameLineScrollView.m */; };
+		26BDF0E81810EEAF00B09C74 /* FontNameLineScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BDF0DA1810EEAF00B09C74 /* FontNameLineScrollView.m */; };
+		26BDF0EB1810EEAF00B09C74 /* LineScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BDF0DE1810EEAF00B09C74 /* LineScrollView.m */; };
+		26BDF0EC1810EEAF00B09C74 /* LineScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BDF0DE1810EEAF00B09C74 /* LineScrollView.m */; };
+		26BDF0ED1810EEAF00B09C74 /* TextSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BDF0E01810EEAF00B09C74 /* TextSettingViewController.m */; };
+		26BDF0EE1810EEAF00B09C74 /* TextSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BDF0E01810EEAF00B09C74 /* TextSettingViewController.m */; };
+		26BDF0EF1810EEAF00B09C74 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BDF0E21810EEAF00B09C74 /* TextViewController.m */; };
+		26BDF0F01810EEAF00B09C74 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BDF0E21810EEAF00B09C74 /* TextViewController.m */; };
 		26CDACCF17E8819C008F030D /* libFlurry_4.2.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CDACCE17E8819C008F030D /* libFlurry_4.2.3.a */; };
 		26CDACD017E8819C008F030D /* libFlurry_4.2.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CDACCE17E8819C008F030D /* libFlurry_4.2.3.a */; };
 		26CDACD217E8820B008F030D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CDACD117E8820B008F030D /* Security.framework */; };
@@ -154,6 +176,26 @@
 		26E2D13517E81924003C1E11 /* icon_text@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E2D12217E81924003C1E11 /* icon_text@2x.png */; };
 		26E2D13617E81924003C1E11 /* icon_zettel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E2D12317E81924003C1E11 /* icon_zettel@2x.png */; };
 		26E2D13717E81924003C1E11 /* icon_zettel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E2D12317E81924003C1E11 /* icon_zettel@2x.png */; };
+		26F301521813821C0091B207 /* Halloween2013_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F301481813821C0091B207 /* Halloween2013_0.jpg */; };
+		26F301531813821C0091B207 /* Halloween2013_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F301481813821C0091B207 /* Halloween2013_0.jpg */; };
+		26F301541813821C0091B207 /* Halloween2013_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F301491813821C0091B207 /* Halloween2013_1.jpg */; };
+		26F301551813821C0091B207 /* Halloween2013_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F301491813821C0091B207 /* Halloween2013_1.jpg */; };
+		26F301561813821C0091B207 /* Halloween2013_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F3014A1813821C0091B207 /* Halloween2013_2.jpg */; };
+		26F301571813821C0091B207 /* Halloween2013_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F3014A1813821C0091B207 /* Halloween2013_2.jpg */; };
+		26F301581813821C0091B207 /* Halloween2013_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F3014B1813821C0091B207 /* Halloween2013_3.jpg */; };
+		26F301591813821C0091B207 /* Halloween2013_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F3014B1813821C0091B207 /* Halloween2013_3.jpg */; };
+		26F3015A1813821C0091B207 /* Halloween2013_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F3014C1813821C0091B207 /* Halloween2013_4.jpg */; };
+		26F3015B1813821C0091B207 /* Halloween2013_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F3014C1813821C0091B207 /* Halloween2013_4.jpg */; };
+		26F3015C1813821C0091B207 /* Halloween2013_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F3014D1813821C0091B207 /* Halloween2013_5.jpg */; };
+		26F3015D1813821C0091B207 /* Halloween2013_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F3014D1813821C0091B207 /* Halloween2013_5.jpg */; };
+		26F3015E1813821C0091B207 /* Halloween2013_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F3014E1813821C0091B207 /* Halloween2013_6.jpg */; };
+		26F3015F1813821C0091B207 /* Halloween2013_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F3014E1813821C0091B207 /* Halloween2013_6.jpg */; };
+		26F301601813821C0091B207 /* Halloween2013_7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F3014F1813821C0091B207 /* Halloween2013_7.jpg */; };
+		26F301611813821C0091B207 /* Halloween2013_7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F3014F1813821C0091B207 /* Halloween2013_7.jpg */; };
+		26F301621813821C0091B207 /* Halloween2013_8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F301501813821C0091B207 /* Halloween2013_8.jpg */; };
+		26F301631813821C0091B207 /* Halloween2013_8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F301501813821C0091B207 /* Halloween2013_8.jpg */; };
+		26F301641813821C0091B207 /* Halloween2013_9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F301511813821C0091B207 /* Halloween2013_9.jpg */; };
+		26F301651813821C0091B207 /* Halloween2013_9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F301511813821C0091B207 /* Halloween2013_9.jpg */; };
 		26F6E18817F5C1D400E919BD /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26F6E18717F5C1D400E919BD /* Images-2.xcassets */; };
 		AF039D6815A057B70012719E /* CardCover.m in Sources */ = {isa = PBXBuildFile; fileRef = AF039D6715A057B70012719E /* CardCover.m */; };
 		AF05A3A114C5D05A00AD4C61 /* ZettelCardTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05A3A014C5D05A00AD4C61 /* ZettelCardTextView.m */; };
@@ -554,7 +596,7 @@
 		AF8DB0B41480E97A00C55084 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF8DB0B21480E97A00C55084 /* InfoPlist.strings */; };
 		AF8DB0B61480E97A00C55084 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8DB0B51480E97A00C55084 /* main.m */; };
 		AF8DB0BA1480E97A00C55084 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8DB0B91480E97A00C55084 /* AppDelegate.m */; };
-		AF8DB0BD1480E97A00C55084 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8DB0BC1480E97A00C55084 /* RootViewController.m */; };
+		AF8DB0BD1480E97A00C55084 /* MERootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8DB0BC1480E97A00C55084 /* MERootViewController.m */; };
 		AF9A23C8158BE8C0001CF935 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AF9A23C7158BE8C0001CF935 /* FBDialog.bundle */; };
 		AF9AA37A16BAF4ED00241AA9 /* contentBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF9AA37916BAF4ED00241AA9 /* contentBG.jpg */; };
 		AF9AA37B16BAF4ED00241AA9 /* contentBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF9AA37916BAF4ED00241AA9 /* contentBG.jpg */; };
@@ -654,7 +696,6 @@
 		AFC3484E16C9A1500034A275 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2B427216BC54D9003ED115 /* AdSupport.framework */; };
 		AFC553F0149B648B005B1842 /* icon_information.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC553EF149B648B005B1842 /* icon_information.png */; };
 		AFC5555F149C012B005B1842 /* ZettelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC5555E149C012A005B1842 /* ZettelViewController.m */; };
-		AFC78ABE14DBF0C2002C5122 /* CoverTextLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC78ABD14DBF0C2002C5122 /* CoverTextLabelView.m */; };
 		AFC984261486CAC0004E3B02 /* pic in Resources */ = {isa = PBXBuildFile; fileRef = AFC984251486CAC0004E3B02 /* pic */; };
 		AFC984331486D2C1004E3B02 /* NSString+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC9842B1486D2C1004E3B02 /* NSString+Extras.m */; };
 		AFC984341486D2C1004E3B02 /* UIAlertView+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC9842D1486D2C1004E3B02 /* UIAlertView+Extras.m */; };
@@ -689,7 +730,7 @@
 		AFEBC4F6159CE0AC00F98B79 /* DateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFEBC4F5159CE0AC00F98B79 /* DateViewController.m */; };
 		AFEBC4FA159CEB8B00F98B79 /* DateView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFEBC4F9159CEB8B00F98B79 /* DateView.m */; };
 		AFF25B8314F27DE70009CB6A /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF25B8214F27DE70009CB6A /* ToDoItem.m */; };
-		AFF25B8914F283060009CB6A /* ExportController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF25B8814F283060009CB6A /* ExportController.m */; };
+		AFF25B8914F283060009CB6A /* MEExportController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF25B8814F283060009CB6A /* MEExportController.m */; };
 		AFF4933B161DD04800FD4D2D /* bg_tableviewHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = AFF4933A161DD04800FD4D2D /* bg_tableviewHeader.png */; };
 		AFF4933D161DD04800FD4D2D /* bg_tableviewHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = AFF4933A161DD04800FD4D2D /* bg_tableviewHeader.png */; };
 		AFF5CF6C14C825C300F37165 /* CardEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF5CF6B14C825C300F37165 /* CardEditView.m */; };
@@ -716,7 +757,7 @@
 		AFFEBA17174F09DB0075BFA6 /* fathersDay10~ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFFEBA03174F09DB0075BFA6 /* fathersDay10~ipad.jpg */; };
 		AFFF4A0515E4366E000A8F99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8DB0B51480E97A00C55084 /* main.m */; };
 		AFFF4A0615E4366E000A8F99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8DB0B91480E97A00C55084 /* AppDelegate.m */; };
-		AFFF4A0715E4366E000A8F99 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8DB0BC1480E97A00C55084 /* RootViewController.m */; };
+		AFFF4A0715E4366E000A8F99 /* MERootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8DB0BC1480E97A00C55084 /* MERootViewController.m */; };
 		AFFF4A0815E4366E000A8F99 /* NSString+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC9842B1486D2C1004E3B02 /* NSString+Extras.m */; };
 		AFFF4A0915E4366E000A8F99 /* UIAlertView+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC9842D1486D2C1004E3B02 /* UIAlertView+Extras.m */; };
 		AFFF4A0A15E4366E000A8F99 /* UIImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC9842F1486D2C1004E3B02 /* UIImage+Extras.m */; };
@@ -750,7 +791,6 @@
 		AFFF4A2815E4366E000A8F99 /* AlbumLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCDC2EA14D98B7100BAC0DD /* AlbumLoader.m */; };
 		AFFF4A2915E4366E000A8F99 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD5C36A14D9ADB40085FA08 /* CardViewController.m */; };
 		AFFF4A2A15E4366E000A8F99 /* CustomBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AF34EA1514DB45E0004D747C /* CustomBarButtonItem.m */; };
-		AFFF4A2B15E4366E000A8F99 /* CoverTextLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC78ABD14DBF0C2002C5122 /* CoverTextLabelView.m */; };
 		AFFF4A2D15E4366E000A8F99 /* LoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDC82C514DC95F50085B61A /* LoveViewController.m */; };
 		AFFF4A2E15E4366E000A8F99 /* UIButton+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCC880E14DD610C0078F2E8 /* UIButton+Extras.m */; };
 		AFFF4A2F15E4366E000A8F99 /* MyColorPlatteView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9F9D9214E0872B0094917A /* MyColorPlatteView.m */; };
@@ -766,7 +806,7 @@
 		AFFF4A3915E4366E000A8F99 /* QuadraticBezierCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBD8DE714E9C124003F64B0 /* QuadraticBezierCurve.m */; };
 		AFFF4A3A15E4366E000A8F99 /* Spline.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBD8DE914E9C124003F64B0 /* Spline.m */; };
 		AFFF4A3B15E4366E000A8F99 /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF25B8214F27DE70009CB6A /* ToDoItem.m */; };
-		AFFF4A3C15E4366E000A8F99 /* ExportController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF25B8814F283060009CB6A /* ExportController.m */; };
+		AFFF4A3C15E4366E000A8F99 /* MEExportController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF25B8814F283060009CB6A /* MEExportController.m */; };
 		AFFF4A3D15E4366E000A8F99 /* SpriteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4306AA151497D50087B5C0 /* SpriteManager.m */; };
 		AFFF4A3E15E4366E000A8F99 /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0E6377158BD5F1006DC6A6 /* Facebook.m */; };
 		AFFF4A3F15E4366E000A8F99 /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0E637B158BD5F1006DC6A6 /* FBDialog.m */; };
@@ -921,6 +961,16 @@
 		2609D5881805A7D50019C242 /* MEInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEInfoViewController.m; sourceTree = "<group>"; };
 		2609D58B1805AC7B0019C242 /* MEInstructionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEInstructionViewController.h; sourceTree = "<group>"; };
 		2609D58C1805AC7B0019C242 /* MEInstructionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEInstructionViewController.m; sourceTree = "<group>"; };
+		260DC2951807CEBC00E7CADA /* LRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRootViewController.h; sourceTree = "<group>"; };
+		260DC2961807CEBC00E7CADA /* LRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRootViewController.m; sourceTree = "<group>"; };
+		260DC2971807CEBC00E7CADA /* PRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRootViewController.h; sourceTree = "<group>"; };
+		260DC2981807CEBC00E7CADA /* PRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRootViewController.m; sourceTree = "<group>"; };
+		260DC2991807CEBC00E7CADA /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		260DC29A1807CEBC00E7CADA /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		261B92251810FDB00085FC3C /* LandScapeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandScapeNavigationController.h; sourceTree = "<group>"; };
+		261B92261810FDB00085FC3C /* LandScapeNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandScapeNavigationController.m; sourceTree = "<group>"; };
+		261B922B181100690085FC3C /* METextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = METextViewController.h; sourceTree = "<group>"; };
+		261B922C181100690085FC3C /* METextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = METextViewController.m; sourceTree = "<group>"; };
 		26476DB717F6BA71000E533D /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
 		26476DB817F6BA71000E533D /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
 		26476DB917F6BA71000E533D /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
@@ -931,7 +981,19 @@
 		26476DBE17F6BA71000E533D /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
 		26476DBF17F6BA71000E533D /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
 		26476DC017F6BA71000E533D /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		2663B042180AAD1400F785A6 /* ExportController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExportController.h; sourceTree = "<group>"; };
+		2663B043180AAD1400F785A6 /* ExportController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExportController.m; sourceTree = "<group>"; };
 		266F117517F7084C0024F620 /* Default~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~ipad.png"; sourceTree = "<group>"; };
+		26BDF0D51810EEAF00B09C74 /* ColorLineScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorLineScrollView.h; sourceTree = "<group>"; };
+		26BDF0D61810EEAF00B09C74 /* ColorLineScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorLineScrollView.m; sourceTree = "<group>"; };
+		26BDF0D91810EEAF00B09C74 /* FontNameLineScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontNameLineScrollView.h; sourceTree = "<group>"; };
+		26BDF0DA1810EEAF00B09C74 /* FontNameLineScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontNameLineScrollView.m; sourceTree = "<group>"; };
+		26BDF0DD1810EEAF00B09C74 /* LineScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineScrollView.h; sourceTree = "<group>"; };
+		26BDF0DE1810EEAF00B09C74 /* LineScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineScrollView.m; sourceTree = "<group>"; };
+		26BDF0DF1810EEAF00B09C74 /* TextSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextSettingViewController.h; sourceTree = "<group>"; };
+		26BDF0E01810EEAF00B09C74 /* TextSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextSettingViewController.m; sourceTree = "<group>"; };
+		26BDF0E11810EEAF00B09C74 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		26BDF0E21810EEAF00B09C74 /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
 		26CDACCE17E8819C008F030D /* libFlurry_4.2.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.2.3.a; sourceTree = "<group>"; };
 		26CDACD117E8820B008F030D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		26DC05F917F6FF3F0068C799 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -950,6 +1012,16 @@
 		26E2D12117E81924003C1E11 /* icon_setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_setting@2x.png"; sourceTree = "<group>"; };
 		26E2D12217E81924003C1E11 /* icon_text@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_text@2x.png"; sourceTree = "<group>"; };
 		26E2D12317E81924003C1E11 /* icon_zettel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_zettel@2x.png"; sourceTree = "<group>"; };
+		26F301481813821C0091B207 /* Halloween2013_0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Halloween2013_0.jpg; sourceTree = "<group>"; };
+		26F301491813821C0091B207 /* Halloween2013_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Halloween2013_1.jpg; sourceTree = "<group>"; };
+		26F3014A1813821C0091B207 /* Halloween2013_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Halloween2013_2.jpg; sourceTree = "<group>"; };
+		26F3014B1813821C0091B207 /* Halloween2013_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Halloween2013_3.jpg; sourceTree = "<group>"; };
+		26F3014C1813821C0091B207 /* Halloween2013_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Halloween2013_4.jpg; sourceTree = "<group>"; };
+		26F3014D1813821C0091B207 /* Halloween2013_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Halloween2013_5.jpg; sourceTree = "<group>"; };
+		26F3014E1813821C0091B207 /* Halloween2013_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Halloween2013_6.jpg; sourceTree = "<group>"; };
+		26F3014F1813821C0091B207 /* Halloween2013_7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Halloween2013_7.jpg; sourceTree = "<group>"; };
+		26F301501813821C0091B207 /* Halloween2013_8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Halloween2013_8.jpg; sourceTree = "<group>"; };
+		26F301511813821C0091B207 /* Halloween2013_9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Halloween2013_9.jpg; sourceTree = "<group>"; };
 		26F6E18717F5C1D400E919BD /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Images-2.xcassets"; path = "../../MyeCard Pro/Images-2.xcassets"; sourceTree = "<group>"; };
 		AF039D6615A057B70012719E /* CardCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardCover.h; path = "../View&ViewController/CardCover.h"; sourceTree = "<group>"; };
 		AF039D6715A057B70012719E /* CardCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardCover.m; path = "../View&ViewController/CardCover.m"; sourceTree = "<group>"; };
@@ -1249,8 +1321,8 @@
 		AF8DB0B71480E97A00C55084 /* XappCard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XappCard-Prefix.pch"; sourceTree = "<group>"; };
 		AF8DB0B81480E97A00C55084 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AF8DB0B91480E97A00C55084 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AF8DB0BB1480E97A00C55084 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		AF8DB0BC1480E97A00C55084 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		AF8DB0BB1480E97A00C55084 /* MERootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MERootViewController.h; sourceTree = "<group>"; };
+		AF8DB0BC1480E97A00C55084 /* MERootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MERootViewController.m; sourceTree = "<group>"; };
 		AF9A23C7158BE8C0001CF935 /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
 		AF9AA37916BAF4ED00241AA9 /* contentBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = contentBG.jpg; sourceTree = "<group>"; };
 		AF9B55561603D54D00662F2F /* UIColor+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extras.h"; sourceTree = "<group>"; };
@@ -1342,8 +1414,6 @@
 		AFC553EF149B648B005B1842 /* icon_information.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_information.png; sourceTree = "<group>"; };
 		AFC5555D149C012A005B1842 /* ZettelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZettelViewController.h; sourceTree = "<group>"; };
 		AFC5555E149C012A005B1842 /* ZettelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZettelViewController.m; sourceTree = "<group>"; };
-		AFC78ABC14DBF0C2002C5122 /* CoverTextLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoverTextLabelView.h; path = "View&ViewController/CoverTextLabelView.h"; sourceTree = "<group>"; };
-		AFC78ABD14DBF0C2002C5122 /* CoverTextLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoverTextLabelView.m; path = "View&ViewController/CoverTextLabelView.m"; sourceTree = "<group>"; };
 		AFC984251486CAC0004E3B02 /* pic */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pic; sourceTree = "<group>"; };
 		AFC984291486D2C1004E3B02 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Category.h; path = Category/Category.h; sourceTree = "<group>"; };
 		AFC9842A1486D2C1004E3B02 /* NSString+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extras.h"; sourceTree = "<group>"; };
@@ -1400,8 +1470,8 @@
 		AFEBC4F9159CEB8B00F98B79 /* DateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DateView.m; path = "../View&ViewController/DateView.m"; sourceTree = "<group>"; };
 		AFF25B8114F27DE70009CB6A /* ToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoItem.h; sourceTree = "<group>"; };
 		AFF25B8214F27DE70009CB6A /* ToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoItem.m; sourceTree = "<group>"; };
-		AFF25B8714F283060009CB6A /* ExportController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExportController.h; path = ../Utilities/ExportController.h; sourceTree = "<group>"; };
-		AFF25B8814F283060009CB6A /* ExportController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExportController.m; path = ../Utilities/ExportController.m; sourceTree = "<group>"; };
+		AFF25B8714F283060009CB6A /* MEExportController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MEExportController.h; path = ../Utilities/MEExportController.h; sourceTree = "<group>"; };
+		AFF25B8814F283060009CB6A /* MEExportController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MEExportController.m; path = ../Utilities/MEExportController.m; sourceTree = "<group>"; };
 		AFF4933A161DD04800FD4D2D /* bg_tableviewHeader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_tableviewHeader.png; sourceTree = "<group>"; };
 		AFF5CF6A14C825C300F37165 /* CardEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardEditView.h; path = "View&ViewController/CardEditView.h"; sourceTree = "<group>"; };
 		AFF5CF6B14C825C300F37165 /* CardEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardEditView.m; path = "View&ViewController/CardEditView.m"; sourceTree = "<group>"; };
@@ -1491,6 +1561,9 @@
 		2609D4E41805A78F0019C242 /* Moduls */ = {
 			isa = PBXGroup;
 			children = (
+				2663B042180AAD1400F785A6 /* ExportController.h */,
+				2663B043180AAD1400F785A6 /* ExportController.m */,
+				260DC2941807CEBC00E7CADA /* Root */,
 				AF7C304516BDA48E0002F3BA /* AdView */,
 				2609D4E51805A78F0019C242 /* InfoVC */,
 				2609D51A1805A78F0019C242 /* Instruction */,
@@ -1588,6 +1661,19 @@
 			path = Instruction;
 			sourceTree = "<group>";
 		};
+		260DC2941807CEBC00E7CADA /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				260DC2951807CEBC00E7CADA /* LRootViewController.h */,
+				260DC2961807CEBC00E7CADA /* LRootViewController.m */,
+				260DC2971807CEBC00E7CADA /* PRootViewController.h */,
+				260DC2981807CEBC00E7CADA /* PRootViewController.m */,
+				260DC2991807CEBC00E7CADA /* RootViewController.h */,
+				260DC29A1807CEBC00E7CADA /* RootViewController.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 		26476DB617F6BA71000E533D /* Admob */ = {
 			isa = PBXGroup;
 			children = (
@@ -1606,6 +1692,25 @@
 			path = Utilities/AdView/Admob;
 			sourceTree = "<group>";
 		};
+		26BDF0D41810EEAF00B09C74 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				26BDF0E11810EEAF00B09C74 /* TextViewController.h */,
+				26BDF0E21810EEAF00B09C74 /* TextViewController.m */,
+				261B922B181100690085FC3C /* METextViewController.h */,
+				261B922C181100690085FC3C /* METextViewController.m */,
+				26BDF0DF1810EEAF00B09C74 /* TextSettingViewController.h */,
+				26BDF0E01810EEAF00B09C74 /* TextSettingViewController.m */,
+				26BDF0DD1810EEAF00B09C74 /* LineScrollView.h */,
+				26BDF0DE1810EEAF00B09C74 /* LineScrollView.m */,
+				26BDF0D91810EEAF00B09C74 /* FontNameLineScrollView.h */,
+				26BDF0DA1810EEAF00B09C74 /* FontNameLineScrollView.m */,
+				26BDF0D51810EEAF00B09C74 /* ColorLineScrollView.h */,
+				26BDF0D61810EEAF00B09C74 /* ColorLineScrollView.m */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
 		26DC05F817F6FF3F0068C799 /* LaunchImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -1617,6 +1722,23 @@
 				266F117517F7084C0024F620 /* Default~ipad.png */,
 			);
 			path = LaunchImage;
+			sourceTree = "<group>";
+		};
+		26F301471813821C0091B207 /* Halloween2013 */ = {
+			isa = PBXGroup;
+			children = (
+				26F301481813821C0091B207 /* Halloween2013_0.jpg */,
+				26F301491813821C0091B207 /* Halloween2013_1.jpg */,
+				26F3014A1813821C0091B207 /* Halloween2013_2.jpg */,
+				26F3014B1813821C0091B207 /* Halloween2013_3.jpg */,
+				26F3014C1813821C0091B207 /* Halloween2013_4.jpg */,
+				26F3014D1813821C0091B207 /* Halloween2013_5.jpg */,
+				26F3014E1813821C0091B207 /* Halloween2013_6.jpg */,
+				26F3014F1813821C0091B207 /* Halloween2013_7.jpg */,
+				26F301501813821C0091B207 /* Halloween2013_8.jpg */,
+				26F301511813821C0091B207 /* Halloween2013_9.jpg */,
+			);
+			path = Halloween2013;
 			sourceTree = "<group>";
 		};
 		26F3F38A1806475D004FC419 /* 3rdLibrary */ = {
@@ -1709,6 +1831,7 @@
 		AF10574415A1C9CE00E38125 /* Covers */ = {
 			isa = PBXGroup;
 			children = (
+				26F301471813821C0091B207 /* Halloween2013 */,
 				AFFEB9DB174F092E0075BFA6 /* FathersDay */,
 				AF1DDDA0172BC5B400EF13DE /* MothersDay */,
 				AF18A84416F3022E00AEAB63 /* Easter */,
@@ -1955,8 +2078,8 @@
 				AF0A19271795136F00DD201D /* NetworkManager.m */,
 				AF7B5260159CB34E005D93BB /* MyStoreObserver.h */,
 				AF7B5261159CB34F005D93BB /* MyStoreObserver.m */,
-				AFF25B8714F283060009CB6A /* ExportController.h */,
-				AFF25B8814F283060009CB6A /* ExportController.m */,
+				AFF25B8714F283060009CB6A /* MEExportController.h */,
+				AFF25B8814F283060009CB6A /* MEExportController.m */,
 				AF4A0CA6158E5BD800A81D62 /* AudioController.h */,
 				AF4A0CA7158E5BD800A81D62 /* AudioController.m */,
 				AFB7B8CE14C45EA60068ED3D /* ToggleDelegate.h */,
@@ -2087,8 +2210,8 @@
 				AF8DB0B91480E97A00C55084 /* AppDelegate.m */,
 				AF5B38EB14BE1C35004D8C74 /* Controller.h */,
 				AF5B38EC14BE1C35004D8C74 /* Controller.m */,
-				AF8DB0BB1480E97A00C55084 /* RootViewController.h */,
-				AF8DB0BC1480E97A00C55084 /* RootViewController.m */,
+				AF8DB0BB1480E97A00C55084 /* MERootViewController.h */,
+				AF8DB0BC1480E97A00C55084 /* MERootViewController.m */,
 				AF6A5FF614B4FDE300972C27 /* Manager */,
 				AFD63FB3148620E800F4AD86 /* ViewController */,
 				AFFB67DE159DD03A005FD1B3 /* DataView */,
@@ -2170,6 +2293,7 @@
 		AFB8667714924FDE00DED9EF /* RootToolbar */ = {
 			isa = PBXGroup;
 			children = (
+				26BDF0D41810EEAF00B09C74 /* Text */,
 				AFB8668414925CC100DED9EF /* PopoverContentViewController.h */,
 				AFB8668514925CC100DED9EF /* PopoverContentViewController.m */,
 				AFB8668614925CC100DED9EF /* PopoverContentViewController.xib */,
@@ -2338,6 +2462,8 @@
 		AFC984281486D2C1004E3B02 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				261B92251810FDB00085FC3C /* LandScapeNavigationController.h */,
+				261B92261810FDB00085FC3C /* LandScapeNavigationController.m */,
 				AF08BB5F161DFF750052B16D /* UIDevice+Extras.m */,
 				AF08BB60161DFF750052B16D /* UIDevice+Extras.h */,
 				AF9B55561603D54D00662F2F /* UIColor+Extras.h */,
@@ -2432,8 +2558,6 @@
 				AF17722114C1E6B800477310 /* ZettelTextView.m */,
 				AFB7B8CF14C46FBD0068ED3D /* TextLabelView.h */,
 				AFB7B8D014C46FBD0068ED3D /* TextLabelView.m */,
-				AFC78ABC14DBF0C2002C5122 /* CoverTextLabelView.h */,
-				AFC78ABD14DBF0C2002C5122 /* CoverTextLabelView.m */,
 			);
 			name = DataView;
 			sourceTree = "<group>";
@@ -2499,6 +2623,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					AFFF4A0115E4366E000A8F99 = {
+						DevelopmentTeam = 5PNFAQX9NQ;
+					};
+				};
 			};
 			buildConfigurationList = AF8DB09F1480E97900C55084 /* Build configuration list for PBXProject "MyeCard" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2551,6 +2680,7 @@
 				26E2D13417E81924003C1E11 /* icon_text@2x.png in Resources */,
 				AFD63FAC14861F2600F4AD86 /* TapkuLibrary.bundle in Resources */,
 				AFC984261486CAC0004E3B02 /* pic in Resources */,
+				26F3015C1813821C0091B207 /* Halloween2013_5.jpg in Resources */,
 				AF4DCB0314882DFE00010D97 /* ContentViewController.xib in Resources */,
 				AF4DCB0914882F1D00010D97 /* CoverViewController.xib in Resources */,
 				AFBDC59E14891ECA00059D6A /* ELCAlbumPickerController.xib in Resources */,
@@ -2570,9 +2700,11 @@
 				AF759BF114995EC90069A149 /* icon_cover.png in Resources */,
 				AFC553F0149B648B005B1842 /* icon_information.png in Resources */,
 				AF6571E3149CB4A400066CF4 /* OverlayZettel.png in Resources */,
+				26F3015E1813821C0091B207 /* Halloween2013_6.jpg in Resources */,
 				AFD69CA1149CD8E000001071 /* icon_zettel.png in Resources */,
 				AF5B38EA14BDE282004D8C74 /* Material.plist in Resources */,
 				2609D5771805A78F0019C242 /* appicon_tinykitchen~ipad.png in Resources */,
+				26F301561813821C0091B207 /* Halloween2013_2.jpg in Resources */,
 				AF17722414C1E99400477310 /* icon_mark.png in Resources */,
 				AF6E3EE114C598C3007F8B76 /* data.plist in Resources */,
 				AFDC82BC14DC56F80085B61A /* icon_action2.png in Resources */,
@@ -2590,6 +2722,7 @@
 				2609D5751805A78F0019C242 /* appicon_tinykitchen@2x~ipad.png in Resources */,
 				AF7B5256159C913B005D93BB /* icon_delete.png in Resources */,
 				AF7B5258159C913B005D93BB /* icon_lock.png in Resources */,
+				26F301601813821C0091B207 /* Halloween2013_7.jpg in Resources */,
 				2609D5371805A78F0019C242 /* Info_Instruction@2x.png in Resources */,
 				2609D54B1805A78F0019C242 /* Info_Support@2x.png in Resources */,
 				AF4A940115A128C8003994D0 /* AddCard.png in Resources */,
@@ -2600,6 +2733,7 @@
 				AF0E336815A380070024A7B7 /* icon_clock.png in Resources */,
 				AF9E79DB161C9B9F00CA8FDC /* Halloween_0@2x~ipad.jpg in Resources */,
 				AF9E79DD161C9B9F00CA8FDC /* Halloween_0~ipad.jpg in Resources */,
+				26F301641813821C0091B207 /* Halloween2013_9.jpg in Resources */,
 				2609D5411805A78F0019C242 /* Info_Recommend@2x.png in Resources */,
 				26E2D12E17E81924003C1E11 /* icon_love@2x.png in Resources */,
 				AF9E79DF161C9B9F00CA8FDC /* Halloween_1@2x~ipad.jpg in Resources */,
@@ -2685,6 +2819,7 @@
 				AF14594B161D9A09009107C9 /* love-2@2x~ipad.jpg in Resources */,
 				AF14594E161D9A09009107C9 /* love-2~ipad.jpg in Resources */,
 				AF145951161D9A09009107C9 /* love-3@2x~ipad.jpg in Resources */,
+				26F301621813821C0091B207 /* Halloween2013_8.jpg in Resources */,
 				AF145954161D9A09009107C9 /* love-3~ipad.jpg in Resources */,
 				2609D5691805A78F0019C242 /* appIcon_InstaHat@2x~ipad.png in Resources */,
 				AF145957161D9A09009107C9 /* love-title-1@2x~ipad.jpg in Resources */,
@@ -2696,6 +2831,7 @@
 				AF145966161D9A09009107C9 /* motherday1~ipad.jpg in Resources */,
 				AF145969161D9A09009107C9 /* motherday2@2x~ipad.jpg in Resources */,
 				AF14596C161D9A09009107C9 /* motherday2~ipad.jpg in Resources */,
+				26F3015A1813821C0091B207 /* Halloween2013_4.jpg in Resources */,
 				26E2D11817E81807003C1E11 /* icon_cards.png in Resources */,
 				2609D5511805A78F0019C242 /* Info_Twitter.png in Resources */,
 				AF14596F161D9A09009107C9 /* motherday3@2x~ipad.jpg in Resources */,
@@ -2707,6 +2843,7 @@
 				2609D56F1805A78F0019C242 /* appIcon_MyeCard~ipad.png in Resources */,
 				AF14597B161D9A09009107C9 /* other-2@2x~ipad.jpg in Resources */,
 				AF14597E161D9A09009107C9 /* other-2~ipad.jpg in Resources */,
+				26F301541813821C0091B207 /* Halloween2013_1.jpg in Resources */,
 				AF145981161D9A09009107C9 /* valentine-1@2x~ipad.jpg in Resources */,
 				AF145984161D9A09009107C9 /* valentine-1~ipad.jpg in Resources */,
 				AF145987161D9A09009107C9 /* valentine-2@2x~ipad.jpg in Resources */,
@@ -2782,6 +2919,7 @@
 				AFBF400916A1F37B00F85E43 /* Cover_Valentine_5~ipad.png in Resources */,
 				AFBF400D16A1F37B00F85E43 /* Cover_Valentine_6~ipad.png in Resources */,
 				AFBF401116A1F37B00F85E43 /* Cover_Valentine_7~ipad.png in Resources */,
+				26F301581813821C0091B207 /* Halloween2013_3.jpg in Resources */,
 				AFBF401516A1F37B00F85E43 /* Cover_Valentine_8~ipad.png in Resources */,
 				AFBF401916A1F37B00F85E43 /* Cover_Valentine_9~ipad.png in Resources */,
 				26E2D12817E81924003C1E11 /* icon_choose@2x.png in Resources */,
@@ -2793,6 +2931,7 @@
 				AF18A85416F3022F00AEAB63 /* easter-11~ipad.png in Resources */,
 				AF18A85616F3022F00AEAB63 /* easter-12~ipad.png in Resources */,
 				AF18A86216F3022F00AEAB63 /* easter-6~ipad.png in Resources */,
+				26F301521813821C0091B207 /* Halloween2013_0.jpg in Resources */,
 				AF18A86416F3022F00AEAB63 /* easter-7~ipad.png in Resources */,
 				AF18A86616F3022F00AEAB63 /* easter-8~ipad.png in Resources */,
 				AF18A86816F3022F00AEAB63 /* easter-9~ipad.png in Resources */,
@@ -2856,6 +2995,8 @@
 				AFFF4A7515E4366E000A8F99 /* Localizable.strings in Resources */,
 				AFFF4A7615E4366E000A8F99 /* icon_setting.png in Resources */,
 				2609D5661805A78F0019C242 /* appIcon_Everalbum@2x~ipad.png in Resources */,
+				26F301651813821C0091B207 /* Halloween2013_9.jpg in Resources */,
+				26F301571813821C0091B207 /* Halloween2013_2.jpg in Resources */,
 				AFFF4A7715E4366E000A8F99 /* icon_photo.png in Resources */,
 				AFFF4A7915E4366E000A8F99 /* icon_cover.png in Resources */,
 				AFFF4A7A15E4366E000A8F99 /* icon_information.png in Resources */,
@@ -2905,6 +3046,8 @@
 				AF9E79F2161C9B9F00CA8FDC /* Halloween_5~ipad.jpg in Resources */,
 				AF9E79F4161C9B9F00CA8FDC /* Halloween_6@2x~ipad.jpg in Resources */,
 				AF9E79F6161C9B9F00CA8FDC /* Halloween_6~ipad.jpg in Resources */,
+				26F301631813821C0091B207 /* Halloween2013_8.jpg in Resources */,
+				26F301591813821C0091B207 /* Halloween2013_3.jpg in Resources */,
 				AF9E79F8161C9B9F00CA8FDC /* Halloween_7@2x~ipad.jpg in Resources */,
 				AF9E79FA161C9B9F00CA8FDC /* Halloween_7~ipad.jpg in Resources */,
 				AF9E79FC161C9B9F00CA8FDC /* Halloween_8@2x~ipad.jpg in Resources */,
@@ -2928,6 +3071,7 @@
 				AF1458E4161D9A09009107C9 /* Christmas-1~ipad.jpg in Resources */,
 				26E2D11917E81807003C1E11 /* icon_cards.png in Resources */,
 				26E2D13317E81924003C1E11 /* icon_setting@2x.png in Resources */,
+				26F301551813821C0091B207 /* Halloween2013_1.jpg in Resources */,
 				AF1458E7161D9A09009107C9 /* Christmas-2@2x~ipad.jpg in Resources */,
 				2609D54C1805A78F0019C242 /* Info_Support@2x.png in Resources */,
 				AF1458EA161D9A09009107C9 /* Christmas-2~ipad.jpg in Resources */,
@@ -2941,7 +3085,9 @@
 				AF145902161D9A09009107C9 /* Christmas-6~ipad.jpg in Resources */,
 				AF145905161D9A09009107C9 /* Christmas-7@2x~ipad.jpg in Resources */,
 				2609D5401805A78F0019C242 /* Info_Recommend.png in Resources */,
+				26F301531813821C0091B207 /* Halloween2013_0.jpg in Resources */,
 				AF145908161D9A09009107C9 /* Christmas-7~ipad.jpg in Resources */,
+				26F3015B1813821C0091B207 /* Halloween2013_4.jpg in Resources */,
 				AF14590B161D9A09009107C9 /* Christmas-8@2x~ipad.jpg in Resources */,
 				AF14590E161D9A09009107C9 /* Christmas-8~ipad.jpg in Resources */,
 				AF145911161D9A09009107C9 /* Christmas-9@2x~ipad.jpg in Resources */,
@@ -2951,6 +3097,7 @@
 				2609D5541805A78F0019C242 /* Info_Twitter@2x.png in Resources */,
 				AF14591A161D9A09009107C9 /* easter-1~ipad.jpg in Resources */,
 				AF14591D161D9A09009107C9 /* easter-2@2x~ipad.jpg in Resources */,
+				26F3015D1813821C0091B207 /* Halloween2013_5.jpg in Resources */,
 				AF145920161D9A09009107C9 /* easter-2~ipad.jpg in Resources */,
 				26DC060317F6FF3F0068C799 /* Default-Landscape~ipad.png in Resources */,
 				AF145923161D9A09009107C9 /* easter-3@2x~ipad.jpg in Resources */,
@@ -2990,6 +3137,7 @@
 				AF14597D161D9A09009107C9 /* other-2@2x~ipad.jpg in Resources */,
 				2609D5601805A78F0019C242 /* Info_Xapp~ipad.png in Resources */,
 				AF145980161D9A09009107C9 /* other-2~ipad.jpg in Resources */,
+				26F3015F1813821C0091B207 /* Halloween2013_6.jpg in Resources */,
 				AF145983161D9A09009107C9 /* valentine-1@2x~ipad.jpg in Resources */,
 				AF145986161D9A09009107C9 /* valentine-1~ipad.jpg in Resources */,
 				2609D5741805A78F0019C242 /* appIcon_NSC~ipad.png in Resources */,
@@ -3053,6 +3201,7 @@
 				2609D52A1805A78F0019C242 /* Info_binder@2x~ipad.png in Resources */,
 				26E2D12D17E81924003C1E11 /* icon_cover@2x.png in Resources */,
 				2609D5361805A78F0019C242 /* Info_Instruction.png in Resources */,
+				26F301611813821C0091B207 /* Halloween2013_7.jpg in Resources */,
 				AF3E600C169E04CB00474472 /* darkBGPattern2.png in Resources */,
 				AF3E6013169E158700474472 /* Archive.otf in Resources */,
 				2609D5781805A78F0019C242 /* appicon_tinykitchen~ipad.png in Resources */,
@@ -3139,7 +3288,7 @@
 			files = (
 				AF8DB0B61480E97A00C55084 /* main.m in Sources */,
 				AF8DB0BA1480E97A00C55084 /* AppDelegate.m in Sources */,
-				AF8DB0BD1480E97A00C55084 /* RootViewController.m in Sources */,
+				AF8DB0BD1480E97A00C55084 /* MERootViewController.m in Sources */,
 				AFC984331486D2C1004E3B02 /* NSString+Extras.m in Sources */,
 				AFC984341486D2C1004E3B02 /* UIAlertView+Extras.m in Sources */,
 				AFC984351486D2C1004E3B02 /* UIImage+Extras.m in Sources */,
@@ -3147,19 +3296,25 @@
 				AF4DCB0414882DFE00010D97 /* ContentViewController.m in Sources */,
 				AF4DCB0814882F1D00010D97 /* CoverViewController.m in Sources */,
 				AFBDC59D14891ECA00059D6A /* ELCAlbumPickerController.m in Sources */,
+				261B92271810FDB00085FC3C /* LandScapeNavigationController.m in Sources */,
 				AFBDC59F14891ECA00059D6A /* ELCAsset.m in Sources */,
+				26BDF0EF1810EEAF00B09C74 /* TextViewController.m in Sources */,
 				AFBDC5A014891ECA00059D6A /* ELCAssetCell.m in Sources */,
 				AFBDC5A214891ECA00059D6A /* ELCAssetTablePicker.m in Sources */,
+				261B922D181100690085FC3C /* METextViewController.m in Sources */,
 				AFBDC5A414891ECA00059D6A /* ELCImagePickerController.m in Sources */,
 				AFB8666A149243FC00DED9EF /* MyView.m in Sources */,
 				AFB8668714925CC100DED9EF /* PopoverContentViewController.m in Sources */,
 				AFD762861492BAD100597A22 /* PortfolioView.m in Sources */,
+				26BDF0E31810EEAF00B09C74 /* ColorLineScrollView.m in Sources */,
 				AF373FB51496C815000BD135 /* LoadingView.m in Sources */,
 				AF373FBC1496C9C7000BD135 /* VideoView.m in Sources */,
 				AFC5555F149C012B005B1842 /* ZettelViewController.m in Sources */,
+				26BDF0E71810EEAF00B09C74 /* FontNameLineScrollView.m in Sources */,
 				AFC2688714A36B2600CDEB87 /* UIPopoverController+Extras.m in Sources */,
 				AFC3297C14A9C8EE00F61B92 /* UIView+Extras.m in Sources */,
 				AFFA9C2014AC6DA100F6758D /* PictureWithFrameView.m in Sources */,
+				26BDF0EB1810EEAF00B09C74 /* LineScrollView.m in Sources */,
 				AFCE205114BB8EC300106167 /* TextLabelViewController.m in Sources */,
 				AF5B38ED14BE1C35004D8C74 /* Controller.m in Sources */,
 				AF17722214C1E6B800477310 /* ZettelTextView.m in Sources */,
@@ -3168,12 +3323,13 @@
 				AF6E3EE414C5AF8E007F8B76 /* ArchivedImageView.m in Sources */,
 				AF05A3A114C5D05A00AD4C61 /* ZettelCardTextView.m in Sources */,
 				AFF5CF6C14C825C300F37165 /* CardEditView.m in Sources */,
+				260DC29B1807CEBC00E7CADA /* LRootViewController.m in Sources */,
 				AF064E1514D30FFA00F1422A /* SettingViewController.m in Sources */,
 				AF064E1D14D337D300F1422A /* ColorChooseViewController.m in Sources */,
 				AFCDC2EB14D98B7100BAC0DD /* AlbumLoader.m in Sources */,
 				AFD5C36B14D9ADB40085FA08 /* CardViewController.m in Sources */,
+				26BDF0ED1810EEAF00B09C74 /* TextSettingViewController.m in Sources */,
 				AF34EA1614DB45E0004D747C /* CustomBarButtonItem.m in Sources */,
-				AFC78ABE14DBF0C2002C5122 /* CoverTextLabelView.m in Sources */,
 				2609D57D1805A78F0019C242 /* InfoViewController.m in Sources */,
 				AFDC82C614DC95F60085B61A /* LoveViewController.m in Sources */,
 				AFCC880F14DD610C0078F2E8 /* UIButton+Extras.m in Sources */,
@@ -3192,7 +3348,7 @@
 				AFBD8DEF14E9C124003F64B0 /* QuadraticBezierCurve.m in Sources */,
 				AFBD8DF014E9C124003F64B0 /* Spline.m in Sources */,
 				AFF25B8314F27DE70009CB6A /* ToDoItem.m in Sources */,
-				AFF25B8914F283060009CB6A /* ExportController.m in Sources */,
+				AFF25B8914F283060009CB6A /* MEExportController.m in Sources */,
 				AF4306AB151497D50087B5C0 /* SpriteManager.m in Sources */,
 				AF0E6392158BD5F1006DC6A6 /* Facebook.m in Sources */,
 				AF0E6394158BD5F1006DC6A6 /* FBDialog.m in Sources */,
@@ -3207,6 +3363,7 @@
 				AF0E639C158BD5F1006DC6A6 /* SBJsonBase.m in Sources */,
 				AF0E639D158BD5F1006DC6A6 /* SBJsonParser.m in Sources */,
 				AF0E639E158BD5F1006DC6A6 /* SBJsonWriter.m in Sources */,
+				2663B044180AAD1400F785A6 /* ExportController.m in Sources */,
 				AF4A0CA8158E5BD800A81D62 /* AudioController.m in Sources */,
 				AF4A0CB0158E5D8700A81D62 /* NSURL+Extras.m in Sources */,
 				AF4A0CBA158E72C200A81D62 /* Card.m in Sources */,
@@ -3220,6 +3377,7 @@
 				AF15B4A715B4A7F600892972 /* MMStopwatchARC.m in Sources */,
 				2609D57F1805A78F0019C242 /* MoreApp.m in Sources */,
 				AF9B55581603D54D00662F2F /* UIColor+Extras.m in Sources */,
+				260DC29F1807CEBC00E7CADA /* RootViewController.m in Sources */,
 				2609D5851805A78F0019C242 /* VerticalSwipeInstructionViewController.m in Sources */,
 				AF853779161CB47F004351D4 /* CoverPackageViewController.m in Sources */,
 				AF08BB61161DFF750052B16D /* UIDevice+Extras.m in Sources */,
@@ -3230,6 +3388,7 @@
 				AF6FC01C1643F83D008593F5 /* FontScrollView.m in Sources */,
 				AF264E9A169C63EE0087BF04 /* CoverCategoryScrollView.m in Sources */,
 				2609D5831805A78F0019C242 /* VerticalInstructionViewController.m in Sources */,
+				260DC29D1807CEBC00E7CADA /* PRootViewController.m in Sources */,
 				AF3E600F169E0AB500474472 /* CoverCategory.m in Sources */,
 				AF3E6016169E1D0500474472 /* FXLabel.m in Sources */,
 				AFD354C4169EF0AC00FCFDA8 /* EcardCoverView.m in Sources */,
@@ -3253,11 +3412,13 @@
 			files = (
 				AFFF4A0515E4366E000A8F99 /* main.m in Sources */,
 				AFFF4A0615E4366E000A8F99 /* AppDelegate.m in Sources */,
-				AFFF4A0715E4366E000A8F99 /* RootViewController.m in Sources */,
+				AFFF4A0715E4366E000A8F99 /* MERootViewController.m in Sources */,
 				AFFF4A0815E4366E000A8F99 /* NSString+Extras.m in Sources */,
 				AFFF4A0915E4366E000A8F99 /* UIAlertView+Extras.m in Sources */,
 				AFFF4A0A15E4366E000A8F99 /* UIImage+Extras.m in Sources */,
 				AFFF4A0B15E4366E000A8F99 /* CoverflowViewController.m in Sources */,
+				260DC29C1807CEBC00E7CADA /* LRootViewController.m in Sources */,
+				26BDF0EE1810EEAF00B09C74 /* TextSettingViewController.m in Sources */,
 				AFFF4A0C15E4366E000A8F99 /* ContentViewController.m in Sources */,
 				AFFF4A0D15E4366E000A8F99 /* CoverViewController.m in Sources */,
 				AFFF4A0E15E4366E000A8F99 /* ELCAlbumPickerController.m in Sources */,
@@ -3281,6 +3442,7 @@
 				2609D58A1805A7D50019C242 /* MEInfoViewController.m in Sources */,
 				AFFF4A2115E4366E000A8F99 /* CardTextView.m in Sources */,
 				AFFF4A2215E4366E000A8F99 /* TextLabelView.m in Sources */,
+				260DC29E1807CEBC00E7CADA /* PRootViewController.m in Sources */,
 				2609D5841805A78F0019C242 /* VerticalInstructionViewController.m in Sources */,
 				AFFF4A2315E4366E000A8F99 /* ArchivedImageView.m in Sources */,
 				AFFF4A2415E4366E000A8F99 /* ZettelCardTextView.m in Sources */,
@@ -3290,7 +3452,7 @@
 				AFFF4A2815E4366E000A8F99 /* AlbumLoader.m in Sources */,
 				AFFF4A2915E4366E000A8F99 /* CardViewController.m in Sources */,
 				AFFF4A2A15E4366E000A8F99 /* CustomBarButtonItem.m in Sources */,
-				AFFF4A2B15E4366E000A8F99 /* CoverTextLabelView.m in Sources */,
+				260DC2A01807CEBC00E7CADA /* RootViewController.m in Sources */,
 				AFFF4A2D15E4366E000A8F99 /* LoveViewController.m in Sources */,
 				2609D5801805A78F0019C242 /* MoreApp.m in Sources */,
 				AFFF4A2E15E4366E000A8F99 /* UIButton+Extras.m in Sources */,
@@ -3299,6 +3461,7 @@
 				AFFF4A3115E4366E000A8F99 /* CardSetting.m in Sources */,
 				AFFF4A3215E4366E000A8F99 /* AppSetting.m in Sources */,
 				AFFF4A3315E4366E000A8F99 /* ImageFilter.m in Sources */,
+				261B92281810FDB00085FC3C /* LandScapeNavigationController.m in Sources */,
 				AFFF4A3415E4366E000A8F99 /* BezierCurve.m in Sources */,
 				AFFF4A3515E4366E000A8F99 /* CatmullRomSpline.m in Sources */,
 				AFFF4A3615E4366E000A8F99 /* CubicBezierCurve.m in Sources */,
@@ -3307,10 +3470,12 @@
 				AFFF4A3915E4366E000A8F99 /* QuadraticBezierCurve.m in Sources */,
 				AFFF4A3A15E4366E000A8F99 /* Spline.m in Sources */,
 				AFFF4A3B15E4366E000A8F99 /* ToDoItem.m in Sources */,
-				AFFF4A3C15E4366E000A8F99 /* ExportController.m in Sources */,
+				AFFF4A3C15E4366E000A8F99 /* MEExportController.m in Sources */,
 				AFFF4A3D15E4366E000A8F99 /* SpriteManager.m in Sources */,
 				AFFF4A3E15E4366E000A8F99 /* Facebook.m in Sources */,
 				AFFF4A3F15E4366E000A8F99 /* FBDialog.m in Sources */,
+				2663B045180AAD1400F785A6 /* ExportController.m in Sources */,
+				26BDF0EC1810EEAF00B09C74 /* LineScrollView.m in Sources */,
 				AFFF4A4015E4366E000A8F99 /* FBFrictionlessRequestSettings.m in Sources */,
 				AFFF4A4115E4366E000A8F99 /* FBLoginDialog.m in Sources */,
 				AFFF4A4215E4366E000A8F99 /* FBRequest.m in Sources */,
@@ -3324,7 +3489,10 @@
 				AFFF4A4A15E4366E000A8F99 /* AudioController.m in Sources */,
 				AFFF4A4B15E4366E000A8F99 /* NSURL+Extras.m in Sources */,
 				AFFF4A4C15E4366E000A8F99 /* Card.m in Sources */,
+				26BDF0F01810EEAF00B09C74 /* TextViewController.m in Sources */,
+				26BDF0E41810EEAF00B09C74 /* ColorLineScrollView.m in Sources */,
 				AFFF4A4D15E4366E000A8F99 /* CardsViewController.m in Sources */,
+				261B922E181100690085FC3C /* METextViewController.m in Sources */,
 				AFFF4A4E15E4366E000A8F99 /* Utilities.m in Sources */,
 				AFFF4A4F15E4366E000A8F99 /* CodingObject.m in Sources */,
 				AFFF4A5015E4366E000A8F99 /* MyStoreObserver.m in Sources */,
@@ -3351,6 +3519,7 @@
 				2609D5821805A78F0019C242 /* InstructionViewController.m in Sources */,
 				AF0A19011794FC5700DD201D /* ASIDataCompressor.m in Sources */,
 				AF0A19031794FC5700DD201D /* ASIDataDecompressor.m in Sources */,
+				26BDF0E81810EEAF00B09C74 /* FontNameLineScrollView.m in Sources */,
 				AF0A19051794FC5700DD201D /* ASIFormDataRequest.m in Sources */,
 				AF0A19071794FC5700DD201D /* ASIHTTPRequest.m in Sources */,
 				AF0A19091794FC5700DD201D /* ASIInputStream.m in Sources */,
@@ -3587,7 +3756,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Xin Chen (2JS83C3H44)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XappCard/XappCard-Prefix.pch";
@@ -3628,7 +3797,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Xin Chen";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xin Chen";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XappCard/XappCard-Prefix.pch";
@@ -3668,7 +3837,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xin Chen";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XappCard/XappCard-Prefix.pch";

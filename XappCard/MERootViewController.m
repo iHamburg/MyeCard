@@ -6,7 +6,7 @@
 //  Copyright (c) 2011 Xappsoft. All rights reserved.
 //
 
-#import "RootViewController.h"
+#import "MERootViewController.h"
 #import "CoverViewController.h"
 #import "ContentViewController.h"
 #import "ZettelViewController.h"
@@ -17,6 +17,8 @@
 #import "CardsViewController.h"
 #import "DateViewController.h"
 #import "CoverflowViewController.h"
+#import "LandScapeNavigationController.h"
+#import "METextViewController.h"
 
 #import "MEInfoViewController.h"
 #import "MEInstructionViewController.h"
@@ -25,19 +27,15 @@
 #import "NetworkManager.h"
 
 
-@implementation RootViewController
+@implementation MERootViewController
 
 
 @synthesize coverVC,contentVC;
-@synthesize photoSource,r,containerSize;
+@synthesize photoSource;
 @synthesize photoBB;
 @synthesize card;
 @synthesize popOverStatus,toolbar;
-@synthesize settingVC,loveVC,zettelVC,textLabelVC,cardsVC,dateVC,coverFlowVC,infoVC;
-@synthesize firstVersion,lastVersion,thisVersion,isFirstOpen,isUpdateOpen;
-
-
-//static CGFloat _hAdBanner;
+@synthesize settingVC,zettelVC,cardsVC,dateVC,coverFlowVC;
 
 - (SettingViewController*)settingVC{
 	if (!settingVC) {
@@ -48,14 +46,6 @@
 	return settingVC;
 }
 
-- (LoveViewController*)loveVC{
-	if (!loveVC) {
-		loveVC = [[LoveViewController alloc] init];
-		loveVC.rootVC = self;
-		loveVC.view.alpha = 1;
-	}
-	return loveVC;
-}
 
 - (ZettelViewController*)zettelVC{
 	if (!zettelVC) {
@@ -67,15 +57,15 @@
 	return zettelVC;
 }
 
-- (TextLabelViewController*)textLabelVC{
-	if (!textLabelVC) {
-		textLabelVC = [[TextLabelViewController alloc] init];
-    	textLabelVC.view.alpha = 1;
-		textLabelVC.rootVC = self;
-	
-	}
-	return textLabelVC;
-}
+//- (TextLabelViewController*)textLabelVC{
+//	if (!textLabelVC) {
+//		textLabelVC = [[TextLabelViewController alloc] init];
+//    	textLabelVC.view.alpha = 1;
+//		textLabelVC.rootVC = self;
+//	
+//	}
+//	return textLabelVC;
+//}
 
 - (CardsViewController*)cardsVC{
 	if (!cardsVC) {
@@ -93,18 +83,7 @@
 }
 
 
-
 #pragma mark - View lifecycle
-+(id)sharedInstance{
-	static id sharedInstance;
-	if (sharedInstance == nil) {
-
-	   sharedInstance = [[RootViewController alloc] init];
-    }
-	
-	return sharedInstance;
-	
-}
 
 - (void)loadToolbarItems {
     // Toolbar Button
@@ -198,50 +177,36 @@
 
 
 - (void)loadView{
-    r = [UIScreen mainScreen].bounds;
-	r = CGRectApplyAffineTransform(r, CGAffineTransformMakeRotation(90 * M_PI / 180));
-	r.origin = CGPointZero;
-	
-    self.view = [[UIView alloc] initWithFrame:r];
 
-    //
+    [super loadView];
     
-	w = r.size.width;
-	h = r.size.height;
-
-    _r = r;
-    _w = w;
-    _h = h;
     CGFloat hToolbar = isPad?44:32;
-    toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, h-hToolbar, w, hToolbar)];
+    toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, _h-hToolbar, _w, hToolbar)];
     toolbar.barStyle = UIBarStyleBlack;
 
     
     [self.view addSubview:toolbar];
     
-    [AdView sharedInstance];
-    
-    [self checkVersion];
 	
 	card = [Controller sharedController].firstCard;
 	
     
 	//iphone
 	containerRect = CGRectMake(0, 0, 480, 320);
-	toolbarRect = CGRectMake(0, h-32, w, 32);
-	bannerRect = CGRectMake(0, h-32, w, 32);
-	bannerOutRect = CGRectMake(0, h, w, 32);
+	toolbarRect = CGRectMake(0, _h-32, _w, 32);
+	bannerRect = CGRectMake(0, _h-32, _w, 32);
+	bannerOutRect = CGRectMake(0, _h, _w, 32);
 	containerWithBannerRect =containerRect;
-	toolbarWithBannerRect = CGRectMake(0, h-64, w, 32);
-	_hAdBanner = isPad?90:32;
+	toolbarWithBannerRect = CGRectMake(0, _h-64, _w, 32);
+
 	
 	if (isPad) {
 		containerRect = CGRectMake(32, 32, 960, 640);
 		containerWithBannerRect = CGRectMake(32, 9, 960, 640);
-		toolbarRect = CGRectMake(0, h-44, w, 44);
+		toolbarRect = CGRectMake(0, _h-44, _w, 44);
 		toolbarWithBannerRect = CGRectMake(0, 658, 1024, 44);
-		bannerRect = CGRectMake(0, h-66, w, 66);
-		bannerOutRect = CGRectMake(0, h, w, 66);
+		bannerRect = CGRectMake(0, _h-66, _w, 66);
+		bannerOutRect = CGRectMake(0, _h, _w, 66);
 	}
 	else if(isPhoneRetina4){ // iphone 5
         
@@ -280,10 +245,8 @@
 	imgPicker.sourceType =  UIImagePickerControllerSourceTypePhotoLibrary;
 	
 	
-	
-	self.textLabelVC.view.alpha = 1;
-    
-	self.settingVC.view.alpha = 1;
+//	self.textLabelVC.view.alpha = 1;
+//	self.settingVC.view.alpha = 1;
     
     
 	
@@ -306,10 +269,23 @@
 
     
 	
-	[self preLoad];
+//	[self preLoad];
 
 }
 
+
+
+- (void)viewWillAppear:(BOOL)animated{
+    L();
+    [super viewWillAppear:animated];
+    
+    
+    if (isIOS7) {
+        [self patchIOS7AfterImageLibraryBug];
+    }
+    
+//    NSLog(@"root # %@, coverV # %@, toolbar # %@",self.view, coverVC.view,toolbar);
+}
 
 // 如果是iphone中调用了presentModalVC的话，viewdidAppear还是会不停出现的！！
 - (void)viewDidAppear:(BOOL)animated{
@@ -320,20 +296,11 @@
 
 	[self test];
 
+//    L();
+//    self.view.frame = CGRectMake(0, 0, 320, 568);
+//    NSLog(@"root # %@, coverV # %@, toolbar # %@",self.view, coverVC.view,toolbar);
 }
 
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    return UIInterfaceOrientationIsLandscape(interfaceOrientation);
-    
-}
-
-- (NSUInteger)supportedInterfaceOrientations{
-//	L();
-    return  UIInterfaceOrientationMaskLandscape;
-}
 
 - (void)didReceiveMemoryWarning
 {
@@ -345,10 +312,9 @@
 
 //如果popVC显示的话，VC会在popVC被dismiss后dealloc
 
-	self.loveVC = nil;
 	self.zettelVC = nil;
 	self.settingVC = nil;
-	self.textLabelVC = nil;
+//	self.textLabelVC = nil;
 }
 
 /**
@@ -374,69 +340,20 @@
 
 }
 
-
-- (void)checkVersion{
-	
-	
-	firstVersion = [[NSUserDefaults standardUserDefaults]floatForKey:kFirstVersionKey];
-	lastVersion = [[NSUserDefaults standardUserDefaults]floatForKey:kLastVersionKey];
-	thisVersion = [[[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString *)kCFBundleVersionKey] floatValue];
-	
-	if (firstVersion == 0.0) { // 第一次安装app
-		isFirstOpen = YES;
-		
-		firstVersion =  [[[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString *)kCFBundleVersionKey] floatValue];
-		[[NSUserDefaults standardUserDefaults]setFloat:firstVersion forKey:kFirstVersionKey];
-		
-		lastVersion = firstVersion;
-		[[NSUserDefaults standardUserDefaults]setFloat:lastVersion forKey:kLastVersionKey];
-		
-	}
-	else{ // 已经安装过app，再次打开
-		if (thisVersion != lastVersion) {
-			isUpdateOpen = YES;
-		}
-		
-		[[NSUserDefaults standardUserDefaults]setFloat:thisVersion forKey:kLastVersionKey];
-	}
-	
-	
-
+- (void)handleAppFirstTimeOpen{
+    [self setTBItems:RootModeChoose];
+    
+    [self toInstruction];
 }
 
-/**
- 这个是在所有的cover，contentVC都完成后才调用的
- */
-- (void)preLoad{
-
-	if (isFirstOpen) {
-
-		[self setTBItems:RootModeChoose];
-		
-		[self toInstruction];
-		
-//		if (!isPaid() && !isIAPFullVersion) {
-//			UIAlertView *alert = [[UIAlertView alloc]initWithTitle:LString(@"Tip") message:LString(@"UpdateMsg3.0") delegate:nil cancelButtonTitle:LString(@"I know about it") otherButtonTitles:nil];
-//			[alert show];
-//		}
-		
-		return;
-	}
-	else if(isUpdateOpen){
-		
-		// 告诉那些free 没有 upgrade的user，只要upgrade to fullversion 就能 获得 所有coverset
-//		if (!isPaid() && !isIAPFullVersion) {
-//			UIAlertView *alert = [[UIAlertView alloc]initWithTitle:LString(@"Limited Time Only") message:LString(@"UpdateMsg3.0") delegate:nil cancelButtonTitle:LString(@"Cancel") otherButtonTitles:nil];
-//			[alert show];
-//		}
-	}
-
-	
-    [self setTBItems:RootModeCover];
-	
-
+- (void)handleRootFirstDidAppear{
+      [self setTBItems:RootModeCover];
 }
 
+- (void)patchIOS7AfterImageLibraryBug {
+    
+    self.view.frame = [[UIScreen mainScreen] bounds];
+}
 
 #pragma mark - IBAction
 
@@ -490,14 +407,12 @@
 		[self popViewController:imgPicker withStatus:PS_OneImage sender:sender];
 		
 	}
-	else if(tag == ToolbarTagCoverText) {
+	else if(tag == ToolbarTagCoverText || tag == ToolbarTagContentText) {
 		if (card.coverMaskFlag) {
-			
 			coverVC.controlMode = ControlModeText;
 		}
-	
-		[self popText:[[TextWidget alloc]initWithFrame:CGRectMake(0, 0, 300, 200)]];
-		
+        
+		[self popTextEdit:[[TextWidget alloc]initWithFrame:CGRectMake(0, 0, 300, 200)]];
 	}
 	else if(tag == ToolbarTagChooseCover) { //
 
@@ -518,29 +433,28 @@
 		[contentVC hideStep:2];
 		
 		self.photoSource = RPSContent;
-//		[self popViewController:imgPicker withStatus:PS_OneImage sender:sender];
+
         UIImagePickerController *imgPicker2 = [[UIImagePickerController alloc] init];
         imgPicker2.delegate = self;
         imgPicker2.allowsEditing = NO;
-        [self presentViewController:imgPicker2 animated:YES completion:nil];
-		
+       
+        if (isPhone) {
+            [self presentViewController:imgPicker2 animated:YES completion:nil];
+            
+        }
+		else{
+            popVC = [[UIPopoverController alloc] initWithContentViewController:imgPicker2];
+            [popVC setPopoverContentSize:CGSizeMake(imgPicker2.view.width, imgPicker2.view.height)];
+            [popVC presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+        }
 	}
-	else if(tag == ToolbarTagContentText) {
-		
-		
-		[self popText:[[TextWidget alloc]initWithFrame:CGRectMake(0, 0, 300, 200)]];
-		
-	}
+
 	else if(tag == ToolbarTagZettel) {
 		
 		[self popViewController:self.zettelVC withStatus:PS_Zettel sender:sender];
 		
 	}
-	else if(tag == ToolbarTagLove) {
-		
-		[self popViewController:self.loveVC withStatus:PS_Love sender:sender];
-		
-	}
+
 	else if(tag == ToolbarTagAction) {
 		//如果status不是PS_Action,就可以直接打开action，否则就把status设成None,表示关闭popVC
 		//其实点击action的时候就可以生成图片了，可是有一个后台锁的问题，
@@ -582,7 +496,37 @@
 	[menuController setMenuVisible:NO animated:YES];
 }
 
+#pragma mark - Text
 
+- (void)textVCDidCancel:(TextViewController *)textVC{
+//     [self closeTextEdit];
+    if (isPad) {
+        [pop dismissPopoverAnimated:YES];
+    }
+    else{
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+}
+
+- (void)textVCDidChangeLabel:(UILabel *)label{
+    
+    if ([[Controller sharedController]rootMode] == RootModeCover) {
+		[[NSNotificationCenter defaultCenter]
+		 postNotificationName:NotifiCoverAddZettel object:@[label]];
+	}
+	else if([[Controller sharedController]rootMode] == RootModeContent){
+		[[NSNotificationCenter defaultCenter]
+		 postNotificationName:NotifiContentAddZettel object:@[label]];
+        
+	}
+
+    if (isPad) {
+        [pop dismissPopoverAnimated:YES];
+    }
+    else{
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+}
 
 #pragma mark - Navigation
 
@@ -601,11 +545,11 @@
 		[self toCover:YES];
 	}
 	
+    NSLog(@"");
 }
 
 
 - (void)toCoverflow{
-	
 	
 	
 	if (!coverFlowVC) {
@@ -621,9 +565,9 @@
 		coverFlowVC.coverImgName = coverImgName;
 	}
 
+    
 	[self.view addSubview:coverFlowVC.view];
 
-//    [self.view insertSubview:coverFlowVC.view belowSubview:[AdView sharedInstance]];
 }
 
 - (void)toCover:(BOOL)animated{
@@ -698,10 +642,6 @@
 	
 	[UIView commitAnimations];
 	
-//	[self.view addSubview:container];
-//	[self.view addSubview:toolbar];
-	
-
 
 }
 
@@ -907,7 +847,7 @@
 				}
 				else if(buttonIndex == 1){ // rate now
 					
-					[[ExportController sharedInstance] toRate];
+					[[MEExportController sharedInstance] toRate];
 					[[NSUserDefaults standardUserDefaults] setInteger:-1 forKey:@"rate"];
 					
 				}
@@ -972,7 +912,7 @@
 			NSDictionary *info = [NSDictionary dictionaryWithObjectsAndKeys:emailBody,@"emailBody",
 								  [NSArray arrayWithObjects:contentData,@"image/jpeg",@"eCard.jpg", nil], @"attachment",nil];
 			
-			[[ExportController sharedInstance] sendEmail:info];
+			[[MEExportController sharedInstance] sendEmail:info];
 			
 			shareTo = @"email";
 		}
@@ -984,7 +924,7 @@
 		
 		}
 		else if(buttonIndex == 2) {  //save
-			[[ExportController sharedInstance]saveImageInAlbum:img];
+			[[MEExportController sharedInstance]saveImageInAlbum:img];
 			
 			shareTo = @"Save ";
 		}
@@ -998,7 +938,7 @@
 		}
 		else if(buttonIndex == 4) { //twitter
 
-			[[ExportController sharedInstance]sendTweetWithText:nil image:img];
+			[[MEExportController sharedInstance]sendTweetWithText:nil image:img];
 			
 			shareTo = @"Twitter";
 		}
@@ -1079,17 +1019,13 @@
 		return;
 	}
 	
-	UIView *piece = object[0];
+	TextWidget *piece = object[0];
 	
-	if ([piece isKindOfClass:[CardEditView class]]) {
-
-
-		//convert TextLabel->TextWidget
-		[self popText:[[TextWidget alloc]initWithTextLabel:piece]];
+    
+	 if([ piece isKindOfClass:[TextWidget class]]){
+		[self popTextEdit:piece];
 	}
-	else if([ piece isKindOfClass:[TextWidget class]]){
-		[self popText:piece];
-	}
+
 	
 }
 
@@ -1115,21 +1051,60 @@
 
 
 
-- (IBAction)popText:(TextWidget*)widget{
-	
+//- (IBAction)popText:(TextWidget*)widget{
+//	
+//	L();
+//	
+////	if (!widget) {
+////		return;
+////	}
+////	
+////	self.textLabelVC.textWidget = widget;
+////	
+////    
+////	[self popViewController:self.textLabelVC withStatus:PS_TextLabel sender:nil];
+//    
+//    
+//}
+
+- (IBAction)popTextEdit:(TextWidget*)textWidget{
 	L();
-	
-	if (!widget) {
-		return;
+	if (!coverTextVC) {
+		coverTextVC = [[METextViewController alloc]init];
+		coverTextVC.view.alpha = 1;
+        coverTextVC.delegate = self;
+	}
+    
+    coverTextVC.label = textWidget;
+    
+    
+    UINavigationController *nav = [[LandScapeNavigationController alloc]initWithRootViewController:coverTextVC];
+    nav.view.frame = CGRectMake(0, 0, coverTextVC.view.width, coverTextVC.view.height + (isPad?(isIOS7?44.0:36.0):32.0));
+    if (isPad) {
+        
+        pop = [[UIPopoverController alloc] initWithContentViewController:nav];
+        
+        pop.popoverContentSize = nav.view.bounds.size;
+        if (isIOS6) {
+            [pop presentPopoverFromRect:CGRectMake(_w/2, isIOS7?_h/2:5, 2, 2) inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+            
+        }
+        else{
+            
+            /// patch bug for ios5
+            [pop presentPopoverFromRect:CGRectMake(_w/2, 20, 2, 2) inView:self.view permittedArrowDirections:0 animated:YES];
+        }
+        
+    }
+	else{
+		[self presentModalViewController:nav animated:YES];
+        
 	}
 	
-	self.textLabelVC.textWidget = widget;
+    
 	
-    
-	[self popViewController:self.textLabelVC withStatus:PS_TextLabel sender:nil];
-    
-    
 }
+
 
 #pragma mark - PopOverVC
 
@@ -1139,8 +1114,8 @@
 	UIViewController *vc = [[UIViewController alloc] init];
 	popoverController.contentViewController = vc;
 	
-	textLabelVC.mode = 0;
-	textLabelVC.text = @"";
+//	textLabelVC.mode = 0;
+//	textLabelVC.text = @"";
 	
 	if (card.setting.coverEnable + card.setting.insideEnable == 0) {
 		card.setting.coverEnable = YES;
@@ -1577,19 +1552,22 @@
 //		NSLog(@"responseDict #%@, # %@",NSStringFromClass([responseObj class]),responseObj);
 
 		float updateVersion = [responseObj[@"version"] floatValue];
+        NSLog(@"updateVersion # %f",updateVersion);
+        
 //		NSLog(@"thisversion # %f, updateversion # %f",thisVersion,updateVersion);
 	
 		
-		if (updateVersion > thisVersion) {
-			updateAlert =   [[UIAlertView alloc] initWithTitle:@"Update available"
-															message:@"An update is available. Would you like to update now?"
-														   delegate:self
-												  cancelButtonTitle:@"Cancel"
-												  otherButtonTitles:@"Update",nil];
-			[updateAlert show];
-			
+//		if (updateVersion > thisVersion) {
+//			updateAlert =   [[UIAlertView alloc] initWithTitle:@"Update available"
+//															message:@"An update is available. Would you like to update now?"
+//														   delegate:self
+//												  cancelButtonTitle:@"Cancel"
+//												  otherButtonTitles:@"Update",nil];
+//			[updateAlert show];
+//			
+//
+//		}
 
-		}
 	}
 	
 	

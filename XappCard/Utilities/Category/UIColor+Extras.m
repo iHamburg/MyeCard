@@ -91,4 +91,12 @@
                            alpha:((float) a / 255.0f)];
 }
 
+
+- (UIColor*)colorWithAlpha:(float)alpha{
+	
+	CGFloat red = 0.0, green = 0.0, blue = 0.0, alpha2 = 0.0;
+	[self getRed:&red green:&green blue:&blue alpha:&alpha2];
+	
+	return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
+}
 @end

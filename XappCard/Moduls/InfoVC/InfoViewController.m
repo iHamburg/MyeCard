@@ -9,7 +9,7 @@
 #import "InfoViewController.h"
 #import "Utilities.h"
 #import "MoreApp.h"
-#import "ExportController.h"
+#import "MEExportController.h"
 #import <QuartzCore/QuartzCore.h>
 
 
@@ -88,7 +88,7 @@
 }
 
 - (void)rateUs{
-    [[ExportController sharedInstance]toRate];
+    [[MEExportController sharedInstance]toRate];
 }
 
 - (void)instructionVCWillDismiss:(InstructionViewController *)vc{
@@ -101,7 +101,7 @@
 - (void)tweetus{
 	
 
-	[[ExportController sharedInstance]sendTweetWithText:STwitter image:nil];
+	[[MEExportController sharedInstance]sendTweetWithText:STwitter image:nil];
 }
 
 - (void)facebook{
@@ -116,7 +116,7 @@
 						  SRecommendEmailBody,@"emailBody",
 						  nil];
 	
-	[[ExportController sharedInstance] sendEmail:dict];
+	[[MEExportController sharedInstance] sendEmail:dict];
 	
 }
 - (void)supportEmail{
@@ -128,7 +128,7 @@
 	};
 	
     
-	[[ExportController sharedInstance] sendEmail:dict2];
+	[[MEExportController sharedInstance] sendEmail:dict2];
 }
 
 
@@ -148,6 +148,6 @@
     
     NSString *appid = isPaid()?app.pAppid:app.fAppid;
     
-    [[ExportController sharedInstance]linkToAppStoreWithID:appid];
+    [[MEExportController sharedInstance]linkToAppStoreWithID:appid];
 }
 @end

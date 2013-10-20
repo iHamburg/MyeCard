@@ -9,7 +9,7 @@
 
 #import <TapkuLibrary/TapkuLibrary.h>
 #import "Controller.h"
-#import "RootViewController.h"
+#import "MERootViewController.h"
 #import "MyStoreObserver.h"
 #import "DateViewController.h"
 #import "CardCover.h"
@@ -38,7 +38,7 @@
 	
 	
 }
-@property (nonatomic, unsafe_unretained) RootViewController *rootVC;
+@property (nonatomic, unsafe_unretained) MERootViewController *rootVC;
 
 @property (nonatomic, assign) int selectedIndex;
 

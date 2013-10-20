@@ -15,7 +15,7 @@
 #import "FBViewController.h" //Facebook
 #import "Flurry.h"  //Flurry
 
-extern CGFloat _h,_w,_hAdBanner;
+extern CGFloat _h,_w;
 extern CGRect _r,_containerRect;
 
 void saveArchived(id, NSString*);
@@ -24,4 +24,5 @@ id loadArchived(NSString*);
 BOOL isPaid(void);
 
 
+NSArray* getAllFontNames(void);
 

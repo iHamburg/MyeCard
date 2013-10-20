@@ -7,17 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-
-#import <QuartzCore/QuartzCore.h>
 #import "Controller.h"
 #import "Card.h"
-#import "AdView.h"
-#import "InfoViewController.h"
-#import "InstructionViewController.h"
+#import "LRootViewController.h"
+#import "TextViewController.h"
 
-#define kFirstVersionKey @"firstVersionKey"
-#define kLastVersionKey @"lastVersionKey"
 #define kUnableTipAlertKey @"tipAlert"
 #define kUpdateAlertKey @"updateAlert"
 
@@ -26,7 +20,6 @@
 @class ContentViewController;
 @class TextLabelViewController;
 @class ZettelViewController;
-@class LoveViewController;
 @class SettingViewController;
 @class CardsViewController;
 @class DateViewController;
@@ -42,7 +35,7 @@
  
  */
 
-@interface RootViewController : UIViewController<InstructionDelegate,InfoDelegate,UIPopoverControllerDelegate, UIImagePickerControllerDelegate,
+@interface MERootViewController : LRootViewController<TextVCDelegate,UIPopoverControllerDelegate, UIImagePickerControllerDelegate,
 UIActionSheetDelegate,MFMailComposeViewControllerDelegate,UIAlertViewDelegate,UINavigationControllerDelegate, UIGestureRecognizerDelegate>{
 
 		
@@ -54,34 +47,29 @@ UIActionSheetDelegate,MFMailComposeViewControllerDelegate,UIAlertViewDelegate,UI
 	IBOutlet UIBarButtonItem *coverTextBB;
 	IBOutlet UIBarButtonItem *contentTextBB;
 	IBOutlet UIBarButtonItem *coverPhotoBB;
-
 	UIBarButtonItem *coverCameraBB;
 	
-    UIToolbar *toolbar2;
-
 	UIView *container;
 	
 	UIPopoverController *popVC;
+    UIPopoverController *pop;
 	UIImagePickerController *imgPicker;
 
 	CoverViewController *coverVC;
 	ContentViewController *contentVC;
-	TextLabelViewController *textLabelVC;
-
+//	TextLabelViewController *textLabelVC;
+    TextViewController *coverTextVC, *contentTextVC;
+    
 	ZettelViewController *zettelVC;
-	LoveViewController *loveVC;
+	
 	SettingViewController *settingVC;
 	CardsViewController *cardsVC;
 	DateViewController *dateVC;
 	CoverflowViewController *coverFlowVC;
-    
-	InfoViewController *infoVC;
-	InstructionViewController *instructionVC;
 	
 	ASIHTTPRequest *updateRequest;
 	
 
-	
 	NSArray *coverItems;
 	NSArray *contentItems;
 	
@@ -89,10 +77,7 @@ UIActionSheetDelegate,MFMailComposeViewControllerDelegate,UIAlertViewDelegate,UI
 	CGRect toolbarRect,toolbarWithBannerRect;
 	CGRect bannerRect,bannerOutRect;
 	CGSize containerSize;
-	CGFloat w,h;
-	
-	
-	
+
 }
 
 
@@ -102,31 +87,19 @@ UIActionSheetDelegate,MFMailComposeViewControllerDelegate,UIAlertViewDelegate,UI
 @property (nonatomic, strong) CardsViewController *cardsVC;
 
 @property (nonatomic, strong) SettingViewController *settingVC;
-@property (nonatomic, strong) LoveViewController *loveVC;
 @property (nonatomic, strong) ZettelViewController *zettelVC;
-@property (nonatomic, strong) TextLabelViewController *textLabelVC;
+//@property (nonatomic, strong) TextLabelViewController *textLabelVC;
 @property (nonatomic, strong) DateViewController *dateVC;
 @property (nonatomic, strong) CoverflowViewController *coverFlowVC;
-@property (nonatomic, strong) InfoViewController *infoVC;
+
 
 @property (nonatomic, assign) RootPhotoSource photoSource;
 @property (nonatomic, assign) PopOverStatus popOverStatus;
 @property (nonatomic, strong) IBOutlet UIBarButtonItem *photoBB;
 @property (nonatomic, strong) IBOutlet UIToolbar *toolbar;
 
-@property (nonatomic, assign) CGRect r;
-@property (nonatomic, assign) CGSize containerSize;
-
-@property (nonatomic, assign) BOOL isFirstOpen,isUpdateOpen;
-@property (nonatomic, assign) float firstVersion, lastVersion, thisVersion; // lastVersion 只用来判断是否update！
-
-
-+(id)sharedInstance;
 
 - (void)setup;
-
-- (void)checkVersion; // first, last, this version
-- (void)preLoad;
 
 - (void)willDismissPopOverViewController;
 - (void)popViewController:(UIViewController*)vc withStatus:(PopOverStatus)status sender:(id)sender;
@@ -148,7 +121,7 @@ UIActionSheetDelegate,MFMailComposeViewControllerDelegate,UIAlertViewDelegate,UI
 
 - (void)openCoverBGPhoto;
 
-- (IBAction)popText:(UIView*)widget;
+//- (IBAction)popText:(UIView*)widget;
 
 - (void)addDate:(NSDate*)date;
 - (void)handleRemindNotification:(UILocalNotification*)notification;
@@ -162,11 +135,9 @@ UIActionSheetDelegate,MFMailComposeViewControllerDelegate,UIAlertViewDelegate,UI
 - (UIImage*)getEmailImage:(BOOL)coverEnabled inside:(BOOL)insideEnabled;
 - (UIImage*)getPreviewImage;
 
-//- (void)initBanner;
 
 - (void)IAPDidFinished:(NSString*)identifier;
 - (void)IAPDidRestored;
-
 
 - (void)showTipAlert;
 

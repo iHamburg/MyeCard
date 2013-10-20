@@ -7,16 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RootViewController.h"
+#import "MERootViewController.h"
 
 @interface PopoverContentViewController : UIViewController{
 
-	__unsafe_unretained RootViewController *rootVC;
+	__unsafe_unretained MERootViewController *rootVC;
 	UIBarButtonItem* cancelBB;
 	UIBarButtonItem *doneBB;
 }
 
-@property (nonatomic, unsafe_unretained) RootViewController *rootVC;
+@property (nonatomic, unsafe_unretained) MERootViewController *rootVC;
 
 - (void)initBarButtons;
 
