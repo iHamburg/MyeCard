@@ -30,20 +30,12 @@
 //	tv.backgroundColor = [_labelMV.bgColor colorWithAlpha:_labelMV.bgAlpha];
 	tv.backgroundColor = _labelMV.bgColor;
     
-    
-    
-
-    
-    
-    
+  
     text = _labelMV.text;
     textColor = _labelMV.textColor;
     textAlignment = _labelMV.textAlignment;
     fontName = _labelMV.fontName;
     bgColor = _labelMV.bgColor;
-//    bgAlpha = _labelMV.bgColor.o;
-    
-    //	settingVC.labelMV = _labelMV;
     
 }
 
@@ -75,7 +67,7 @@
 	
 	_labelMV.font = [UIFont fontWithName:_labelMV.fontName size:originalFontSize];
 	
-    NSLog(@"label.font # %@, fontName # %@",_labelMV.font, _labelMV.fontName);
+//    NSLog(@"label.font # %@, fontName # %@",_labelMV.font, _labelMV.fontName);
     
     [_delegate textVCDidChangeLabel:_labelMV];
     
