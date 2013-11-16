@@ -154,6 +154,9 @@
 		26DC060517F6FF3F0068C799 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DC05FC17F6FF3F0068C799 /* Default.png */; };
 		26DC060617F6FF3F0068C799 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DC05FD17F6FF3F0068C799 /* Default@2x.png */; };
 		26DC060717F6FF3F0068C799 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DC05FD17F6FF3F0068C799 /* Default@2x.png */; };
+		26E17E931828A1C800582CC3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E17E921828A1C800582CC3 /* libPods.a */; };
+		26E17E941828A2BE00582CC3 /* Pods.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9241A932F614478F80B158BE /* Pods.xcconfig */; };
+		26E17E951828A2BE00582CC3 /* Pods.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9241A932F614478F80B158BE /* Pods.xcconfig */; };
 		26E2D11817E81807003C1E11 /* icon_cards.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E2D11717E81807003C1E11 /* icon_cards.png */; };
 		26E2D11917E81807003C1E11 /* icon_cards.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E2D11717E81807003C1E11 /* icon_cards.png */; };
 		26E2D12417E81924003C1E11 /* icon_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E2D11A17E81924003C1E11 /* icon_background@2x.png */; };
@@ -197,6 +200,7 @@
 		26F301641813821C0091B207 /* Halloween2013_9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F301511813821C0091B207 /* Halloween2013_9.jpg */; };
 		26F301651813821C0091B207 /* Halloween2013_9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F301511813821C0091B207 /* Halloween2013_9.jpg */; };
 		26F6E18817F5C1D400E919BD /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26F6E18717F5C1D400E919BD /* Images-2.xcassets */; };
+		3D009F771C894C3D827543E1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA94EF78B9848208C7C95D4 /* libPods.a */; };
 		AF039D6815A057B70012719E /* CardCover.m in Sources */ = {isa = PBXBuildFile; fileRef = AF039D6715A057B70012719E /* CardCover.m */; };
 		AF05A3A114C5D05A00AD4C61 /* ZettelCardTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05A3A014C5D05A00AD4C61 /* ZettelCardTextView.m */; };
 		AF064E1514D30FFA00F1422A /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF064E1414D30FFA00F1422A /* SettingViewController.m */; };
@@ -497,8 +501,6 @@
 		AF3E6010169E0AB500474472 /* CoverCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3E600E169E0AB500474472 /* CoverCategory.m */; };
 		AF3E6012169E158700474472 /* Archive.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF3E6011169E158700474472 /* Archive.otf */; };
 		AF3E6013169E158700474472 /* Archive.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF3E6011169E158700474472 /* Archive.otf */; };
-		AF3E6016169E1D0500474472 /* FXLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3E6015169E1D0500474472 /* FXLabel.m */; };
-		AF3E6017169E1D0500474472 /* FXLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3E6015169E1D0500474472 /* FXLabel.m */; };
 		AF4306AB151497D50087B5C0 /* SpriteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4306AA151497D50087B5C0 /* SpriteManager.m */; };
 		AF4A0CA8158E5BD800A81D62 /* AudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4A0CA7158E5BD800A81D62 /* AudioController.m */; };
 		AF4A0CB0158E5D8700A81D62 /* NSURL+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4A0CAF158E5D8700A81D62 /* NSURL+Extras.m */; };
@@ -1001,6 +1003,10 @@
 		26DC05FB17F6FF3F0068C799 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		26DC05FC17F6FF3F0068C799 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		26DC05FD17F6FF3F0068C799 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		26E17E921828A1C800582CC3 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		26E17E961828E62C00582CC3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		26E17E971828E62C00582CC3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		26E17E981829107100582CC3 /* Script.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Script.sh; sourceTree = "<group>"; };
 		26E2D11717E81807003C1E11 /* icon_cards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_cards.png; sourceTree = "<group>"; };
 		26E2D11A17E81924003C1E11 /* icon_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_background@2x.png"; sourceTree = "<group>"; };
 		26E2D11B17E81924003C1E11 /* icon_cards@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_cards@2x.png"; sourceTree = "<group>"; };
@@ -1023,6 +1029,7 @@
 		26F301501813821C0091B207 /* Halloween2013_8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Halloween2013_8.jpg; sourceTree = "<group>"; };
 		26F301511813821C0091B207 /* Halloween2013_9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Halloween2013_9.jpg; sourceTree = "<group>"; };
 		26F6E18717F5C1D400E919BD /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Images-2.xcassets"; path = "../../MyeCard Pro/Images-2.xcassets"; sourceTree = "<group>"; };
+		9241A932F614478F80B158BE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		AF039D6615A057B70012719E /* CardCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardCover.h; path = "../View&ViewController/CardCover.h"; sourceTree = "<group>"; };
 		AF039D6715A057B70012719E /* CardCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardCover.m; path = "../View&ViewController/CardCover.m"; sourceTree = "<group>"; };
 		AF05A39F14C5D05A00AD4C61 /* ZettelCardTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZettelCardTextView.h; path = "View&ViewController/ZettelCardTextView.h"; sourceTree = "<group>"; };
@@ -1234,8 +1241,6 @@
 		AF3E600D169E0AB500474472 /* CoverCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverCategory.h; sourceTree = "<group>"; };
 		AF3E600E169E0AB500474472 /* CoverCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverCategory.m; sourceTree = "<group>"; };
 		AF3E6011169E158700474472 /* Archive.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Archive.otf; sourceTree = "<group>"; };
-		AF3E6014169E1D0500474472 /* FXLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXLabel.h; sourceTree = "<group>"; };
-		AF3E6015169E1D0500474472 /* FXLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXLabel.m; sourceTree = "<group>"; };
 		AF4306A9151497D50087B5C0 /* SpriteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteManager.h; sourceTree = "<group>"; };
 		AF4306AA151497D50087B5C0 /* SpriteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteManager.m; sourceTree = "<group>"; };
 		AF4A0CA6158E5BD800A81D62 /* AudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioController.h; sourceTree = "<group>"; };
@@ -1490,6 +1495,7 @@
 		AFFEBA03174F09DB0075BFA6 /* fathersDay10~ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fathersDay10~ipad.jpg"; sourceTree = "<group>"; };
 		AFFF4AAE15E4366E000A8F99 /* My eCard_F.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My eCard_F.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFF4AB015E4366E000A8F99 /* MyeCard Free copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MyeCard Free copy-Info.plist"; path = "/Users/appdevelopper/Public/WorkProject/MyeCard/Project/MyeCard/MyeCard Free copy-Info.plist"; sourceTree = "<absolute>"; };
+		FDA94EF78B9848208C7C95D4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1521,6 +1527,7 @@
 				AF8DB0AA1480E97A00C55084 /* UIKit.framework in Frameworks */,
 				AF8DB0AE1480E97A00C55084 /* CoreGraphics.framework in Frameworks */,
 				26CDACCF17E8819C008F030D /* libFlurry_4.2.3.a in Frameworks */,
+				3D009F771C894C3D827543E1 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1528,6 +1535,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26E17E931828A1C800582CC3 /* libPods.a in Frameworks */,
 				26CDACD217E8820B008F030D /* Security.framework in Frameworks */,
 				AFAADD53179BA1D700B138AC /* CFNetwork.framework in Frameworks */,
 				AFAADD52179BA1D300B138AC /* MobileCoreServices.framework in Frameworks */,
@@ -2161,6 +2169,7 @@
 				AF8DB0AF1480E97A00C55084 /* MyeCard */,
 				AF8DB0A81480E97A00C55084 /* Frameworks */,
 				AF8DB0A61480E97A00C55084 /* Products */,
+				9241A932F614478F80B158BE /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2176,6 +2185,7 @@
 		AF8DB0A81480E97A00C55084 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26E17E921828A1C800582CC3 /* libPods.a */,
 				26CDACD117E8820B008F030D /* Security.framework */,
 				AFB74D38178AFCF400CE87D1 /* CFNetwork.framework */,
 				AFB74D36178AFCEF00CE87D1 /* MobileCoreServices.framework */,
@@ -2199,6 +2209,7 @@
 				AF8DB0AB1480E97A00C55084 /* Foundation.framework */,
 				AF8DB0AD1480E97A00C55084 /* CoreGraphics.framework */,
 				AFE3B95714B63B4D0053FD4D /* SenTestingKit.framework */,
+				FDA94EF78B9848208C7C95D4 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2221,6 +2232,7 @@
 				AFC984271486D2C0004E3B02 /* Utilities */,
 				AFC984211486C6C6004E3B02 /* Resources */,
 				AF8DB0B01480E97A00C55084 /* Supporting Files */,
+				26E17E981829107100582CC3 /* Script.sh */,
 			);
 			name = MyeCard;
 			path = XappCard;
@@ -2438,8 +2450,6 @@
 			isa = PBXGroup;
 			children = (
 				AF0A18E81794FC5700DD201D /* ASIHTTPRequest */,
-				AF3E6014169E1D0500474472 /* FXLabel.h */,
-				AF3E6015169E1D0500474472 /* FXLabel.m */,
 				AFFABFC11642B83400553EC9 /* UtilityObjects */,
 				AF0E6375158BD5F1006DC6A6 /* Facebook */,
 				AFBDC58C14891ECA00059D6A /* ELCImagePickerViewController */,
@@ -2586,9 +2596,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF8DB0C31480E97A00C55084 /* Build configuration list for PBXNativeTarget "MyeCard Pro" */;
 			buildPhases = (
+				26DF496E182A54FE00318298 /* ShellScript */,
+				330234C518F341EFB523ED15 /* Check Pods Manifest.lock */,
 				AF8DB0A11480E97900C55084 /* Sources */,
 				AF8DB0A21480E97900C55084 /* Frameworks */,
 				AF8DB0A31480E97900C55084 /* Resources */,
+				34DD0036F81A4AC7A22D9599 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2636,6 +2649,7 @@
 			knownRegions = (
 				en,
 				de,
+				"zh-Hans",
 			);
 			mainGroup = AF8DB09A1480E97900C55084;
 			productRefGroup = AF8DB0A61480E97A00C55084 /* Products */;
@@ -2718,6 +2732,7 @@
 				AF68D2A7151A68D6001BB203 /* Profile_love@3x.png in Resources */,
 				AF9A23C8158BE8C0001CF935 /* FBDialog.bundle in Resources */,
 				AF4A0CB2158E60CA00A81D62 /* facebook.mp3 in Resources */,
+				26E17E951828A2BE00582CC3 /* Pods.xcconfig in Resources */,
 				AF2ED376159BD2A700BFFB13 /* Cards.plist in Resources */,
 				2609D5751805A78F0019C242 /* appicon_tinykitchen@2x~ipad.png in Resources */,
 				AF7B5256159C913B005D93BB /* icon_delete.png in Resources */,
@@ -3128,6 +3143,7 @@
 				AF145965161D9A09009107C9 /* motherday1@2x~ipad.jpg in Resources */,
 				AF145968161D9A09009107C9 /* motherday1~ipad.jpg in Resources */,
 				AF14596B161D9A09009107C9 /* motherday2@2x~ipad.jpg in Resources */,
+				26E17E941828A2BE00582CC3 /* Pods.xcconfig in Resources */,
 				AF14596E161D9A09009107C9 /* motherday2~ipad.jpg in Resources */,
 				AF145971161D9A09009107C9 /* motherday3@2x~ipad.jpg in Resources */,
 				AF145974161D9A09009107C9 /* motherday3~ipad.jpg in Resources */,
@@ -3281,6 +3297,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26DF496E182A54FE00318298 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"ABC\"";
+		};
+		330234C518F341EFB523ED15 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		34DD0036F81A4AC7A22D9599 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AF8DB0A11480E97900C55084 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -3390,7 +3452,6 @@
 				2609D5831805A78F0019C242 /* VerticalInstructionViewController.m in Sources */,
 				260DC29D1807CEBC00E7CADA /* PRootViewController.m in Sources */,
 				AF3E600F169E0AB500474472 /* CoverCategory.m in Sources */,
-				AF3E6016169E1D0500474472 /* FXLabel.m in Sources */,
 				AFD354C4169EF0AC00FCFDA8 /* EcardCoverView.m in Sources */,
 				AF64145516BD18D900A7E2ED /* AdView.m in Sources */,
 				AF385A5216EED5900052EFF3 /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
@@ -3511,7 +3572,6 @@
 				2609D58E1805AC7B0019C242 /* MEInstructionViewController.m in Sources */,
 				2609D5861805A78F0019C242 /* VerticalSwipeInstructionViewController.m in Sources */,
 				AF3E6010169E0AB500474472 /* CoverCategory.m in Sources */,
-				AF3E6017169E1D0500474472 /* FXLabel.m in Sources */,
 				AFD354C5169EF0AC00FCFDA8 /* EcardCoverView.m in Sources */,
 				AF64145616BD18D900A7E2ED /* AdView.m in Sources */,
 				AF385A5316EED5900052EFF3 /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
@@ -3536,6 +3596,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				AF8DB0B31480E97A00C55084 /* en */,
+				26E17E971828E62C00582CC3 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -3545,6 +3606,7 @@
 			children = (
 				AFD6FEBE1498A6D50090D5EB /* en */,
 				AFD6FEC01498A6EE0090D5EB /* de */,
+				26E17E961828E62C00582CC3 /* zh-Hans */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -3618,6 +3680,7 @@
 		};
 		AF8DB0C41480E97A00C55084 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9241A932F614478F80B158BE /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -3635,6 +3698,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/**",
 					"$(SRCROOT)/XappCard/Tapku/src",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = "XappCard/MyeCard-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
@@ -3644,7 +3708,7 @@
 					"$(SRCROOT)/XappCard/Utilities/AdView/Admob/**",
 					"$(SRCROOT)/XappCard/Utilities/Flurry/**",
 				);
-				OTHER_LDFLAGS = "-fobjc-arc";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "My eCard_P";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0C88246A-C510-4EA5-8F0C-C323E63CE0FA";
 				SDKROOT = iphoneos;
@@ -3655,6 +3719,7 @@
 		};
 		AF8DB0C51480E97A00C55084 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9241A932F614478F80B158BE /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -3669,6 +3734,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/**",
 					"$(SRCROOT)/XappCard/Tapku/src",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = "XappCard/MyeCard-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
@@ -3678,7 +3744,7 @@
 					"$(SRCROOT)/XappCard/Utilities/AdView/Admob/**",
 					"$(SRCROOT)/XappCard/Utilities/Flurry/**",
 				);
-				OTHER_LDFLAGS = "-fobjc-arc";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "My eCard";
 				PROVISIONING_PROFILE = "D6E01E46-F91D-46FE-BED4-134E1BC62F87";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4F18FA7A-8E36-4CBF-8D7B-03A5F23CBDC9";
@@ -3719,6 +3785,7 @@
 		};
 		AFAD5A5D14F2F8C300D54D9B /* Adhoc */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9241A932F614478F80B158BE /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -3733,6 +3800,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/**",
 					"$(SRCROOT)/XappCard/Tapku/src",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = "XappCard/MyeCard-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
@@ -3742,7 +3810,7 @@
 					"$(SRCROOT)/XappCard/Utilities/AdView/Admob/**",
 					"$(SRCROOT)/XappCard/Utilities/Flurry/**",
 				);
-				OTHER_LDFLAGS = "-fobjc-arc";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "My eCard";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1B170487-E8BF-4B76-9EF9-15C7B1D1221C";
 				SDKROOT = iphoneos;
@@ -3753,6 +3821,7 @@
 		};
 		AFFF4AAB15E4366E000A8F99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9241A932F614478F80B158BE /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -3767,7 +3836,10 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/XappCard/Tapku/src";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/XappCard/Tapku/src/**",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "MyeCard Free copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
@@ -3776,11 +3848,7 @@
 					"$(SRCROOT)/XappCard/Utilities/AdView/Admob/**",
 					"$(SRCROOT)/XappCard/Utilities/Flurry/**",
 				);
-				OTHER_LDFLAGS = (
-					"-fobjc-arc",
-					"-ObjC",
-					"-all_load",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "My eCard_F";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CC672C02-81A3-4DB0-9290-AFC30B6B4EAD";
 				SDKROOT = iphoneos;
@@ -3791,6 +3859,7 @@
 		};
 		AFFF4AAC15E4366E000A8F99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9241A932F614478F80B158BE /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -3802,7 +3871,10 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/XappCard/Tapku/src";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/XappCard/Tapku/src/**",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "MyeCard Free copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
@@ -3812,11 +3884,7 @@
 					"$(SRCROOT)/XappCard/Utilities/Flurry/**",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"-fobjc-arc",
-					"-ObjC",
-					"-all_load",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "My eCard";
 				PROVISIONING_PROFILE = "28300ACC-89F4-4FFA-8C45-DA6554ED3830";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9DC6691B-17A9-4106-A1DC-46A9C3C65D18";
@@ -3828,6 +3896,7 @@
 		};
 		AFFF4AAD15E4366E000A8F99 /* Adhoc */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9241A932F614478F80B158BE /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -3839,7 +3908,10 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/XappCard/Tapku/src";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/XappCard/Tapku/src/**",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "MyeCard Free copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
@@ -3848,11 +3920,7 @@
 					"$(SRCROOT)/XappCard/Utilities/AdView/Admob/**",
 					"$(SRCROOT)/XappCard/Utilities/Flurry/**",
 				);
-				OTHER_LDFLAGS = (
-					"-fobjc-arc",
-					"-ObjC",
-					"-all_load",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "My eCard";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AD7CDC01-E7DD-44C4-8F8C-CA4BC7D46C1E";
 				SDKROOT = iphoneos;

@@ -57,15 +57,7 @@
 	return zettelVC;
 }
 
-//- (TextLabelViewController*)textLabelVC{
-//	if (!textLabelVC) {
-//		textLabelVC = [[TextLabelViewController alloc] init];
-//    	textLabelVC.view.alpha = 1;
-//		textLabelVC.rootVC = self;
-//	
-//	}
-//	return textLabelVC;
-//}
+
 
 - (CardsViewController*)cardsVC{
 	if (!cardsVC) {
@@ -1530,7 +1522,15 @@
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
 
-	
+    NSString *response = [request responseString];
+    NSLog(response);
+//    id responseObj = [response JSONValue];
+//    NSLog(responseObj);
+
+    NSDictionary *resDic = [NSJSONSerialization JSONObjectWithData:[response dataUsingEncoding:NSUnicodeStringEncoding] options:NSJSONReadingMutableLeaves error:nil];
+    NSLog(@"%@",[resDic description]);
+//    NSDictionary *dict = [[NSDictionary alloc] initwith ]
+    
 	if (request == updateRequest) {
 		NSString *response = [request responseString];
 
@@ -1594,6 +1594,8 @@
 //	[UIDevice instanceMethodSignatureForSelector:nil];
     
 //    [self toInstruction];
+    
+    [self testGoogle];
 }
 
 - (void)testUpdateAlert{
@@ -1610,5 +1612,14 @@
 	[request startAsynchronous];
 	
 	NSLog(@"test request id # %@",request.requestID);
+}
+
+- (void)testGoogle{
+    NSString *requestStr = [@"http://translate.google.com/translate_a/t?client=p&text=album&sl=en&tl=de" stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSURL *url = [NSURL URLWithString :requestStr];
+	ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+	[request setDelegate:self];
+	
+	[request startAsynchronous];
 }
 @end
