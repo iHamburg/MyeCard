@@ -27,15 +27,17 @@
 	datePicker.backgroundColor = [UIColor clearColor];
 	datePicker.datePickerMode = UIDatePickerModeDate;
 	// should be tomorrow
-	datePicker.minimumDate = [NSDate dateWithTimeInterval:(24*60*60) sinceDate:[NSDate date]];
+//	datePicker.minimumDate = [NSDate dateWithTimeInterval:(24*60*60) sinceDate:[NSDate date]];
+    datePicker.minimumDate = [NSDate date];
 	
-	self.view.backgroundColor = [UIColor blackColor];
 	
 	[self.view addSubview:datePicker];
 	
 
 	self.contentSizeForViewInPopover = self.view.bounds.size;
 	self.title = LString(@"remindTitle");
+    
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 

@@ -37,6 +37,8 @@
 @synthesize popOverStatus,toolbar;
 @synthesize settingVC,zettelVC,cardsVC,dateVC,coverFlowVC;
 
+
+
 - (SettingViewController*)settingVC{
 	if (!settingVC) {
 		settingVC = [[SettingViewController alloc] init];
@@ -132,7 +134,6 @@
     
     UIBarButtonItem *zettelB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_zettel.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
 
-//    zettelB.title = NSLocalizedString(@"iZettel", nil);
     zettelB.tag = ToolbarTagZettel;
     
     UIBarButtonItem *loveB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_love.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
@@ -237,9 +238,6 @@
 	imgPicker.sourceType =  UIImagePickerControllerSourceTypePhotoLibrary;
 	
 	
-//	self.textLabelVC.view.alpha = 1;
-//	self.settingVC.view.alpha = 1;
-    
     
 	
 	if (isPad) {
@@ -260,8 +258,6 @@
 										   otherButtonTitles:NSLocalizedString(@"emailPNG", nil),LString(@"send it later"),NSLocalizedString(@"Save PNG", nil),@"Facebook",@"Twitter",nil];
 
     
-	
-//	[self preLoad];
 
 }
 
@@ -270,13 +266,15 @@
 - (void)viewWillAppear:(BOOL)animated{
     L();
     [super viewWillAppear:animated];
+//    NSLog(@"root # %@, content # %@, toolbar # %@",self.view, contentVC.view,toolbar);
     
     
     if (isIOS7) {
         [self patchIOS7AfterImageLibraryBug];
     }
     
-//    NSLog(@"root # %@, coverV # %@, toolbar # %@",self.view, coverVC.view,toolbar);
+//     NSLog(@"root # %@, content # %@, toolbar # %@",self.view, contentVC.view,toolbar);
+
 }
 
 // 如果是iphone中调用了presentModalVC的话，viewdidAppear还是会不停出现的！！
@@ -286,11 +284,16 @@
 
 	[self.view insertSubview:container belowSubview:toolbar];
 
+    
+    if (isIOS7) {
+        [self patchIOS7AfterImageLibraryBug];
+    }
+    
 	[self test];
 
 //    L();
 //    self.view.frame = CGRectMake(0, 0, 320, 568);
-//    NSLog(@"root # %@, coverV # %@, toolbar # %@",self.view, coverVC.view,toolbar);
+//   NSLog(@"root # %@, content # %@, toolbar # %@",self.view, contentVC.view,toolbar);
 }
 
 
@@ -345,6 +348,7 @@
 - (void)patchIOS7AfterImageLibraryBug {
     
     self.view.frame = [[UIScreen mainScreen] bounds];
+//    self.view.frame = _r;
 }
 
 #pragma mark - IBAction
@@ -661,7 +665,8 @@
 }
 
 - (void)openDateVC{
-	if (!dateVC) {
+	
+    if (!dateVC) {
 		dateVC = [[DateViewController alloc] init];
 		dateVC.rootVC = self;
 		dateVC.view.alpha = 1;
@@ -912,8 +917,6 @@
 
 			[self openDateVC];
 			
-			
-		
 		}
 		else if(buttonIndex == 2) {  //save
 			[[MEExportController sharedInstance]saveImageInAlbum:img];
@@ -1595,7 +1598,8 @@
     
 //    [self toInstruction];
     
-    [self testGoogle];
+//    [self testGoogle];
+
 }
 
 - (void)testUpdateAlert{

@@ -26,9 +26,7 @@
     _h = _r.size.height;
     
 	_containerRect = _r;
-//    if(isPhone5){
-//		_containerRect = CGRectMake(44, 0, 480, 320);
-//	}
+
 }
 - (void)didReceiveMemoryWarning
 {

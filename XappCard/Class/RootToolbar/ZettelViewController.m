@@ -95,7 +95,7 @@
 		[zettelVs addObject:zettelV];
 		[scrollView addSubview:zettelV];
 	
-        NSLog(@"zettelV # %@",zettelV);
+//        NSLog(@"zettelV # %@",zettelV);
 		
 	}
 

@@ -14,7 +14,7 @@
 	NSArray *covers;
 	NSArray *coverFreeImgNames,*coverHalloweenImgNames,  *coverThanksgivingImgNames,
 	*coverAnniversaryImgNames, *coverChristmasImgNames, *_coverValentinImgNames, *_coverEasterImgNames, *_coverMotherImgNames,
-	*coverFathersDayImgNames, *coverHalloween2013ImgNames;
+	*coverFathersDayImgNames, *coverHalloween2013ImgNames, *coverChristmas2013ImgNames;
 
 	NSArray *fullZettels;
 	NSDictionary *fullZettelCats;

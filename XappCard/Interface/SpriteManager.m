@@ -88,6 +88,8 @@
 		_coverMotherImgNames = materialDict[@"Cover_Muttertag"];
 		coverFathersDayImgNames = materialDict[@"Cover_FathersDay"];
         coverHalloween2013ImgNames = materialDict[@"Cover_Halloween2013"];
+        coverChristmas2013ImgNames = materialDict[@"Cover_Christmas2013"];
+        
 		// Cover Category
 		coverCategorys = [NSMutableArray array];
 
@@ -127,6 +129,16 @@
 		
 	}
 	
+    coverCat = [[CoverCategory alloc]init];
+	coverCat.name = @"Xmas & New Year";
+	coverCat.coverImgNames = [NSMutableArray arrayWithArray:coverChristmas2013ImgNames];
+	[coverCategorys addObject:coverCat];
+    
+    coverCat = [[CoverCategory alloc]init];
+	coverCat.name = @"Thanksgiving";
+	coverCat.coverImgNames = [NSMutableArray arrayWithArray:coverThanksgivingImgNames];
+	[coverCategorys addObject:coverCat];
+    
     coverCat = [[CoverCategory alloc]init];
 	coverCat.name = @"Halloween 2013";
 	coverCat.coverImgNames = [NSMutableArray arrayWithArray:coverHalloween2013ImgNames];
@@ -174,10 +186,7 @@
 	[coverCategorys addObject:coverCat];
 	
 	
-	coverCat = [[CoverCategory alloc]init];
-	coverCat.name = @"Thanksgiving";
-	coverCat.coverImgNames = [NSMutableArray arrayWithArray:coverThanksgivingImgNames];
-	[coverCategorys addObject:coverCat];
+
 
 	
 }

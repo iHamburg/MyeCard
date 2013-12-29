@@ -572,7 +572,7 @@ be happy ever after!</string>
 	<array>
 		<string>Halloween2013_0.jpg</string>
 		<string>Halloween2013_1.jpg</string>
-        <string>Halloween2013_2.jpg</string>
+		<string>Halloween2013_2.jpg</string>
 		<string>Halloween2013_3.jpg</string>
 		<string>Halloween2013_4.jpg</string>
 		<string>Halloween2013_5.jpg</string>
@@ -580,7 +580,21 @@ be happy ever after!</string>
 		<string>Halloween2013_7.jpg</string>
 		<string>Halloween2013_8.jpg</string>
 		<string>Halloween2013_9.jpg</string>
-
+	</array>
+	<key>Cover_Christmas2013</key>
+	<array>
+	
+        <string>Christmas2013_2.jpg</string>
+        <string>Christmas2013_3.jpg</string>
+        <string>Christmas2013_4.jpg</string>
+        <string>Christmas2013_5.jpg</string>
+        <string>Christmas2013_6.jpg</string>
+        <string>Christmas2013_8.jpg</string>
+        <string>Christmas2013_10.jpg</string>
+        <string>Christmas2013_11.jpg</string>
+        <string>Christmas2013_12.jpg</string>
+        <string>Christmas2013_1.jpg</string>
+        <string>Christmas2013_9.jpg</string>
 	</array>
 	<key>Cover_Anniversary</key>
 	<array>

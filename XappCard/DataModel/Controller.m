@@ -32,6 +32,7 @@ static NSDateFormatter *formatter;
 	
 	cardNames = [NSMutableArray arrayWithContentsOfFile:[NSString dataFilePath:kFileCardNames]];
 
+  //  LString(@"");
 	//	NSLog(@"card names:%@",cardNames);
 	if (!cardNames) { // first open, no cardnames
 		NSString *cardName = [[NSDate date]description];

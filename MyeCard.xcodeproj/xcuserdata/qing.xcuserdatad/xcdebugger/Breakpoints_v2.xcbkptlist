@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XappCard/MERootViewController.m"
-            timestampString = "403930096.64648"
+            timestampString = "407568927.763521"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1015"
-            endingLineNumber = "1015"
+            startingLineNumber = "1018"
+            endingLineNumber = "1018"
             landmarkName = "-handleNotificationOpenTextViewController:"
             landmarkType = "5">
          </BreakpointContent>

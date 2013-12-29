@@ -24,10 +24,10 @@
 	NSLog(@"applicaiton did lauch");
 	NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
 
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(
-														 NSDocumentDirectory, NSUserDomainMask, YES);
-	NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSLog(@"docuPath # %@",documentsDirectory);
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(
+//														 NSDocumentDirectory, NSUserDomainMask, YES);
+//	NSString *documentsDirectory = [paths objectAtIndex:0];
+//    NSLog(@"docuPath # %@",documentsDirectory);
 
 
 #ifndef DEBUG

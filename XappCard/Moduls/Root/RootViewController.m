@@ -76,7 +76,7 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
 //    NSLog(@"willappear root # %@",self.view);
-    self.view.frame = _r;
+//    self.view.frame = _r;
     
     if (rootLoadViewFlag) {
         
@@ -104,8 +104,6 @@
     
     [super viewDidAppear:animated];
     
-   
-//        NSLog(@"didappear root # %@",self.view);
 }
 - (void)didReceiveMemoryWarning
 {
