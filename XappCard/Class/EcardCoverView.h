@@ -10,6 +10,7 @@
 
 @interface EcardCoverView : TKCoverflowCoverView{
 	UIImageView *lockView;
+    
 }
 
 - (void)showLock;

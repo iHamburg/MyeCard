@@ -26,7 +26,7 @@
 		rect = CGRectMake(0, 0, 1024, 768);
 		containerRect = CGRectMake(0, 0, 1024, 768);
 	}
-	else if(isPhoneRetina4){
+	else if(!isPhone4){
 		rect = CGRectMake(0, 0, 568, 320);
 		containerRect = CGRectMake(44, 0, 480, 320);
 	}

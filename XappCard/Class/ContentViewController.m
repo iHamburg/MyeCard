@@ -161,7 +161,7 @@
 
 
 - (void)handleNotificationAddZettel: (NSNotification*)notification{
-	L();
+//	L();
 	NSArray *zettels = [notification object];
 
 	// add pictureVs to rightTextV;

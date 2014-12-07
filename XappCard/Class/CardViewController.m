@@ -25,18 +25,30 @@
 
 - (void)loadView{
 	
-	CGRect r = [UIScreen mainScreen].bounds;
-	r = CGRectApplyAffineTransform(r, CGAffineTransformMakeRotation(90 * M_PI / 180.));
 	
-	r.origin = CGPointZero;
-	self.view = [[UIView alloc] initWithFrame:isPad?CGRectMake(0, 0, 960, 640):CGRectMake(0, 0, 480, 320)];
-	w = self.view.bounds.size.width;
-	h = self.view.bounds.size.height;
+    
+    if(isIOS8){
+
+        self.view = [[UIView alloc] initWithFrame:isPad?CGRectMake(0, 0, 960, 640):CGRectMake(0, 0, 480, 320)];
+        w = self.view.bounds.size.width;
+        h = self.view.bounds.size.height;
+
+    
+    }
+    else{
+       
+        self.view = [[UIView alloc] initWithFrame:isPad?CGRectMake(0, 0, 960, 640):CGRectMake(0, 0, 480, 320)];
+        w = self.view.bounds.size.width;
+        h = self.view.bounds.size.height;
+    }
+
 	
 	self.view.backgroundColor = [UIColor blackColor];
 	
 	bgV = [[UIImageView alloc] initWithFrame:self.view.bounds];
 	bgV.autoresizingMask = AUTORESIZINGMASK;
+    
+//    bgV.contentMode = UIViewContentModeScaleAspectFit;
 	
 	self.view.layer.cornerRadius = CORNERRADIUS;
 	self.view.layer.masksToBounds = YES;

@@ -57,7 +57,6 @@ UIActionSheetDelegate,MFMailComposeViewControllerDelegate,UIAlertViewDelegate,UI
 
 	CoverViewController *coverVC;
 	ContentViewController *contentVC;
-//	TextLabelViewController *textLabelVC;
     TextViewController *coverTextVC, *contentTextVC;
     
 	ZettelViewController *zettelVC;
@@ -88,7 +87,6 @@ UIActionSheetDelegate,MFMailComposeViewControllerDelegate,UIAlertViewDelegate,UI
 
 @property (nonatomic, strong) SettingViewController *settingVC;
 @property (nonatomic, strong) ZettelViewController *zettelVC;
-//@property (nonatomic, strong) TextLabelViewController *textLabelVC;
 @property (nonatomic, strong) DateViewController *dateVC;
 @property (nonatomic, strong) CoverflowViewController *coverFlowVC;
 

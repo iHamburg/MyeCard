@@ -36,7 +36,7 @@
 	
 	CGRect rect = CGRectMake(0, 0, 480, 320);
 
-	if(isPhoneRetina4){
+	if(!isPhone4 && isPhone){
 		rect = CGRectMake(0, 0, 568, 320);
 
 	}

@@ -123,9 +123,17 @@
 		261B92281810FDB00085FC3C /* LandScapeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 261B92261810FDB00085FC3C /* LandScapeNavigationController.m */; };
 		261B922D181100690085FC3C /* METextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 261B922C181100690085FC3C /* METextViewController.m */; };
 		261B922E181100690085FC3C /* METextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 261B922C181100690085FC3C /* METextViewController.m */; };
-		26476DC117F6BA71000E533D /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26476DC017F6BA71000E533D /* libGoogleAdMobAds.a */; };
-		26476DC217F6BA72000E533D /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26476DC017F6BA71000E533D /* libGoogleAdMobAds.a */; };
 		26476DC417F6BFAD000E533D /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26F6E18717F5C1D400E919BD /* Images-2.xcassets */; };
+		26588FB2189BCD52002F9CBD /* V14_0001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26588FAD189BCD52002F9CBD /* V14_0001.jpg */; };
+		26588FB3189BCD52002F9CBD /* V14_0001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26588FAD189BCD52002F9CBD /* V14_0001.jpg */; };
+		26588FB4189BCD52002F9CBD /* V14_0002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26588FAE189BCD52002F9CBD /* V14_0002.jpg */; };
+		26588FB5189BCD52002F9CBD /* V14_0002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26588FAE189BCD52002F9CBD /* V14_0002.jpg */; };
+		26588FB6189BCD52002F9CBD /* V14_0003.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26588FAF189BCD52002F9CBD /* V14_0003.jpg */; };
+		26588FB7189BCD52002F9CBD /* V14_0003.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26588FAF189BCD52002F9CBD /* V14_0003.jpg */; };
+		26588FB8189BCD52002F9CBD /* V14_0004.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26588FB0189BCD52002F9CBD /* V14_0004.jpg */; };
+		26588FB9189BCD52002F9CBD /* V14_0004.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26588FB0189BCD52002F9CBD /* V14_0004.jpg */; };
+		26588FBA189BCD52002F9CBD /* V14_0005.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26588FB1189BCD52002F9CBD /* V14_0005.jpg */; };
+		26588FBB189BCD52002F9CBD /* V14_0005.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26588FB1189BCD52002F9CBD /* V14_0005.jpg */; };
 		2663B044180AAD1400F785A6 /* ExportController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2663B043180AAD1400F785A6 /* ExportController.m */; };
 		2663B045180AAD1400F785A6 /* ExportController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2663B043180AAD1400F785A6 /* ExportController.m */; };
 		266F117617F7084C0024F620 /* Default~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 266F117517F7084C0024F620 /* Default~ipad.png */; };
@@ -162,8 +170,6 @@
 		26BDF0EE1810EEAF00B09C74 /* TextSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BDF0E01810EEAF00B09C74 /* TextSettingViewController.m */; };
 		26BDF0EF1810EEAF00B09C74 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BDF0E21810EEAF00B09C74 /* TextViewController.m */; };
 		26BDF0F01810EEAF00B09C74 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BDF0E21810EEAF00B09C74 /* TextViewController.m */; };
-		26CDACCF17E8819C008F030D /* libFlurry_4.2.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CDACCE17E8819C008F030D /* libFlurry_4.2.3.a */; };
-		26CDACD017E8819C008F030D /* libFlurry_4.2.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CDACCE17E8819C008F030D /* libFlurry_4.2.3.a */; };
 		26CDACD217E8820B008F030D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CDACD117E8820B008F030D /* Security.framework */; };
 		26CDACD317E88213008F030D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CDACD117E8820B008F030D /* Security.framework */; };
 		26DC05FE17F6FF3F0068C799 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DC05F917F6FF3F0068C799 /* Default-568h@2x.png */; };
@@ -177,8 +183,8 @@
 		26DC060617F6FF3F0068C799 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DC05FD17F6FF3F0068C799 /* Default@2x.png */; };
 		26DC060717F6FF3F0068C799 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DC05FD17F6FF3F0068C799 /* Default@2x.png */; };
 		26E17E931828A1C800582CC3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E17E921828A1C800582CC3 /* libPods.a */; };
-		26E17E941828A2BE00582CC3 /* Pods.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9241A932F614478F80B158BE /* Pods.xcconfig */; };
-		26E17E951828A2BE00582CC3 /* Pods.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9241A932F614478F80B158BE /* Pods.xcconfig */; };
+		26E17E941828A2BE00582CC3 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		26E17E951828A2BE00582CC3 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		26E2D11817E81807003C1E11 /* icon_cards.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E2D11717E81807003C1E11 /* icon_cards.png */; };
 		26E2D11917E81807003C1E11 /* icon_cards.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E2D11717E81807003C1E11 /* icon_cards.png */; };
 		26E2D12417E81924003C1E11 /* icon_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E2D11A17E81924003C1E11 /* icon_background@2x.png */; };
@@ -223,6 +229,9 @@
 		26F301651813821C0091B207 /* Halloween2013_9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F301511813821C0091B207 /* Halloween2013_9.jpg */; };
 		26F6E18817F5C1D400E919BD /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26F6E18717F5C1D400E919BD /* Images-2.xcassets */; };
 		3D009F771C894C3D827543E1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA94EF78B9848208C7C95D4 /* libPods.a */; };
+		8503A7581A31F45600C8D876 /* MyeCard Free copy-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8503A7561A31F45100C8D876 /* MyeCard Free copy-Info.plist */; };
+		8599DA001A335030005BAE30 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8599D9FE1A335030005BAE30 /* libGoogleAdMobAds.a */; };
+		8599DA011A335030005BAE30 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8599D9FF1A335030005BAE30 /* README.txt */; };
 		AF039D6815A057B70012719E /* CardCover.m in Sources */ = {isa = PBXBuildFile; fileRef = AF039D6715A057B70012719E /* CardCover.m */; };
 		AF05A3A114C5D05A00AD4C61 /* ZettelCardTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05A3A014C5D05A00AD4C61 /* ZettelCardTextView.m */; };
 		AF064E1514D30FFA00F1422A /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF064E1414D30FFA00F1422A /* SettingViewController.m */; };
@@ -357,18 +366,6 @@
 		AF145941161D9A09009107C9 /* holiday-2@2x~ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF1458AD161D9A09009107C9 /* holiday-2@2x~ipad.jpg */; };
 		AF145942161D9A09009107C9 /* holiday-2~ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF1458AE161D9A09009107C9 /* holiday-2~ipad.jpg */; };
 		AF145944161D9A09009107C9 /* holiday-2~ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF1458AE161D9A09009107C9 /* holiday-2~ipad.jpg */; };
-		AF145945161D9A09009107C9 /* love-1@2x~ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF1458AF161D9A09009107C9 /* love-1@2x~ipad.jpg */; };
-		AF145947161D9A09009107C9 /* love-1@2x~ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF1458AF161D9A09009107C9 /* love-1@2x~ipad.jpg */; };
-		AF145948161D9A09009107C9 /* love-1~ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF1458B0161D9A09009107C9 /* love-1~ipad.jpg */; };
-		AF14594A161D9A09009107C9 /* love-1~ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF1458B0161D9A09009107C9 /* love-1~ipad.jpg */; };
-		AF14594B161D9A09009107C9 /* love-2@2x~ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF1458B1161D9A09009107C9 /* love-2@2x~ipad.jpg */; };
-		AF14594D161D9A09009107C9 /* love-2@2x~ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF1458B1161D9A09009107C9 /* love-2@2x~ipad.jpg */; };
-		AF14594E161D9A09009107C9 /* love-2~ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF1458B2161D9A09009107C9 /* love-2~ipad.jpg */; };
-		AF145950161D9A09009107C9 /* love-2~ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF1458B2161D9A09009107C9 /* love-2~ipad.jpg */; };
-		AF145951161D9A09009107C9 /* love-3@2x~ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF1458B3161D9A09009107C9 /* love-3@2x~ipad.jpg */; };
-		AF145953161D9A09009107C9 /* love-3@2x~ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF1458B3161D9A09009107C9 /* love-3@2x~ipad.jpg */; };
-		AF145954161D9A09009107C9 /* love-3~ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF1458B4161D9A09009107C9 /* love-3~ipad.jpg */; };
-		AF145956161D9A09009107C9 /* love-3~ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF1458B4161D9A09009107C9 /* love-3~ipad.jpg */; };
 		AF145957161D9A09009107C9 /* love-title-1@2x~ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF1458B5161D9A09009107C9 /* love-title-1@2x~ipad.jpg */; };
 		AF145959161D9A09009107C9 /* love-title-1@2x~ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF1458B5161D9A09009107C9 /* love-title-1@2x~ipad.jpg */; };
 		AF14595A161D9A09009107C9 /* love-title-1~ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF1458B6161D9A09009107C9 /* love-title-1~ipad.jpg */; };
@@ -695,26 +692,18 @@
 		AFBDC5A314891ECA00059D6A /* ELCAssetTablePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFBDC59714891ECA00059D6A /* ELCAssetTablePicker.xib */; };
 		AFBDC5A414891ECA00059D6A /* ELCImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBDC59914891ECA00059D6A /* ELCImagePickerController.m */; };
 		AFBDC5A514891ECA00059D6A /* ELCImagePickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFBDC59A14891ECA00059D6A /* ELCImagePickerController.xib */; };
-		AFBF3FF516A1F37B00F85E43 /* Cover_Valentine_10~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBF3FE016A1F37B00F85E43 /* Cover_Valentine_10~ipad.png */; };
-		AFBF3FF616A1F37B00F85E43 /* Cover_Valentine_10~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBF3FE016A1F37B00F85E43 /* Cover_Valentine_10~ipad.png */; };
 		AFBF3FF916A1F37B00F85E43 /* Cover_Valentine_1~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBF3FE216A1F37B00F85E43 /* Cover_Valentine_1~ipad.png */; };
 		AFBF3FFA16A1F37B00F85E43 /* Cover_Valentine_1~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBF3FE216A1F37B00F85E43 /* Cover_Valentine_1~ipad.png */; };
 		AFBF3FFD16A1F37B00F85E43 /* Cover_Valentine_2~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBF3FE416A1F37B00F85E43 /* Cover_Valentine_2~ipad.png */; };
 		AFBF3FFE16A1F37B00F85E43 /* Cover_Valentine_2~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBF3FE416A1F37B00F85E43 /* Cover_Valentine_2~ipad.png */; };
 		AFBF400116A1F37B00F85E43 /* Cover_Valentine_3~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBF3FE616A1F37B00F85E43 /* Cover_Valentine_3~ipad.png */; };
 		AFBF400216A1F37B00F85E43 /* Cover_Valentine_3~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBF3FE616A1F37B00F85E43 /* Cover_Valentine_3~ipad.png */; };
-		AFBF400516A1F37B00F85E43 /* Cover_Valentine_4~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBF3FE816A1F37B00F85E43 /* Cover_Valentine_4~ipad.png */; };
-		AFBF400616A1F37B00F85E43 /* Cover_Valentine_4~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBF3FE816A1F37B00F85E43 /* Cover_Valentine_4~ipad.png */; };
 		AFBF400916A1F37B00F85E43 /* Cover_Valentine_5~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBF3FEA16A1F37B00F85E43 /* Cover_Valentine_5~ipad.png */; };
 		AFBF400A16A1F37B00F85E43 /* Cover_Valentine_5~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBF3FEA16A1F37B00F85E43 /* Cover_Valentine_5~ipad.png */; };
 		AFBF400D16A1F37B00F85E43 /* Cover_Valentine_6~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBF3FEC16A1F37B00F85E43 /* Cover_Valentine_6~ipad.png */; };
 		AFBF400E16A1F37B00F85E43 /* Cover_Valentine_6~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBF3FEC16A1F37B00F85E43 /* Cover_Valentine_6~ipad.png */; };
 		AFBF401116A1F37B00F85E43 /* Cover_Valentine_7~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBF3FEE16A1F37B00F85E43 /* Cover_Valentine_7~ipad.png */; };
 		AFBF401216A1F37B00F85E43 /* Cover_Valentine_7~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBF3FEE16A1F37B00F85E43 /* Cover_Valentine_7~ipad.png */; };
-		AFBF401516A1F37B00F85E43 /* Cover_Valentine_8~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBF3FF016A1F37B00F85E43 /* Cover_Valentine_8~ipad.png */; };
-		AFBF401616A1F37B00F85E43 /* Cover_Valentine_8~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBF3FF016A1F37B00F85E43 /* Cover_Valentine_8~ipad.png */; };
-		AFBF401916A1F37B00F85E43 /* Cover_Valentine_9~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBF3FF216A1F37B00F85E43 /* Cover_Valentine_9~ipad.png */; };
-		AFBF401A16A1F37B00F85E43 /* Cover_Valentine_9~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBF3FF216A1F37B00F85E43 /* Cover_Valentine_9~ipad.png */; };
 		AFC2688714A36B2600CDEB87 /* UIPopoverController+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC2688614A36B2600CDEB87 /* UIPopoverController+Extras.m */; };
 		AFC3297C14A9C8EE00F61B92 /* UIView+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC3297B14A9C8ED00F61B92 /* UIView+Extras.m */; };
 		AFC3484E16C9A1500034A275 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2B427216BC54D9003ED115 /* AdSupport.framework */; };
@@ -995,16 +984,11 @@
 		261B92261810FDB00085FC3C /* LandScapeNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandScapeNavigationController.m; sourceTree = "<group>"; };
 		261B922B181100690085FC3C /* METextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = METextViewController.h; sourceTree = "<group>"; };
 		261B922C181100690085FC3C /* METextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = METextViewController.m; sourceTree = "<group>"; };
-		26476DB717F6BA71000E533D /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
-		26476DB817F6BA71000E533D /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
-		26476DB917F6BA71000E533D /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
-		26476DBA17F6BA71000E533D /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
-		26476DBB17F6BA71000E533D /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
-		26476DBC17F6BA71000E533D /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
-		26476DBD17F6BA71000E533D /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
-		26476DBE17F6BA71000E533D /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
-		26476DBF17F6BA71000E533D /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
-		26476DC017F6BA71000E533D /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		26588FAD189BCD52002F9CBD /* V14_0001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = V14_0001.jpg; sourceTree = "<group>"; };
+		26588FAE189BCD52002F9CBD /* V14_0002.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = V14_0002.jpg; sourceTree = "<group>"; };
+		26588FAF189BCD52002F9CBD /* V14_0003.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = V14_0003.jpg; sourceTree = "<group>"; };
+		26588FB0189BCD52002F9CBD /* V14_0004.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = V14_0004.jpg; sourceTree = "<group>"; };
+		26588FB1189BCD52002F9CBD /* V14_0005.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = V14_0005.jpg; sourceTree = "<group>"; };
 		2663B042180AAD1400F785A6 /* ExportController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExportController.h; sourceTree = "<group>"; };
 		2663B043180AAD1400F785A6 /* ExportController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExportController.m; sourceTree = "<group>"; };
 		266F117517F7084C0024F620 /* Default~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~ipad.png"; sourceTree = "<group>"; };
@@ -1029,7 +1013,6 @@
 		26BDF0E01810EEAF00B09C74 /* TextSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextSettingViewController.m; sourceTree = "<group>"; };
 		26BDF0E11810EEAF00B09C74 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
 		26BDF0E21810EEAF00B09C74 /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
-		26CDACCE17E8819C008F030D /* libFlurry_4.2.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.2.3.a; sourceTree = "<group>"; };
 		26CDACD117E8820B008F030D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		26DC05F917F6FF3F0068C799 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		26DC05FA17F6FF3F0068C799 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
@@ -1062,7 +1045,23 @@
 		26F301501813821C0091B207 /* Halloween2013_8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Halloween2013_8.jpg; sourceTree = "<group>"; };
 		26F301511813821C0091B207 /* Halloween2013_9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Halloween2013_9.jpg; sourceTree = "<group>"; };
 		26F6E18717F5C1D400E919BD /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Images-2.xcassets"; path = "../../MyeCard Pro/Images-2.xcassets"; sourceTree = "<group>"; };
-		9241A932F614478F80B158BE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		4F5615B09E774D51B282E7C8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8503A7561A31F45100C8D876 /* MyeCard Free copy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MyeCard Free copy-Info.plist"; sourceTree = "<group>"; };
+		8599D9F21A335030005BAE30 /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
+		8599D9F31A335030005BAE30 /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
+		8599D9F41A335030005BAE30 /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
+		8599D9F51A335030005BAE30 /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
+		8599D9F61A335030005BAE30 /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
+		8599D9F71A335030005BAE30 /* GADInAppPurchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInAppPurchase.h; sourceTree = "<group>"; };
+		8599D9F81A335030005BAE30 /* GADInAppPurchaseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInAppPurchaseDelegate.h; sourceTree = "<group>"; };
+		8599D9F91A335030005BAE30 /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
+		8599D9FA1A335030005BAE30 /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
+		8599D9FB1A335030005BAE30 /* GADModules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADModules.h; sourceTree = "<group>"; };
+		8599D9FC1A335030005BAE30 /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
+		8599D9FD1A335030005BAE30 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
+		8599D9FE1A335030005BAE30 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		8599D9FF1A335030005BAE30 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		9368569DEEF4B68FD9645E5D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AF039D6615A057B70012719E /* CardCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardCover.h; path = "../View&ViewController/CardCover.h"; sourceTree = "<group>"; };
 		AF039D6715A057B70012719E /* CardCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardCover.m; path = "../View&ViewController/CardCover.m"; sourceTree = "<group>"; };
 		AF05A39F14C5D05A00AD4C61 /* ZettelCardTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZettelCardTextView.h; path = "View&ViewController/ZettelCardTextView.h"; sourceTree = "<group>"; };
@@ -1171,12 +1170,6 @@
 		AF1458AC161D9A09009107C9 /* holiday-1~ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "holiday-1~ipad.jpg"; sourceTree = "<group>"; };
 		AF1458AD161D9A09009107C9 /* holiday-2@2x~ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "holiday-2@2x~ipad.jpg"; sourceTree = "<group>"; };
 		AF1458AE161D9A09009107C9 /* holiday-2~ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "holiday-2~ipad.jpg"; sourceTree = "<group>"; };
-		AF1458AF161D9A09009107C9 /* love-1@2x~ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "love-1@2x~ipad.jpg"; sourceTree = "<group>"; };
-		AF1458B0161D9A09009107C9 /* love-1~ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "love-1~ipad.jpg"; sourceTree = "<group>"; };
-		AF1458B1161D9A09009107C9 /* love-2@2x~ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "love-2@2x~ipad.jpg"; sourceTree = "<group>"; };
-		AF1458B2161D9A09009107C9 /* love-2~ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "love-2~ipad.jpg"; sourceTree = "<group>"; };
-		AF1458B3161D9A09009107C9 /* love-3@2x~ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "love-3@2x~ipad.jpg"; sourceTree = "<group>"; };
-		AF1458B4161D9A09009107C9 /* love-3~ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "love-3~ipad.jpg"; sourceTree = "<group>"; };
 		AF1458B5161D9A09009107C9 /* love-title-1@2x~ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "love-title-1@2x~ipad.jpg"; sourceTree = "<group>"; };
 		AF1458B6161D9A09009107C9 /* love-title-1~ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "love-title-1~ipad.jpg"; sourceTree = "<group>"; };
 		AF1458B7161D9A09009107C9 /* love-title-2@2x~ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "love-title-2@2x~ipad.jpg"; sourceTree = "<group>"; };
@@ -1241,7 +1234,6 @@
 		AF22BC17167F6D460002849D /* Cover_Christmas_7~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cover_Christmas_7~ipad.png"; sourceTree = "<group>"; };
 		AF22BC19167F6D460002849D /* Cover_Christmas_8~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cover_Christmas_8~ipad.png"; sourceTree = "<group>"; };
 		AF22BC1B167F6D460002849D /* Cover_Christmas_9~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cover_Christmas_9~ipad.png"; sourceTree = "<group>"; };
-		AF25D6C1174F469500B7159F /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
 		AF264E98169C63EE0087BF04 /* CoverCategoryScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverCategoryScrollView.h; sourceTree = "<group>"; };
 		AF264E99169C63EE0087BF04 /* CoverCategoryScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverCategoryScrollView.m; sourceTree = "<group>"; };
 		AF2B425F16BC4CFE003ED115 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -1435,16 +1427,12 @@
 		AFBDC59814891ECA00059D6A /* ELCImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCImagePickerController.h; sourceTree = "<group>"; };
 		AFBDC59914891ECA00059D6A /* ELCImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCImagePickerController.m; sourceTree = "<group>"; };
 		AFBDC59A14891ECA00059D6A /* ELCImagePickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ELCImagePickerController.xib; sourceTree = "<group>"; };
-		AFBF3FE016A1F37B00F85E43 /* Cover_Valentine_10~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cover_Valentine_10~ipad.png"; sourceTree = "<group>"; };
 		AFBF3FE216A1F37B00F85E43 /* Cover_Valentine_1~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cover_Valentine_1~ipad.png"; sourceTree = "<group>"; };
 		AFBF3FE416A1F37B00F85E43 /* Cover_Valentine_2~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cover_Valentine_2~ipad.png"; sourceTree = "<group>"; };
 		AFBF3FE616A1F37B00F85E43 /* Cover_Valentine_3~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cover_Valentine_3~ipad.png"; sourceTree = "<group>"; };
-		AFBF3FE816A1F37B00F85E43 /* Cover_Valentine_4~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cover_Valentine_4~ipad.png"; sourceTree = "<group>"; };
 		AFBF3FEA16A1F37B00F85E43 /* Cover_Valentine_5~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cover_Valentine_5~ipad.png"; sourceTree = "<group>"; };
 		AFBF3FEC16A1F37B00F85E43 /* Cover_Valentine_6~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cover_Valentine_6~ipad.png"; sourceTree = "<group>"; };
 		AFBF3FEE16A1F37B00F85E43 /* Cover_Valentine_7~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cover_Valentine_7~ipad.png"; sourceTree = "<group>"; };
-		AFBF3FF016A1F37B00F85E43 /* Cover_Valentine_8~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cover_Valentine_8~ipad.png"; sourceTree = "<group>"; };
-		AFBF3FF216A1F37B00F85E43 /* Cover_Valentine_9~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cover_Valentine_9~ipad.png"; sourceTree = "<group>"; };
 		AFC2688514A36B2600CDEB87 /* UIPopoverController+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPopoverController+Extras.h"; sourceTree = "<group>"; };
 		AFC2688614A36B2600CDEB87 /* UIPopoverController+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPopoverController+Extras.m"; sourceTree = "<group>"; };
 		AFC3297A14A9C8ED00F61B92 /* UIView+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extras.h"; sourceTree = "<group>"; };
@@ -1527,7 +1515,7 @@
 		AFFEBA02174F09DB0075BFA6 /* fathersDay9~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fathersDay9~ipad.png"; sourceTree = "<group>"; };
 		AFFEBA03174F09DB0075BFA6 /* fathersDay10~ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fathersDay10~ipad.jpg"; sourceTree = "<group>"; };
 		AFFF4AAE15E4366E000A8F99 /* My eCard_F.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My eCard_F.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFFF4AB015E4366E000A8F99 /* MyeCard Free copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MyeCard Free copy-Info.plist"; path = "/Users/appdevelopper/Public/WorkProject/MyeCard/Project/MyeCard/MyeCard Free copy-Info.plist"; sourceTree = "<absolute>"; };
+		F645D4FB90C5266666F08281 /* Pods.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.adhoc.xcconfig; path = "Pods/Target Support Files/Pods/Pods.adhoc.xcconfig"; sourceTree = "<group>"; };
 		FDA94EF78B9848208C7C95D4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1553,13 +1541,11 @@
 				AF373FBE1496CC5F000BD135 /* MediaPlayer.framework in Frameworks */,
 				AF5181E91494030D00A1348C /* MessageUI.framework in Frameworks */,
 				AF8DB0AC1480E97A00C55084 /* Foundation.framework in Frameworks */,
-				26476DC117F6BA71000E533D /* libGoogleAdMobAds.a in Frameworks */,
 				AFBDC58B14891EB700059D6A /* AssetsLibrary.framework in Frameworks */,
 				AFC984391486D4F4004E3B02 /* MapKit.framework in Frameworks */,
 				AFC984371486D4EB004E3B02 /* QuartzCore.framework in Frameworks */,
 				AF8DB0AA1480E97A00C55084 /* UIKit.framework in Frameworks */,
 				AF8DB0AE1480E97A00C55084 /* CoreGraphics.framework in Frameworks */,
-				26CDACCF17E8819C008F030D /* libFlurry_4.2.3.a in Frameworks */,
 				3D009F771C894C3D827543E1 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1585,14 +1571,13 @@
 				AFFF4A5A15E4366E000A8F99 /* CoreLocation.framework in Frameworks */,
 				AFFF4A5B15E4366E000A8F99 /* MediaPlayer.framework in Frameworks */,
 				AFFF4A5C15E4366E000A8F99 /* MessageUI.framework in Frameworks */,
+				8599DA001A335030005BAE30 /* libGoogleAdMobAds.a in Frameworks */,
 				AFFF4A5D15E4366E000A8F99 /* Foundation.framework in Frameworks */,
-				26476DC217F6BA72000E533D /* libGoogleAdMobAds.a in Frameworks */,
 				AFFF4A5E15E4366E000A8F99 /* AssetsLibrary.framework in Frameworks */,
 				AFFF4A6015E4366E000A8F99 /* MapKit.framework in Frameworks */,
 				AFFF4A6115E4366E000A8F99 /* QuartzCore.framework in Frameworks */,
 				AFFF4A6215E4366E000A8F99 /* UIKit.framework in Frameworks */,
 				AFFF4A6315E4366E000A8F99 /* CoreGraphics.framework in Frameworks */,
-				26CDACD017E8819C008F030D /* libFlurry_4.2.3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1715,24 +1700,6 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
-		26476DB617F6BA71000E533D /* Admob */ = {
-			isa = PBXGroup;
-			children = (
-				26476DB717F6BA71000E533D /* GADAdMobExtras.h */,
-				26476DB817F6BA71000E533D /* GADAdNetworkExtras.h */,
-				26476DB917F6BA71000E533D /* GADAdSize.h */,
-				26476DBA17F6BA71000E533D /* GADBannerView.h */,
-				26476DBB17F6BA71000E533D /* GADBannerViewDelegate.h */,
-				26476DBC17F6BA71000E533D /* GADInterstitial.h */,
-				26476DBD17F6BA71000E533D /* GADInterstitialDelegate.h */,
-				26476DBE17F6BA71000E533D /* GADRequest.h */,
-				26476DBF17F6BA71000E533D /* GADRequestError.h */,
-				26476DC017F6BA71000E533D /* libGoogleAdMobAds.a */,
-			);
-			name = Admob;
-			path = Utilities/AdView/Admob;
-			sourceTree = "<group>";
-		};
 		269B8863185EA43B00EC6B37 /* Christmas2013 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1803,10 +1770,40 @@
 		26F3F38A1806475D004FC419 /* 3rdLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				AF25D6C0174F469500B7159F /* Flurry */,
-				26476DB617F6BA71000E533D /* Admob */,
+				8599D9F11A335030005BAE30 /* Admob */,
 			);
 			name = 3rdLibrary;
+			sourceTree = "<group>";
+		};
+		8599D9F11A335030005BAE30 /* Admob */ = {
+			isa = PBXGroup;
+			children = (
+				8599D9F21A335030005BAE30 /* GADAdMobExtras.h */,
+				8599D9F31A335030005BAE30 /* GADAdNetworkExtras.h */,
+				8599D9F41A335030005BAE30 /* GADAdSize.h */,
+				8599D9F51A335030005BAE30 /* GADBannerView.h */,
+				8599D9F61A335030005BAE30 /* GADBannerViewDelegate.h */,
+				8599D9F71A335030005BAE30 /* GADInAppPurchase.h */,
+				8599D9F81A335030005BAE30 /* GADInAppPurchaseDelegate.h */,
+				8599D9F91A335030005BAE30 /* GADInterstitial.h */,
+				8599D9FA1A335030005BAE30 /* GADInterstitialDelegate.h */,
+				8599D9FB1A335030005BAE30 /* GADModules.h */,
+				8599D9FC1A335030005BAE30 /* GADRequest.h */,
+				8599D9FD1A335030005BAE30 /* GADRequestError.h */,
+				8599D9FE1A335030005BAE30 /* libGoogleAdMobAds.a */,
+				8599D9FF1A335030005BAE30 /* README.txt */,
+			);
+			path = Admob;
+			sourceTree = "<group>";
+		};
+		8D1FAFDDFA9888D64AED2D4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9368569DEEF4B68FD9645E5D /* Pods.debug.xcconfig */,
+				4F5615B09E774D51B282E7C8 /* Pods.release.xcconfig */,
+				F645D4FB90C5266666F08281 /* Pods.adhoc.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		AF0A18E81794FC5700DD201D /* ASIHTTPRequest */ = {
@@ -1956,12 +1953,6 @@
 				AF1458AC161D9A09009107C9 /* holiday-1~ipad.jpg */,
 				AF1458AD161D9A09009107C9 /* holiday-2@2x~ipad.jpg */,
 				AF1458AE161D9A09009107C9 /* holiday-2~ipad.jpg */,
-				AF1458AF161D9A09009107C9 /* love-1@2x~ipad.jpg */,
-				AF1458B0161D9A09009107C9 /* love-1~ipad.jpg */,
-				AF1458B1161D9A09009107C9 /* love-2@2x~ipad.jpg */,
-				AF1458B2161D9A09009107C9 /* love-2~ipad.jpg */,
-				AF1458B3161D9A09009107C9 /* love-3@2x~ipad.jpg */,
-				AF1458B4161D9A09009107C9 /* love-3~ipad.jpg */,
 				AF1458B5161D9A09009107C9 /* love-title-1@2x~ipad.jpg */,
 				AF1458B6161D9A09009107C9 /* love-title-1~ipad.jpg */,
 				AF1458B7161D9A09009107C9 /* love-title-2@2x~ipad.jpg */,
@@ -2050,16 +2041,6 @@
 				AF22BC1B167F6D460002849D /* Cover_Christmas_9~ipad.png */,
 			);
 			path = Christmas;
-			sourceTree = "<group>";
-		};
-		AF25D6C0174F469500B7159F /* Flurry */ = {
-			isa = PBXGroup;
-			children = (
-				AF25D6C1174F469500B7159F /* Flurry.h */,
-				26CDACCE17E8819C008F030D /* libFlurry_4.2.3.a */,
-			);
-			name = Flurry;
-			path = Utilities/Flurry;
 			sourceTree = "<group>";
 		};
 		AF264E97169C611C0087BF04 /* Coverflow */ = {
@@ -2221,7 +2202,7 @@
 				AF8DB0AF1480E97A00C55084 /* MyeCard */,
 				AF8DB0A81480E97A00C55084 /* Frameworks */,
 				AF8DB0A61480E97A00C55084 /* Products */,
-				9241A932F614478F80B158BE /* Pods.xcconfig */,
+				8D1FAFDDFA9888D64AED2D4F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2295,7 +2276,7 @@
 			children = (
 				AFD63FAB14861F2600F4AD86 /* TapkuLibrary.bundle */,
 				AF8DB0B11480E97A00C55084 /* MyeCard-Info.plist */,
-				AFFF4AB015E4366E000A8F99 /* MyeCard Free copy-Info.plist */,
+				8503A7561A31F45100C8D876 /* MyeCard Free copy-Info.plist */,
 				AF8DB0B21480E97A00C55084 /* InfoPlist.strings */,
 				AF8DB0B51480E97A00C55084 /* main.m */,
 				AF8DB0B71480E97A00C55084 /* XappCard-Prefix.pch */,
@@ -2428,16 +2409,17 @@
 		AFBF3FDE16A1F37B00F85E43 /* Cover_Valentine */ = {
 			isa = PBXGroup;
 			children = (
-				AFBF3FE016A1F37B00F85E43 /* Cover_Valentine_10~ipad.png */,
+				26588FAD189BCD52002F9CBD /* V14_0001.jpg */,
+				26588FAE189BCD52002F9CBD /* V14_0002.jpg */,
+				26588FAF189BCD52002F9CBD /* V14_0003.jpg */,
+				26588FB0189BCD52002F9CBD /* V14_0004.jpg */,
+				26588FB1189BCD52002F9CBD /* V14_0005.jpg */,
 				AFBF3FE216A1F37B00F85E43 /* Cover_Valentine_1~ipad.png */,
 				AFBF3FE416A1F37B00F85E43 /* Cover_Valentine_2~ipad.png */,
 				AFBF3FE616A1F37B00F85E43 /* Cover_Valentine_3~ipad.png */,
-				AFBF3FE816A1F37B00F85E43 /* Cover_Valentine_4~ipad.png */,
 				AFBF3FEA16A1F37B00F85E43 /* Cover_Valentine_5~ipad.png */,
 				AFBF3FEC16A1F37B00F85E43 /* Cover_Valentine_6~ipad.png */,
 				AFBF3FEE16A1F37B00F85E43 /* Cover_Valentine_7~ipad.png */,
-				AFBF3FF016A1F37B00F85E43 /* Cover_Valentine_8~ipad.png */,
-				AFBF3FF216A1F37B00F85E43 /* Cover_Valentine_9~ipad.png */,
 			);
 			path = Cover_Valentine;
 			sourceTree = "<group>";
@@ -2654,6 +2636,7 @@
 				AF8DB0A21480E97900C55084 /* Frameworks */,
 				AF8DB0A31480E97900C55084 /* Resources */,
 				34DD0036F81A4AC7A22D9599 /* Copy Pods Resources */,
+				8599D9DB1A3341EF005BAE30 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -2687,8 +2670,11 @@
 		AF8DB09C1480E97900C55084 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0600;
 				TargetAttributes = {
+					AF8DB0A41480E97900C55084 = {
+						DevelopmentTeam = 5PNFAQX9NQ;
+					};
 					AFFF4A0115E4366E000A8F99 = {
 						DevelopmentTeam = 5PNFAQX9NQ;
 					};
@@ -2785,7 +2771,7 @@
 				AF68D2A7151A68D6001BB203 /* Profile_love@3x.png in Resources */,
 				AF9A23C8158BE8C0001CF935 /* FBDialog.bundle in Resources */,
 				AF4A0CB2158E60CA00A81D62 /* facebook.mp3 in Resources */,
-				26E17E951828A2BE00582CC3 /* Pods.xcconfig in Resources */,
+				26E17E951828A2BE00582CC3 /* (null) in Resources */,
 				AF2ED376159BD2A700BFFB13 /* Cards.plist in Resources */,
 				2609D5751805A78F0019C242 /* appicon_tinykitchen@2x~ipad.png in Resources */,
 				AF7B5256159C913B005D93BB /* icon_delete.png in Resources */,
@@ -2800,6 +2786,7 @@
 				2609D5231805A78F0019C242 /* Icon_AppstoreDownload@2x~ipad.png in Resources */,
 				AF10575515A1C9CE00E38125 /* CoverWithLogo3~ipad.png in Resources */,
 				AF0E336815A380070024A7B7 /* icon_clock.png in Resources */,
+				26588FBA189BCD52002F9CBD /* V14_0005.jpg in Resources */,
 				AF9E79DB161C9B9F00CA8FDC /* Halloween_0@2x~ipad.jpg in Resources */,
 				AF9E79DD161C9B9F00CA8FDC /* Halloween_0~ipad.jpg in Resources */,
 				26F301641813821C0091B207 /* Halloween2013_9.jpg in Resources */,
@@ -2830,6 +2817,7 @@
 				269B8881185EA43B00EC6B37 /* Christmas2013_8.jpg in Resources */,
 				AF9E79F9161C9B9F00CA8FDC /* Halloween_7~ipad.jpg in Resources */,
 				AF9E79FB161C9B9F00CA8FDC /* Halloween_8@2x~ipad.jpg in Resources */,
+				26588FB4189BCD52002F9CBD /* V14_0002.jpg in Resources */,
 				26F6E18817F5C1D400E919BD /* Images-2.xcassets in Resources */,
 				AF9E79FD161C9B9F00CA8FDC /* Halloween_8~ipad.jpg in Resources */,
 				AF9E79FF161C9B9F00CA8FDC /* Halloween_9@2x~ipad.jpg in Resources */,
@@ -2884,15 +2872,9 @@
 				AF14593C161D9A09009107C9 /* holiday-1~ipad.jpg in Resources */,
 				AF14593F161D9A09009107C9 /* holiday-2@2x~ipad.jpg in Resources */,
 				AF145942161D9A09009107C9 /* holiday-2~ipad.jpg in Resources */,
-				AF145945161D9A09009107C9 /* love-1@2x~ipad.jpg in Resources */,
-				AF145948161D9A09009107C9 /* love-1~ipad.jpg in Resources */,
 				2609D5271805A78F0019C242 /* icon_back.png in Resources */,
 				2609D5391805A78F0019C242 /* Info_Instruction@2x~ipad.png in Resources */,
-				AF14594B161D9A09009107C9 /* love-2@2x~ipad.jpg in Resources */,
-				AF14594E161D9A09009107C9 /* love-2~ipad.jpg in Resources */,
-				AF145951161D9A09009107C9 /* love-3@2x~ipad.jpg in Resources */,
 				26F301621813821C0091B207 /* Halloween2013_8.jpg in Resources */,
-				AF145954161D9A09009107C9 /* love-3~ipad.jpg in Resources */,
 				2609D5691805A78F0019C242 /* appIcon_InstaHat@2x~ipad.png in Resources */,
 				AF145957161D9A09009107C9 /* love-title-1@2x~ipad.jpg in Resources */,
 				AF14595A161D9A09009107C9 /* love-title-1~ipad.jpg in Resources */,
@@ -2923,10 +2905,12 @@
 				AF145984161D9A09009107C9 /* valentine-1~ipad.jpg in Resources */,
 				AF145987161D9A09009107C9 /* valentine-2@2x~ipad.jpg in Resources */,
 				AF14598A161D9A09009107C9 /* valentine-2~ipad.jpg in Resources */,
+				26588FB6189BCD52002F9CBD /* V14_0003.jpg in Resources */,
 				AFF4933B161DD04800FD4D2D /* bg_tableviewHeader.png in Resources */,
 				AF2D1D24162FE848006A45FE /* Thanksgiving_0~ipad.jpg in Resources */,
 				AF2D1D28162FE848006A45FE /* Thanksgiving_1~ipad.jpg in Resources */,
 				AF2D1D2C162FE848006A45FE /* Thanksgiving_2~ipad.jpg in Resources */,
+				26588FB8189BCD52002F9CBD /* V14_0004.jpg in Resources */,
 				26E2D13617E81924003C1E11 /* icon_zettel@2x.png in Resources */,
 				AF2D1D30162FE848006A45FE /* Thanksgiving_3~ipad.jpg in Resources */,
 				AF2D1D34162FE848006A45FE /* Thanksgiving_4~ipad.jpg in Resources */,
@@ -2974,6 +2958,7 @@
 				AF22BC42167F6D460002849D /* Cover_Christmas_7~ipad.png in Resources */,
 				AF22BC46167F6D460002849D /* Cover_Christmas_8~ipad.png in Resources */,
 				AF22BC4A167F6D460002849D /* Cover_Christmas_9~ipad.png in Resources */,
+				26588FB2189BCD52002F9CBD /* V14_0001.jpg in Resources */,
 				AF3E600B169E04CB00474472 /* darkBGPattern2.png in Resources */,
 				26DC060017F6FF3F0068C799 /* Default-Landscape@2x~ipad.png in Resources */,
 				AF3E6012169E158700474472 /* Archive.otf in Resources */,
@@ -2984,20 +2969,16 @@
 				AF6852A1169F5520007D3D2F /* icon_alignLeft@2x.png in Resources */,
 				AF6852A3169F5520007D3D2F /* icon_alignRight@2x.png in Resources */,
 				26E2D13217E81924003C1E11 /* icon_setting@2x.png in Resources */,
-				AFBF3FF516A1F37B00F85E43 /* Cover_Valentine_10~ipad.png in Resources */,
 				269B887D185EA43B00EC6B37 /* Christmas2013_5.jpg in Resources */,
 				AFBF3FF916A1F37B00F85E43 /* Cover_Valentine_1~ipad.png in Resources */,
 				2609D5491805A78F0019C242 /* Info_Support.png in Resources */,
 				AFBF3FFD16A1F37B00F85E43 /* Cover_Valentine_2~ipad.png in Resources */,
 				2609D5711805A78F0019C242 /* appIcon_NSC@2x~ipad.png in Resources */,
 				AFBF400116A1F37B00F85E43 /* Cover_Valentine_3~ipad.png in Resources */,
-				AFBF400516A1F37B00F85E43 /* Cover_Valentine_4~ipad.png in Resources */,
 				AFBF400916A1F37B00F85E43 /* Cover_Valentine_5~ipad.png in Resources */,
 				AFBF400D16A1F37B00F85E43 /* Cover_Valentine_6~ipad.png in Resources */,
 				AFBF401116A1F37B00F85E43 /* Cover_Valentine_7~ipad.png in Resources */,
 				26F301581813821C0091B207 /* Halloween2013_3.jpg in Resources */,
-				AFBF401516A1F37B00F85E43 /* Cover_Valentine_8~ipad.png in Resources */,
-				AFBF401916A1F37B00F85E43 /* Cover_Valentine_9~ipad.png in Resources */,
 				269B887B185EA43B00EC6B37 /* Christmas2013_4.jpg in Resources */,
 				26E2D12817E81924003C1E11 /* icon_choose@2x.png in Resources */,
 				AF9AA37A16BAF4ED00241AA9 /* contentBG.jpg in Resources */,
@@ -3175,6 +3156,7 @@
 				AF14590B161D9A09009107C9 /* Christmas-8@2x~ipad.jpg in Resources */,
 				AF14590E161D9A09009107C9 /* Christmas-8~ipad.jpg in Resources */,
 				AF145911161D9A09009107C9 /* Christmas-9@2x~ipad.jpg in Resources */,
+				26588FB9189BCD52002F9CBD /* V14_0004.jpg in Resources */,
 				AF145914161D9A09009107C9 /* Christmas-9~ipad.jpg in Resources */,
 				2609D5581805A78F0019C242 /* Info_Twitter~ipad.png in Resources */,
 				AF145917161D9A09009107C9 /* easter-1@2x~ipad.jpg in Resources */,
@@ -3199,12 +3181,6 @@
 				AF14593E161D9A09009107C9 /* holiday-1~ipad.jpg in Resources */,
 				AF145941161D9A09009107C9 /* holiday-2@2x~ipad.jpg in Resources */,
 				AF145944161D9A09009107C9 /* holiday-2~ipad.jpg in Resources */,
-				AF145947161D9A09009107C9 /* love-1@2x~ipad.jpg in Resources */,
-				AF14594A161D9A09009107C9 /* love-1~ipad.jpg in Resources */,
-				AF14594D161D9A09009107C9 /* love-2@2x~ipad.jpg in Resources */,
-				AF145950161D9A09009107C9 /* love-2~ipad.jpg in Resources */,
-				AF145953161D9A09009107C9 /* love-3@2x~ipad.jpg in Resources */,
-				AF145956161D9A09009107C9 /* love-3~ipad.jpg in Resources */,
 				AF145959161D9A09009107C9 /* love-title-1@2x~ipad.jpg in Resources */,
 				AF14595C161D9A09009107C9 /* love-title-1~ipad.jpg in Resources */,
 				AF14595F161D9A09009107C9 /* love-title-2@2x~ipad.jpg in Resources */,
@@ -3212,11 +3188,12 @@
 				AF145965161D9A09009107C9 /* motherday1@2x~ipad.jpg in Resources */,
 				AF145968161D9A09009107C9 /* motherday1~ipad.jpg in Resources */,
 				AF14596B161D9A09009107C9 /* motherday2@2x~ipad.jpg in Resources */,
-				26E17E941828A2BE00582CC3 /* Pods.xcconfig in Resources */,
+				26E17E941828A2BE00582CC3 /* (null) in Resources */,
 				AF14596E161D9A09009107C9 /* motherday2~ipad.jpg in Resources */,
 				AF145971161D9A09009107C9 /* motherday3@2x~ipad.jpg in Resources */,
 				AF145974161D9A09009107C9 /* motherday3~ipad.jpg in Resources */,
 				2609D5761805A78F0019C242 /* appicon_tinykitchen@2x~ipad.png in Resources */,
+				26588FBB189BCD52002F9CBD /* V14_0005.jpg in Resources */,
 				AF145977161D9A09009107C9 /* other-1@2x~ipad.jpg in Resources */,
 				269B8870185EA43B00EC6B37 /* Christmas2013_1.jpg in Resources */,
 				AF14597A161D9A09009107C9 /* other-1~ipad.jpg in Resources */,
@@ -3255,6 +3232,7 @@
 				AF7A4A99164069EE0053B351 /* Spirax-Regular.ttf in Resources */,
 				AF7A4A9B164069EE0053B351 /* Swagger.ttf in Resources */,
 				AF7A4A9D164069EE0053B351 /* SwaggerBold.ttf in Resources */,
+				8503A7581A31F45600C8D876 /* MyeCard Free copy-Info.plist in Resources */,
 				AF7A4A9F164069EE0053B351 /* SwaggerLight.ttf in Resources */,
 				AF7A4AA1164069EE0053B351 /* Universal-college_DEMO-version.ttf in Resources */,
 				AF7A4AA3164069EE0053B351 /* Zian free promo.ttf in Resources */,
@@ -3275,6 +3253,7 @@
 				AF22BC2B167F6D460002849D /* Cover_Christmas_1~ipad.png in Resources */,
 				AF22BC2F167F6D460002849D /* Cover_Christmas_2~ipad.png in Resources */,
 				AF22BC33167F6D460002849D /* Cover_Christmas_3~ipad.png in Resources */,
+				26588FB5189BCD52002F9CBD /* V14_0002.jpg in Resources */,
 				AF22BC37167F6D460002849D /* Cover_Christmas_4~ipad.png in Resources */,
 				AF22BC3B167F6D460002849D /* Cover_Christmas_5~ipad.png in Resources */,
 				AF22BC3F167F6D460002849D /* Cover_Christmas_6~ipad.png in Resources */,
@@ -3310,16 +3289,13 @@
 				269B8872185EA43B00EC6B37 /* Christmas2013_10.jpg in Resources */,
 				2609D5241805A78F0019C242 /* Icon_AppstoreDownload@2x~ipad.png in Resources */,
 				26DC060717F6FF3F0068C799 /* Default@2x.png in Resources */,
-				AFBF3FF616A1F37B00F85E43 /* Cover_Valentine_10~ipad.png in Resources */,
 				AFBF3FFA16A1F37B00F85E43 /* Cover_Valentine_1~ipad.png in Resources */,
 				AFBF3FFE16A1F37B00F85E43 /* Cover_Valentine_2~ipad.png in Resources */,
 				AFBF400216A1F37B00F85E43 /* Cover_Valentine_3~ipad.png in Resources */,
-				AFBF400616A1F37B00F85E43 /* Cover_Valentine_4~ipad.png in Resources */,
 				AFBF400A16A1F37B00F85E43 /* Cover_Valentine_5~ipad.png in Resources */,
 				AFBF400E16A1F37B00F85E43 /* Cover_Valentine_6~ipad.png in Resources */,
+				26588FB7189BCD52002F9CBD /* V14_0003.jpg in Resources */,
 				AFBF401216A1F37B00F85E43 /* Cover_Valentine_7~ipad.png in Resources */,
-				AFBF401616A1F37B00F85E43 /* Cover_Valentine_8~ipad.png in Resources */,
-				AFBF401A16A1F37B00F85E43 /* Cover_Valentine_9~ipad.png in Resources */,
 				AF9AA37B16BAF4ED00241AA9 /* contentBG.jpg in Resources */,
 				AF18A85316F3022F00AEAB63 /* easter-10~ipad.png in Resources */,
 				AF18A85516F3022F00AEAB63 /* easter-11~ipad.png in Resources */,
@@ -3340,12 +3316,14 @@
 				AF18A87616F355D700AEAB63 /* Cover_easter-3~ipad.jpg in Resources */,
 				2609D5461805A78F0019C242 /* Info_selected@2x~ipad.png in Resources */,
 				AF18A87816F355D700AEAB63 /* Cover_easter-4~ipad.jpg in Resources */,
+				26588FB3189BCD52002F9CBD /* V14_0001.jpg in Resources */,
 				AF18A87A16F355D700AEAB63 /* Cover_easter-5~ipad.jpg in Resources */,
 				AF1DDDAC172BC5B400EF13DE /* MothersDay_1.jpg in Resources */,
 				AF1DDDAE172BC5B400EF13DE /* MothersDay_10.jpg in Resources */,
 				AF1DDDB0172BC5B400EF13DE /* MothersDay_2.png in Resources */,
 				AF1DDDB2172BC5B400EF13DE /* MothersDay_3.png in Resources */,
 				AF1DDDB4172BC5B400EF13DE /* MothersDay_4.png in Resources */,
+				8599DA011A335030005BAE30 /* README.txt in Resources */,
 				AF1DDDB6172BC5B400EF13DE /* MothersDay_5.jpg in Resources */,
 				AF1DDDB8172BC5B400EF13DE /* MothersDay_6.jpg in Resources */,
 				AF1DDDBA172BC5B400EF13DE /* MothersDay_7.png in Resources */,
@@ -3378,6 +3356,7 @@
 			files = (
 			);
 			inputPaths = (
+				"",
 			);
 			outputPaths = (
 			);
@@ -3412,8 +3391,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		8599D9DB1A3341EF005BAE30 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/Users/Forest/百度云同步盘/MacBook/MyeCard/XappCard/Script.sh";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -3697,9 +3689,11 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Xin Chen (2JS83C3H44)";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -3732,9 +3726,11 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -3754,12 +3750,13 @@
 		};
 		AF8DB0C41480E97A00C55084 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9241A932F614478F80B158BE /* Pods.xcconfig */;
+			baseConfigurationReference = 9368569DEEF4B68FD9645E5D /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = armv7;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Xin Chen (2JS83C3H44)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XappCard/XappCard-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3775,30 +3772,32 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "XappCard/MyeCard-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(SRCROOT)/XappCard/Utilities/AdView/Admob/**",
-					"$(SRCROOT)/XappCard/Utilities/Flurry/**",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "My eCard_P";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0C88246A-C510-4EA5-8F0C-C323E63CE0FA";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4EB69DDD-1BBD-49D7-86FF-45FE69872990";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		AF8DB0C51480E97A00C55084 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9241A932F614478F80B158BE /* Pods.xcconfig */;
+			baseConfigurationReference = 4F5615B09E774D51B282E7C8 /* Pods.release.xcconfig */;
 			buildSettings = {
+				ARCHS = armv7;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Xin Chen";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xin Chen";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XappCard/XappCard-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "PAID=1";
@@ -3811,19 +3810,18 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "XappCard/MyeCard-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(SRCROOT)/XappCard/Utilities/AdView/Admob/**",
-					"$(SRCROOT)/XappCard/Utilities/Flurry/**",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "My eCard";
-				PROVISIONING_PROFILE = "D6E01E46-F91D-46FE-BED4-134E1BC62F87";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4F18FA7A-8E36-4CBF-8D7B-03A5F23CBDC9";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CAC7E928-82B6-4BCB-9222-C3C2E8EAEDE4";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -3837,9 +3835,11 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -3859,12 +3859,13 @@
 		};
 		AFAD5A5D14F2F8C300D54D9B /* Adhoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9241A932F614478F80B158BE /* Pods.xcconfig */;
+			baseConfigurationReference = F645D4FB90C5266666F08281 /* Pods.adhoc.xcconfig */;
 			buildSettings = {
+				ARCHS = armv7;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xin Chen";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XappCard/XappCard-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "PAID=1";
@@ -3877,30 +3878,34 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "XappCard/MyeCard-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(SRCROOT)/XappCard/Utilities/AdView/Admob/**",
-					"$(SRCROOT)/XappCard/Utilities/Flurry/**",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "My eCard";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1B170487-E8BF-4B76-9EF9-15C7B1D1221C";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Adhoc;
 		};
 		AFFF4AAB15E4366E000A8F99 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9241A932F614478F80B158BE /* Pods.xcconfig */;
+			baseConfigurationReference = 9368569DEEF4B68FD9645E5D /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Xin Chen (2JS83C3H44)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XappCard/XappCard-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3915,30 +3920,35 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "MyeCard Free copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(SRCROOT)/XappCard/Utilities/AdView/Admob/**",
-					"$(SRCROOT)/XappCard/Utilities/Flurry/**",
+					"$(PROJECT_DIR)/XappCard/Admob",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "My eCard_F";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CC672C02-81A3-4DB0-9290-AFC30B6B4EAD";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F7A821DF-D70A-4F07-A8AA-58435635076E";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		AFFF4AAC15E4366E000A8F99 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9241A932F614478F80B158BE /* Pods.xcconfig */;
+			baseConfigurationReference = 4F5615B09E774D51B282E7C8 /* Pods.release.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xin Chen";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XappCard/XappCard-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "IAP=1";
@@ -3950,32 +3960,36 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "MyeCard Free copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(SRCROOT)/XappCard/Utilities/AdView/Admob/**",
-					"$(SRCROOT)/XappCard/Utilities/Flurry/**",
+					"$(PROJECT_DIR)/XappCard/Admob",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "My eCard";
-				PROVISIONING_PROFILE = "28300ACC-89F4-4FFA-8C45-DA6554ED3830";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9DC6691B-17A9-4106-A1DC-46A9C3C65D18";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EE89E8E2-F9DB-4A6E-8A46-87DFAB8E676C";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
 		AFFF4AAD15E4366E000A8F99 /* Adhoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9241A932F614478F80B158BE /* Pods.xcconfig */;
+			baseConfigurationReference = F645D4FB90C5266666F08281 /* Pods.adhoc.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xin Chen";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XappCard/XappCard-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "IAP=1";
@@ -3987,18 +4001,19 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "MyeCard Free copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(SRCROOT)/XappCard/Utilities/AdView/Admob/**",
-					"$(SRCROOT)/XappCard/Utilities/Flurry/**",
+					"$(PROJECT_DIR)/XappCard/Admob",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "My eCard";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AD7CDC01-E7DD-44C4-8F8C-CA4BC7D46C1E";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Adhoc;

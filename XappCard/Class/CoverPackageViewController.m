@@ -25,7 +25,8 @@
 	CGFloat height = isPad?500:320;
 	CGRect rect = CGRectMake(0, 0, 480, height);
 	CGRect containerRect = CGRectMake(0, 0, 480, height);
-	if(isPhoneRetina4){
+
+    if(!isPhone4 && isPhone){
 		rect = CGRectMake(0, 0, 568, height);
 		containerRect = CGRectMake(44, 0, 480, height);
 	}

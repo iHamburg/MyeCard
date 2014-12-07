@@ -23,7 +23,6 @@
 	}
 	
 	return sharedInstance;
-	
 }
 
 - (id)init{
@@ -128,7 +127,24 @@
 		[coverCategorys addObject:coverCat];
 		
 	}
+    
+    
+	coverCat = [[CoverCategory alloc]init];
+	coverCat.name = @"Mother's Day";
+	coverCat.coverImgNames = [NSMutableArray arrayWithArray:_coverMotherImgNames];
+	[coverCategorys addObject:coverCat];
+    
+	coverCat =[[CoverCategory alloc]init];
+	coverCat.name = @"Valentine's Day";
+	coverCat.coverImgNames = [NSMutableArray arrayWithArray:_coverValentinImgNames];
+	[coverCategorys addObject:coverCat];
 	
+    
+    coverCat = [[CoverCategory alloc]init];
+	coverCat.name = @"anniversary";
+	coverCat.coverImgNames = [NSMutableArray arrayWithArray:coverAnniversaryImgNames];
+	[coverCategorys addObject:coverCat];
+    
     coverCat = [[CoverCategory alloc]init];
 	coverCat.name = @"Xmas & New Year";
 	coverCat.coverImgNames = [NSMutableArray arrayWithArray:coverChristmas2013ImgNames];
@@ -149,36 +165,19 @@
 	coverCat.name = @"Halloween";
 	coverCat.coverImgNames = [NSMutableArray arrayWithArray:coverHalloweenImgNames];
 	[coverCategorys addObject:coverCat];
-    
-    coverCat = [[CoverCategory alloc]init];
-	coverCat.name = @"anniversary";
-	coverCat.coverImgNames = [NSMutableArray arrayWithArray:coverAnniversaryImgNames];
-	[coverCategorys addObject:coverCat];
+ 
     
 	coverCat = [[CoverCategory alloc]init];
 	coverCat.name = @"Fathers Day";
 	coverCat.coverImgNames = [NSMutableArray arrayWithArray:coverFathersDayImgNames];
 	[coverCategorys addObject:coverCat];
-	
-	coverCat = [[CoverCategory alloc]init];
-	coverCat.name = @"Mother's Day";
-	coverCat.coverImgNames = [NSMutableArray arrayWithArray:_coverMotherImgNames];
-	[coverCategorys addObject:coverCat];
+
 	
 	coverCat = [[CoverCategory alloc]init];
 	coverCat.name = @"Easter";
 	coverCat.coverImgNames = [NSMutableArray arrayWithArray:_coverEasterImgNames];
 	[coverCategorys addObject:coverCat];
 	
-	coverCat =[[CoverCategory alloc]init];
-	coverCat.name = @"Valentine's Day";
-	coverCat.coverImgNames = [NSMutableArray arrayWithArray:_coverValentinImgNames];
-	[coverCategorys addObject:coverCat];
-	
-	coverCat = [[CoverCategory alloc]init];
-	coverCat.name = @"anniversary";
-	coverCat.coverImgNames = [NSMutableArray arrayWithArray:coverAnniversaryImgNames];
-	[coverCategorys addObject:coverCat];
 	
 	coverCat = [[CoverCategory alloc]init];
 	coverCat.name = @"Xmas & New Year";

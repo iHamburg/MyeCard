@@ -18,7 +18,12 @@
     [super loadView];
     
     _r = [UIScreen mainScreen].bounds;
-	_r = CGRectApplyAffineTransform(_r, CGAffineTransformMakeRotation(90 * M_PI / 180.0));
+    
+    if (!isIOS8) { // iOS8 之前的版本都要转一下
+        _r = CGRectApplyAffineTransform(_r, CGAffineTransformMakeRotation(90 * M_PI / 180.0));
+    }
+    
+
 	_r.origin = CGPointZero;
 	self.view = [[UIView alloc]initWithFrame:_r];
     

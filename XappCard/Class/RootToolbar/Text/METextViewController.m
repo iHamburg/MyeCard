@@ -27,7 +27,6 @@
 	tv.textColor = _labelMV.textColor;
 	tv.textAlignment = _labelMV.textAlignment;
 	tv.font = [UIFont fontWithName:_labelMV.fontName size:displayedFontSize];
-//	tv.backgroundColor = [_labelMV.bgColor colorWithAlpha:_labelMV.bgAlpha];
 	tv.backgroundColor = _labelMV.bgColor;
     
   
@@ -51,7 +50,7 @@
 	_labelMV.textAlignment = tv.textAlignment;
     _labelMV.fontName = fontName;
     _labelMV.bgColor = bgColor;
-//    _labelMV.bgAlpha = bgAlpha;
+
     
     
 	

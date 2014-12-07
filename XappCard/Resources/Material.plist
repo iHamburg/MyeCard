@@ -583,18 +583,17 @@ be happy ever after!</string>
 	</array>
 	<key>Cover_Christmas2013</key>
 	<array>
-	
-        <string>Christmas2013_2.jpg</string>
-        <string>Christmas2013_3.jpg</string>
-        <string>Christmas2013_4.jpg</string>
-        <string>Christmas2013_5.jpg</string>
-        <string>Christmas2013_6.jpg</string>
-        <string>Christmas2013_8.jpg</string>
-        <string>Christmas2013_10.jpg</string>
-        <string>Christmas2013_11.jpg</string>
-        <string>Christmas2013_12.jpg</string>
-        <string>Christmas2013_1.jpg</string>
-        <string>Christmas2013_9.jpg</string>
+		<string>Christmas2013_2.jpg</string>
+		<string>Christmas2013_3.jpg</string>
+		<string>Christmas2013_4.jpg</string>
+		<string>Christmas2013_5.jpg</string>
+		<string>Christmas2013_6.jpg</string>
+		<string>Christmas2013_8.jpg</string>
+		<string>Christmas2013_10.jpg</string>
+		<string>Christmas2013_11.jpg</string>
+		<string>Christmas2013_12.jpg</string>
+		<string>Christmas2013_1.jpg</string>
+		<string>Christmas2013_9.jpg</string>
 	</array>
 	<key>Cover_Anniversary</key>
 	<array>
@@ -634,23 +633,21 @@ be happy ever after!</string>
 	</array>
 	<key>Cover_Valentine</key>
 	<array>
+		<string>V14_0005.jpg</string>
+		<string>V14_0004.jpg</string>
+		<string>V14_0003.jpg</string>
+		<string>V14_0001.jpg</string>
+		<string>V14_0002.jpg</string>
 		<string>Cover_Valentine_1.png</string>
 		<string>Cover_Valentine_2.png</string>
 		<string>Cover_Valentine_3.png</string>
-		<string>Cover_Valentine_4.png</string>
 		<string>Cover_Valentine_5.png</string>
 		<string>Cover_Valentine_6.png</string>
 		<string>Cover_Valentine_7.png</string>
-		<string>Cover_Valentine_8.png</string>
-		<string>Cover_Valentine_9.png</string>
-		<string>Cover_Valentine_10.png</string>
 		<string>love-title-1.jpg</string>
 		<string>love-title-2.jpg</string>
 		<string>valentine-1.jpg</string>
 		<string>valentine-2.jpg</string>
-		<string>love-1.jpg</string>
-		<string>love-2.jpg</string>
-		<string>love-3.jpg</string>
 	</array>
 	<key>Cover_Easter</key>
 	<array>

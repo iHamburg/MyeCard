@@ -13,9 +13,18 @@
 
 - (void)loadView{
    
+    
+    
+    
 	CGFloat height = 288;
     
     self.view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WTEXTVC, height)];
+    
+    
+    if (isIOS7) {
+        
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
     
     self.view.backgroundColor = [UIColor blackColor];
     
@@ -33,7 +42,7 @@
     
     
 	CGFloat hTextView = isPad?self.view.height:125;
-    CGFloat yOrigin = (isPhone&&isIOS7)?32:0;
+     CGFloat yOrigin = 0;
     
 	tv = [[UITextView alloc]initWithFrame:CGRectMake(self.view.width/2, yOrigin, self.view.width/2, hTextView)];
 	tv.layer.borderColor = [UIColor blackColor].CGColor;
@@ -89,6 +98,10 @@
     //	[tv becomeFirstResponder];
     settingVC.bgAlpha = bgAlpha;
     tv.contentOffset = CGPointZero;
+
+
+    
+    NSLog(@"tv # %@",tv);
     
 }
 

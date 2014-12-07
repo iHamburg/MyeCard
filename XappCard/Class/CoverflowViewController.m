@@ -48,13 +48,23 @@
 	rootVC = [MERootViewController sharedInstance];
 	
 	CGRect r = [UIScreen mainScreen].bounds;
-	r = CGRectApplyAffineTransform(r, CGAffineTransformMakeRotation(90 * M_PI / 180.));
-	r.origin = CGPointZero;
-	self.view = [[UIView alloc] initWithFrame:r];
-	self.view.backgroundColor = [UIColor blackColor];
-	w = r.size.width;
-	h = r.size.height;
+    
+    if (isIOS8) {
+        r.origin = CGPointZero;
+        self.view = [[UIView alloc] initWithFrame:r];
+        self.view.backgroundColor = [UIColor blackColor];
+        w = r.size.width;
+        h = r.size.height;
+    }
+    else{
+        r = CGRectApplyAffineTransform(r, CGAffineTransformMakeRotation(90 * M_PI / 180.));
+        r.origin = CGPointZero;
+        self.view = [[UIView alloc] initWithFrame:r];
+        self.view.backgroundColor = [UIColor blackColor];
+        w = r.size.width;
+        h = r.size.height;
 
+    }
 
 	UIImageView *step1V = [[UIImageView alloc] initWithFrame:isPad?CGRectMake(112,20,500,60):CGRectMake(56, 40, 250, 30)];
 	step1V.center = CGPointMake(self.view.center.x, isPad?45:20);
@@ -62,8 +72,12 @@
 	step1V.image = [[SpriteManager sharedInstance] stepImageWithIndex:1];
 
 	CGRect coverFlowRect = CGRectMake(0, 65, w, 255);
+  
+    
+//    NSLog(@"w # %f",w); // ios7的时候是568， ios8就成320？
 	coverflow = [[TKCoverflowView alloc] initWithFrame:isPad?self.view.bounds:coverFlowRect];
-
+    NSLog(@"coverflow # %@",coverflow);
+    
     coverflow.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	coverflow.coverflowDelegate = self;
 	coverflow.dataSource = self;
@@ -87,6 +101,8 @@
 	coverCategory = [[SpriteManager sharedInstance]coverCategorys][0];
 	[coverflow setNumberOfCovers:[coverCategory.coverImgNames count]];
 	[coverflow bringCoverAtIndexToFront:0 animated:NO];
+    
+    
 
 }
 
@@ -105,9 +121,13 @@
 - (void) viewDidAppear:(BOOL)animated{
 	L();
 	[super viewDidAppear:animated];
-	self.view.frame = _r;
+
+
+    self.view.frame = _r;
 
     [self layoutADBanner:[AdView sharedInstance]];
+    
+    NSLog(@"cover flow # %@",self.view);
 }
 
 
@@ -209,8 +229,10 @@
 	NSString *acoverImgName = [coverCategory coverImgNameWithIndex:index];
 	
 	UIImage *img = [UIImage imageWithContentsOfFileUniversal:acoverImgName];
-//	NSLog(@"imgName # %@, img # %@",acoverImgName,img);
+
 	cover.image = [img imageByScalingAndCroppingForWidth:cover.width];
+
+    
 		
 	return cover;
 	

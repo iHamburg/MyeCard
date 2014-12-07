@@ -233,7 +233,7 @@
 //	[[LoadingView sharedLoadingView]showTitle:@"Added into Facebook" inView:[delegate view]];
 //	[[AudioController sharedInstance]play:AudioTypeFacebook delegate:nil];
 	[[LoadingView sharedLoadingView]addTitle:LString(@"Done") inView:[delegate view]];
-	[Flurry logEvent:@"Facebook Sent"];
+//	[Flurry logEvent:@"Facebook Sent"];
 }
 
 /**

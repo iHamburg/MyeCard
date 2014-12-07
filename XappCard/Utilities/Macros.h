@@ -15,12 +15,16 @@
 
 #define isPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #define isPhone  (UI_USER_INTERFACE_IDIOM() != UIUserInterfaceIdiomPad)
-#define isPhoneRetina4 ([UIDevice resolution] == UIDeviceResolution_iPhoneRetina4)
+#define isPhone4 ([UIDevice resolution] == UIDeviceResolution_iPhoneRetina35)||([UIDevice resolution] == UIDeviceResolution_iPhoneStandard)
+//#define isPhoneRetina4 ([UIDevice resolution] == UIDeviceResolution_iPhoneRetina4)
 
 
-#define isIOS7 (kVersion >= 7.0)
-#define isIOS6 (kVersion >= 6.0)
 
+#define isIOS8 (kVersion >= 8.0)    //ios8 以上
+#define isIOS7 (kVersion >= 7.0)  // 只有ios7
+#define isIOS6 (kVersion >= 6.0)    // ios6 以上
+#define isIOS7Only (kVersion >= 7.0 && kVersion < 8.0)  // 只有ios7
+#define isIOS6Only (kVersion >= 6.0 && kVersion <7.0)
 
 #define isIAPFullVersion [[NSUserDefaults standardUserDefaults] boolForKey:kIAPFullVersion]
 #define isIAPHalloween [[NSUserDefaults standardUserDefaults] boolForKey:kIAPHalloween]

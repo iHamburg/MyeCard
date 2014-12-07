@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <MessageUI/MessageUI.h>
 #import <Twitter/Twitter.h>
-#import "Flurry.h"
+//#import "Flurry.h"
 
 
 @interface ExportController : NSObject<MFMailComposeViewControllerDelegate> {
@@ -19,9 +19,11 @@
     UIImage *tweetDefaultImg;
     
     NSString *appIDStr;
-    
+
+    MFMailComposeViewController* _mailPicker;
 }
 
+@property (nonatomic, strong) MFMailComposeViewController* mailPicker;
 
 +(id)sharedInstance;
 

@@ -102,6 +102,7 @@
 	NSMutableString *target = [self mutableCopy];
 	NSCharacterSet *chs = [NSCharacterSet characterSetWithCharactersInString:@"&"];
 	
+    
 	while ([target length] > 0) {
 		NSRange r = [target rangeOfCharacterFromSet:chs];
 		if (r.location == NSNotFound) {

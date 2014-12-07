@@ -10,27 +10,22 @@
 #import "MERootViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
-NSString *const NotificationAdChanged = @"ADChanged";
 
 @interface AdView()
-
 - (void)setupIAD;
 - (void)setupGAD;
-
 @end
 
 @implementation AdView
 
 
-//static bool _isIAD = NO;
-//static bool _iadAvailable = NO;
+static bool _isIAD = NO;
+static bool _iadAvailable = NO;
 
 static bool _isGADLoaded = NO;
 
-static NSString *MY_BANNER_UNIT_ID=@"a1510c1bf584fb4";    // myecard
-//static NSString *MY_BANNER_UNIT_ID=@"a15226a64014da4";   //iCA
-//static NSString *MY_BANNER_UNIT_ID=@"a1510c1a0d38138"; // Everalbum
-//static NSString *MY_BANNER_UNIT_ID=@"a1510e69df21727"; // TinyKitchen
+
+static NSString *MY_BANNER_UNIT_ID=@"ca-app-pub-6490786775790369/1932214935"; // MyeCard
 
 
 @synthesize isAdDisplaying;
@@ -38,9 +33,18 @@ static NSString *MY_BANNER_UNIT_ID=@"a1510c1bf584fb4";    // myecard
 - (void)setIsAdDisplaying:(BOOL)isAdDisplaying_{
     isAdDisplaying = isAdDisplaying_;
     
-    [[NSNotificationCenter defaultCenter]postNotificationName:NotificationAdChanged object:self];
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"ADChanged" object:self];
 }
 
+- (BOOL)bannerLoaded{
+	if (_isIAD) {
+		return _iadView.bannerLoaded;
+	}
+	else{
+		return _isGADLoaded;
+	}
+    
+}
 
 #pragma mark -
 static id sharedInstance;
@@ -52,8 +56,8 @@ static id sharedInstance;
     }
     
     if (sharedInstance == nil) {
-		CGFloat hBanner = isPad?66:32;
-		sharedInstance = [[[self class] alloc]initWithFrame:CGRectMake(0, _h, _w, hBanner)];
+		
+		sharedInstance = [[[self class] alloc]initWithFrame:CGRectMake(0, 0, _w, 32)];
 	}
 	
 	return sharedInstance;
@@ -64,8 +68,7 @@ static id sharedInstance;
 +(void)releaseSharedInstance{
 
     sharedInstance = nil;
-    [[NSNotificationCenter defaultCenter]postNotificationName:@"ADChanged" object:nil];
-    
+
 }
 - (id)initWithFrame:(CGRect)frame
 {
@@ -73,54 +76,56 @@ static id sharedInstance;
     if (self) {
         // Initialization code
 		
-		[[NSNotificationCenter defaultCenter] addObserver:self
-												 selector:@selector(handleResignActive)
-													 name:UIApplicationWillResignActiveNotification
-												   object:nil];
-
-		[[NSNotificationCenter defaultCenter] addObserver:self
-												 selector:@selector(handleBecomeActive)
-													 name:UIApplicationDidBecomeActiveNotification
-												   object:nil];
-
-//		static NSSet* supportedCountries = nil;
-//		if (supportedCountries == nil)
-//		{
-//			supportedCountries = [NSSet setWithObjects:
-//								  @"ES", // spain
-//								  @"US", // usa
-//								  @"UK", // united kingdom
-//								  @"CA", // canada
-//								  @"FR", // france
-//								  @"DE", // german
-//								  @"IT", // italy
-//								  @"JP", // japan
-//								  nil];
-//		}
-//		
-//		NSLocale* currentLocale = [NSLocale currentLocale];  // get the current locale.
-//		NSString* countryCode = [currentLocale objectForKey:NSLocaleCountryCode];
-//		NSLog(@"contryCode # %@",countryCode);
-//		
-//		if ([supportedCountries containsObject:countryCode]) {
-//			_iadAvailable = YES;
-//		}
-//		else{
-//			_iadAvailable = NO;
-//		}
-//		
-//		// 优先调用IAD
-//		
-//		
-//		if (_iadAvailable) { // iad
+//		[[NSNotificationCenter defaultCenter] addObserver:self
+//												 selector:@selector(handleResignActive)
+//													 name:UIApplicationWillResignActiveNotification
+//												   object:nil];
 //
-//			[self setupIAD];
-//		}
-//		else{ //gad
-//			[self setupGAD];
-//		}
+//		[[NSNotificationCenter defaultCenter] addObserver:self
+//												 selector:@selector(handleBecomeActive)
+//													 name:UIApplicationDidBecomeActiveNotification
+//												   object:nil];
+
 		
-        [self setupGAD];
+		static NSSet* supportedCountries = nil;
+		if (supportedCountries == nil)
+		{
+			supportedCountries = [NSSet setWithObjects:
+								  @"ES", // spain
+								  @"US", // usa
+								  @"UK", // united kingdom
+								  @"CA", // canada
+								  @"FR", // france
+								  @"DE", // german
+								  @"IT", // italy
+								  @"JP", // japan
+								  nil];
+		}
+		
+		NSLocale* currentLocale = [NSLocale currentLocale];  // get the current locale.
+		NSString* countryCode = [currentLocale objectForKey:NSLocaleCountryCode];
+		NSLog(@"contryCode # %@",countryCode);
+		
+		if ([supportedCountries containsObject:countryCode]) {
+			_iadAvailable = YES;
+		}
+		else{
+			_iadAvailable = NO;
+		}
+		
+		// 优先调用IAD
+		
+		
+		if (_iadAvailable) { // iad
+
+			[self setupIAD];
+		}
+		else{ //gad
+			[self setupGAD];
+		}
+		
+		// 开始时hidden，等到载入iad时才显示
+		self.hidden = YES;
 	
 
     }
@@ -131,17 +136,6 @@ static id sharedInstance;
     
 }
 
-- (void)handleResignActive{
-//	L();
-	
-	
-}
-
-- (void)handleBecomeActive{
-//	L();
-
-//	[[ViewController sharedInstance] initBanner];
-}
 #pragma mark - iAD Banner
 
 
@@ -149,7 +143,7 @@ static id sharedInstance;
 {
 	L();
 
-//	self.hidden = NO;
+	self.hidden = NO;
 	
 	self.isAdDisplaying = YES;
 	
@@ -160,7 +154,7 @@ static id sharedInstance;
 	//	L();
 	NSLog(@"error # %@",[error localizedDescription]);
 
-//	self.hidden= YES;
+	self.hidden= YES;
 	
 	self.isAdDisplaying = NO;
 
@@ -194,11 +188,11 @@ static id sharedInstance;
 	//    is_gAdON = YES;
 	//
 	//    isAdLoaded = YES;
-//	L();
+	L();
 	
 	_isGADLoaded = YES;
 	
-//	self.hidden = NO;
+	self.hidden = NO;
 
 	self.isAdDisplaying = YES;
 //	[[NSNotificationCenter defaultCenter]postNotificationName:kNotificationLoadAdview object:self];
@@ -216,9 +210,14 @@ static id sharedInstance;
 	
 	_isGADLoaded = NO;
 	
-//	self.hidden = YES;
+	self.hidden = YES;
 	
 	self.isAdDisplaying = NO;
+	
+//	
+//	if (_iadAvailable) {
+//		[self setupIAD];
+//	}
 
 	///TODO: 当GAD不能调用，继续尝试
 	[self setupGAD];
@@ -273,6 +272,7 @@ static id sharedInstance;
 	
 	[self addSubview:_iadView];
 	
+	_isIAD = YES;
 	[_gadView removeFromSuperview];
 	_gadView.delegate = nil;
 	_gadView = nil;
@@ -297,6 +297,7 @@ static id sharedInstance;
 	
 	[self addSubview:_gadView];
 	
+	_isIAD = NO;
 	[_iadView removeFromSuperview];
 	_iadView.delegate = nil;
 	_iadView = nil;

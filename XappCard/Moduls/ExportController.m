@@ -12,6 +12,17 @@
 
 @implementation ExportController
 
+
+- (MFMailComposeViewController*)mailPicker{
+
+    if (!_mailPicker) {
+        _mailPicker = [[MFMailComposeViewController alloc] init];
+        _mailPicker.mailComposeDelegate = self;
+    }
+    
+    return _mailPicker;
+}
+
 +(id)sharedInstance{
 	static id sharedInstance;
 	if (sharedInstance == nil) {
@@ -23,11 +34,12 @@
 	
 }
 
+
 #pragma mark - Email
 
 - (void)sendEmailWithImages:(NSArray*)images{
-   MFMailComposeViewController* mailPicker = [[MFMailComposeViewController alloc] init];
-	mailPicker.mailComposeDelegate = self;
+  
+    MFMailComposeViewController *mailPicker = self.mailPicker;
 	
     NSString *subject = @"Subject Test";
 	
@@ -39,15 +51,14 @@
         
     }
     
-//	[_root presentModalViewController:mailPicker animated:YES];
     [_root presentViewController:mailPicker animated:YES completion:nil];
 }
 
 - (void)sendEmail:(NSDictionary *)info{
 	[[LoadingView sharedLoadingView] removeView];
 	
-	MFMailComposeViewController* mailPicker = [[MFMailComposeViewController alloc] init];
-	mailPicker.mailComposeDelegate = self;
+    MFMailComposeViewController *mailPicker = self.mailPicker;
+    
 	
 	NSString *emailBody = [info objectForKey:@"emailBody"];
 	NSString *subject = [info objectForKey:@"subject"];
@@ -69,7 +80,6 @@
 	}
 	
 	
-//	[_root presentModalViewController:mailPicker animated:YES];
      [_root presentViewController:mailPicker animated:YES completion:nil];
 }
 
@@ -91,14 +101,15 @@
         
 	}
 	
+    _mailPicker = nil;
 }
+
+
+#pragma mark - Tweet
+
 - (void)sendTweetWithText:(NSString*)text image:(UIImage*)image{
 	[[LoadingView sharedLoadingView]removeView];
-	
-	// Set up the built-in twitter composition view controller.
-//	if (!tweetViewController) {
-//		tweetViewController = [[TWTweetComposeViewController alloc] init];
-//	}
+
 
    TWTweetComposeViewController* tweetViewController = [[TWTweetComposeViewController alloc] init];
     
@@ -126,28 +137,7 @@
          
      }];
     // Create the completion handler block.
-//    [tweetViewController setCompletionHandler:^(TWTweetComposeViewControllerResult result) {
-////        NSString *output;
-////        
-////        switch (result) {
-////            case TWTweetComposeViewControllerResultCancelled:
-////                // The cancel button was tapped.
-////                output = @"Tweet cancelled.";
-////                break;
-////            case TWTweetComposeViewControllerResultDone:
-////                // The tweet was sent.
-////                output = @"Tweet done.";
-////				//				[FlurryAnalytics logEvent:@"Tweet sent"];
-////                break;
-////            default:
-////                break;
-////        }
-//		
-//        [_root dismissModalViewControllerAnimated:YES];
-//    }];
-    
-    // Present the tweet composition view controller modally.
-//    [_root presentModalViewController:tweetViewController animated:YES];
+
      [_root presentViewController:tweetViewController animated:YES completion:nil];
 	
 }

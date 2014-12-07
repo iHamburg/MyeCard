@@ -9,7 +9,7 @@
 #import "CoverCategoryScrollView.h"
 #import "Utilities.h"
 #import "SpriteManager.h"
-#import "FXLabel.h"
+//#import "FXLabel.h"
 
 @implementation CoverCategoryScrollView
 
@@ -59,7 +59,7 @@
 			
 			CoverCategory *cat = coverCategorys[i];
 			NSString *name = cat.name;
-			FXLabel *l = [[FXLabel alloc]initWithFrame:CGRectMake(200+wLabel*i, 0, wLabel, h)];
+			UILabel *l = [[UILabel alloc]initWithFrame:CGRectMake(200+wLabel*i, 0, wLabel, h)];
 			l.backgroundColor = [UIColor clearColor];
 			l.textAlignment = NSTextAlignmentCenter;
 			l.text = name;
@@ -68,8 +68,8 @@
 			l.userInteractionEnabled = YES;
 			l.shadowColor = [UIColor blackColor];
 			l.shadowOffset = CGSizeMake(0, isPad?2:1);
-			l.innerShadowColor = [UIColor colorWithWhite:1.0 alpha:0.8];
-			l.innerShadowOffset = CGSizeMake(0, isPad?2:1);
+//			l.innerShadowColor = [UIColor colorWithWhite:1.0 alpha:0.8];
+//			l.innerShadowOffset = CGSizeMake(0, isPad?2:1);
 			[l addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:parent action:@selector(handleTap:)]];
 			l.tag = i+1;
 			[self addSubview:l];

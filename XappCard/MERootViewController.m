@@ -123,13 +123,11 @@
     switchContentB.tag = ToolbarTagSwitch;
     
     photoBB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_photo.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
-//    photoBB.title = NSLocalizedString(@"iPhoto", nil);
+
     photoBB.tag = ToolbarTagContentPhoto;
     
     contentTextBB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_text.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
-//    contentTextBB.title = NSLocalizedString(@"iText", nil);
 
-//    contentTextBB = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(toolbarButtonClicked:)];
     contentTextBB.tag = ToolbarTagContentText;
     
     UIBarButtonItem *zettelB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_zettel.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
@@ -137,7 +135,7 @@
     zettelB.tag = ToolbarTagZettel;
     
     UIBarButtonItem *loveB = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_love.png"] style:UIBarButtonItemStylePlain target:self action:@selector(toolbarButtonClicked:)];
-//    loveB.title = NSLocalizedString(@"iLove", nil);
+
     loveB.tag = ToolbarTagLove;
     UIBarButtonItem *actionB = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(toolbarButtonClicked:)];
     actionB.tag = ToolbarTagAction;
@@ -165,7 +163,6 @@
     contentItems =  [NSArray arrayWithObjects:fixed,addB,flexible,switchContentB,fixed,photoBB,fixed,contentTextBB,
                      fixed,zettelB,fixed,settingB,flexible,actionB,shareFixed,infoB,fixed,nil];
     
-//    toolbar.backgroundColor = [UIColor blackColor];
 }
 
 
@@ -201,7 +198,7 @@
 		bannerRect = CGRectMake(0, _h-66, _w, 66);
 		bannerOutRect = CGRectMake(0, _h, _w, 66);
 	}
-	else if(isPhoneRetina4){ // iphone 5
+	else if(!isPhone4){ // iphone 5
         
 		containerRect = CGRectMake(44, 0, 480, 320);
         containerWithBannerRect =containerRect;
@@ -257,7 +254,6 @@
 									  destructiveButtonTitle:nil
 										   otherButtonTitles:NSLocalizedString(@"emailPNG", nil),LString(@"send it later"),NSLocalizedString(@"Save PNG", nil),@"Facebook",@"Twitter",nil];
 
-    
 
 }
 
@@ -266,10 +262,10 @@
 - (void)viewWillAppear:(BOOL)animated{
     L();
     [super viewWillAppear:animated];
-//    NSLog(@"root # %@, content # %@, toolbar # %@",self.view, contentVC.view,toolbar);
+
     
     
-    if (isIOS7) {
+    if (isIOS7Only) {
         [self patchIOS7AfterImageLibraryBug];
     }
     
@@ -285,15 +281,16 @@
 	[self.view insertSubview:container belowSubview:toolbar];
 
     
-    if (isIOS7) {
+    if (isIOS7Only) {
         [self patchIOS7AfterImageLibraryBug];
     }
     
 	[self test];
+    
+//    [self toCoverflow];
 
-//    L();
-//    self.view.frame = CGRectMake(0, 0, 320, 568);
-//   NSLog(@"root # %@, content # %@, toolbar # %@",self.view, contentVC.view,toolbar);
+    
+//    NSLog(@"container # %@",container);
 }
 
 
@@ -309,7 +306,7 @@
 
 	self.zettelVC = nil;
 	self.settingVC = nil;
-//	self.textLabelVC = nil;
+
 }
 
 /**
@@ -345,10 +342,11 @@
       [self setTBItems:RootModeCover];
 }
 
+// 针对ios7的补丁
 - (void)patchIOS7AfterImageLibraryBug {
     
     self.view.frame = [[UIScreen mainScreen] bounds];
-//    self.view.frame = _r;
+
 }
 
 #pragma mark - IBAction
@@ -541,7 +539,7 @@
 		[self toCover:YES];
 	}
 	
-    NSLog(@"");
+
 }
 
 
@@ -592,9 +590,6 @@
 
 		
 	}
-	
-//	[self.view addSubview:container];
-//	[self.view addSubview:toolbar];
 	
 	[self.coverFlowVC.view removeFromSuperview];
 	self.coverFlowVC = nil;
@@ -938,21 +933,21 @@
 			shareTo = @"Twitter";
 		}
 		
-		NSString *coverName = card.coverImgName;
-		if (ISEMPTY(coverName)) {
-			coverName = @"Unknown";
-		}
-	
-		NSLog(@"coverName # %@",coverName);
+//		NSString *coverName = card.coverImgName;
+//		if (ISEMPTY(coverName)) {
+//			coverName = @"Unknown";
+//		}
+//	
+//		NSLog(@"coverName # %@",coverName);
+//		
+//		NSDictionary *dict = @{
+//		
+//		@"ShareTo": shareTo,
+//		@"CoverName":coverName,
+//		};
 		
-		NSDictionary *dict = @{
 		
-		@"ShareTo": shareTo,
-		@"CoverName":coverName,
-		};
-		
-		
-		[Flurry logEvent:@"Share Card" withParameters:dict];
+//		[Flurry logEvent:@"Share Card" withParameters:dict];
 		
 	}
 	else if(actionSheet == cameraSheet){
@@ -1026,7 +1021,6 @@
 
 
 - (void)handleNotificationResignActive: (NSNotification*)notification{
-//	L();
 
 	
 	[self saveCard];
@@ -1040,27 +1034,12 @@
 	
 	///send request
 	
-	[self checkUpdate];
+//	[self checkUpdate];
 	
 }
 
 
 
-//- (IBAction)popText:(TextWidget*)widget{
-//	
-//	L();
-//	
-////	if (!widget) {
-////		return;
-////	}
-////	
-////	self.textLabelVC.textWidget = widget;
-////	
-////    
-////	[self popViewController:self.textLabelVC withStatus:PS_TextLabel sender:nil];
-//    
-//    
-//}
 
 - (IBAction)popTextEdit:(TextWidget*)textWidget{
 	L();
@@ -1072,6 +1051,7 @@
     
     coverTextVC.label = textWidget;
     
+//    NSLog(@"pop textview ");
     
     UINavigationController *nav = [[LandScapeNavigationController alloc]initWithRootViewController:coverTextVC];
     nav.view.frame = CGRectMake(0, 0, coverTextVC.view.width, coverTextVC.view.height + (isPad?(isIOS7?44.0:36.0):32.0));
@@ -1080,6 +1060,7 @@
         pop = [[UIPopoverController alloc] initWithContentViewController:nav];
         
         pop.popoverContentSize = nav.view.bounds.size;
+      
         if (isIOS6) {
             [pop presentPopoverFromRect:CGRectMake(_w/2, isIOS7?_h/2:5, 2, 2) inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
             
@@ -1104,13 +1085,15 @@
 #pragma mark - PopOverVC
 
 - (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController{
-	//	[popoverController.contentViewController release];
-	L();
-	UIViewController *vc = [[UIViewController alloc] init];
-	popoverController.contentViewController = vc;
 	
-//	textLabelVC.mode = 0;
-//	textLabelVC.text = @"";
+	L();
+    
+    if (!isIOS8) { //-[UIPopoverController setContentViewController:animated:] can only be called after the popover has been presented
+        UIViewController *vc = [[UIViewController alloc] init];
+        popoverController.contentViewController = vc;
+        
+    }
+	
 	
 	if (card.setting.coverEnable + card.setting.insideEnable == 0) {
 		card.setting.coverEnable = YES;
@@ -1135,10 +1118,11 @@
 	UIViewController *nav;
 	CGFloat popHeight;
 	CGFloat popWidth;
-	if (![vc isKindOfClass:[UINavigationController class]]) {
+	
+    if (![vc isKindOfClass:[UINavigationController class]]) {
 		nav = [[UINavigationController alloc] initWithRootViewController:vc];
 		popHeight = vc.view.frame.size.height + (isPad?44:32);
-//        popHeight = vc.view.frame.size.height;
+
 		popWidth  = vc.view.frame.size.width;
 	}
 	else { // 如果是imagepicker，默认是320x500
@@ -1150,13 +1134,20 @@
 
 	if (isPad) {
 
-		popVC.contentViewController = nav;
-		popVC.popoverContentSize = CGSizeMake(popWidth , popHeight);	
+        if (isIOS8) {
+            popVC = [[UIPopoverController alloc] initWithContentViewController:nav];
+        }
+        else{
+            popVC.contentViewController = nav;
+        }
+		popVC.popoverContentSize = CGSizeMake(popWidth , popHeight);
 
 
 		if (sender) {
-			[popVC presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
-		}
+	
+            [popVC presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+		
+        }
 		else {
 
 			CGSize size = self.view.bounds.size;
@@ -1512,118 +1503,22 @@
     }];
     
 }
-
-
-#pragma mark - UpdateAlert
-- (void)checkUpdate{
-	updateRequest = [NetworkManager requestUpdateMsg:self];
-}
-
-#pragma mark - Request
-
-
-- (void)requestFinished:(ASIHTTPRequest *)request
-{
-
-    NSString *response = [request responseString];
-    NSLog(response);
-//    id responseObj = [response JSONValue];
-//    NSLog(responseObj);
-
-    NSDictionary *resDic = [NSJSONSerialization JSONObjectWithData:[response dataUsingEncoding:NSUnicodeStringEncoding] options:NSJSONReadingMutableLeaves error:nil];
-    NSLog(@"%@",[resDic description]);
-//    NSDictionary *dict = [[NSDictionary alloc] initwith ]
-    
-	if (request == updateRequest) {
-		NSString *response = [request responseString];
-
-//		NSLog(@"request finished # %@",response);
-
-		
-///  通过ios5之后的原生JSON处理机制进行处理
-//		NSData *responseData = [request responseData];
-//    id responseObj = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:nil];
-		
-	
-		/// 如果JSON解析不成功，错误处理
-		if (!([[response JSONValue] isKindOfClass:[NSArray class]] || [[response JSONValue] isKindOfClass:[NSDictionary class]])) {
-			return;
-		}
-		
-		NSDictionary* responseObj = [response JSONValue];
-		
-//		NSLog(@"responseDict #%@, # %@",NSStringFromClass([responseObj class]),responseObj);
-
-		float updateVersion = [responseObj[@"version"] floatValue];
-        NSLog(@"updateVersion # %f",updateVersion);
-        
-//		NSLog(@"thisversion # %f, updateversion # %f",thisVersion,updateVersion);
-	
-		
-//		if (updateVersion > thisVersion) {
-//			updateAlert =   [[UIAlertView alloc] initWithTitle:@"Update available"
-//															message:@"An update is available. Would you like to update now?"
-//														   delegate:self
-//												  cancelButtonTitle:@"Cancel"
-//												  otherButtonTitles:@"Update",nil];
-//			[updateAlert show];
-//			
 //
-//		}
-
-	}
-	
-	
-
-}
-
-- (void)requestFailed:(ASIHTTPRequest *)request
-{
-    NSError *error = [request error];
-	NSLog(@"request error # %@",[error localizedDescription]);
-}
-
-
 #pragma mark -
 
 - (void)test{
 
-//	[self testUpdateAlert];
-//	[self testLocalHost];
-	
-//	[self performSelector:@selector(toCover:) withObject:(id) 1 afterDelay:3];
-//	[self perfor]
-
-//	[UIDevice instanceMethodSignatureForSelector:nil];
+    L();
     
-//    [self toInstruction];
-    
-//    [self testGoogle];
+//    CGRect r = [UIScreen mainScreen].bounds;
+//    NSLog(@"screen # %@",NSStringFromCGRect(r));
+//    r = CGRectApplyAffineTransform(r, CGAffineTransformMakeRotation(90 * M_PI / 180.));
+//        NSLog(@"screen # %@",NSStringFromCGRect(r));
+//    r.origin = CGPointZero;
+//    self.view = [[UIView alloc] initWithFrame:r];
+//    self.view.backgroundColor = [UIColor blackColor];
+
 
 }
 
-- (void)testUpdateAlert{
-	[NetworkManager requestUpdateMsg:self];
-
-}
-
-- (void)testLocalHost{
-	NSString *str=[@"http://localhost/xappsoft/testMoreApp.php" stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-	NSURL *url = [NSURL URLWithString :str];
-	ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
-	[request setDelegate:self];
-	
-	[request startAsynchronous];
-	
-	NSLog(@"test request id # %@",request.requestID);
-}
-
-- (void)testGoogle{
-    NSString *requestStr = [@"http://translate.google.com/translate_a/t?client=p&text=album&sl=en&tl=de" stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSURL *url = [NSURL URLWithString :requestStr];
-	ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
-	[request setDelegate:self];
-	
-	[request startAsynchronous];
-}
 @end

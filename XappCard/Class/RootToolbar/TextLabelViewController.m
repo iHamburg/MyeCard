@@ -83,11 +83,12 @@
 {
     [self loadFontNames];
 
-     CGFloat h = 320;
+    CGFloat h = 320;
 	CGRect rect = CGRectMake(0, 0, 480, h);
 	CGRect containerRect = CGRectMake(0, 0, 480, h);
 	
-    if(isPhoneRetina4){
+    
+    if(!isPhone4){
 		rect = CGRectMake(0, 0, 568, h);
 		containerRect = CGRectMake(44, 0, 480, h);
 	}
@@ -116,7 +117,6 @@
 	settingTV.backgroundView = nil;
 	settingTV.scrollEnabled = NO;
 	
-//	tableKeys = @[@"Text",@"Font outline"];
     colorPlatteV = [[MyColorPlatteView alloc] initWithFrame:CGRectMake(10, CGRectGetMaxY(settingTV.frame)+5, 215, 188)];
 	colorPlatteV.delegate = self;
     
@@ -158,7 +158,7 @@
 	
     L();
     
-    NSLog(@"textVC # %@, nav # %@",self.view,self.navigationController.view);
+//    NSLog(@"textVC # %@, nav # %@",self.view,self.navigationController.view);
 	
 
 }
@@ -166,22 +166,28 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
-    if (isPhone && (kVersion>=7.0)) {
+    if (isPhone && isIOS7Only) {
 
         [colorPlatteV setOrigin:CGPointMake(10, CGRectGetMaxY(settingTV.frame)+5)];
         [textView setOrigin:CGPointMake(250, 42)];
         [fontV setOrigin:CGPointMake(240, CGRectGetMaxY(textView.frame)+5)];
     }
-    
-//    NSLog(@"fontV # %@",fontV);
+//    else if(isPad && isIOS8){
+//        [colorPlatteV setOrigin:CGPointMake(10, CGRectGetMaxY(settingTV.frame)+35)];
+//        [textView setOrigin:CGPointMake(250, 72)];
+//        [fontV setOrigin:CGPointMake(240, CGRectGetMaxY(textView.frame)+5)];
+//        
+//    }
+//    
+
     [textView becomeFirstResponder];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
-	L();
+//	L();
 	[super viewDidAppear:animated];
 	
-    
+//    NSLog(@"textV # %@",textView);
 }
 
 
@@ -196,7 +202,6 @@
 // Customize the number of sections in the table view.
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 	
-//    return 1;
     if (kVersion>=7.0) {
         return 1;
     }
@@ -248,7 +253,6 @@
 - (void)textViewDidBeginEditing:(UITextView *)_textView{
 	L();
 
-//	_textView.textColor = selectedColor;
 	if (!isPad) {
 		self.navigationItem.rightBarButtonItem = textDoneBB;
 
@@ -273,7 +277,6 @@
 	
     font = [UIFont fontWithName:selectedFontName size:isPad?20:20];
 	
-	//  [rootVC setFont:font];
 	textView.font = font;
 }
 

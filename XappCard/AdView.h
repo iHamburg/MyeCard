@@ -12,9 +12,10 @@
 
 #define kKeyPathAdDisplaying @"isAdDisplaying"
 
+
 extern NSString *const NotificationAdChanged;
 
-@interface AdView : UIView<GADBannerViewDelegate,ADBannerViewDelegate>{
+@interface AdView : UIView<ADBannerViewDelegate>{
 	
 	ADBannerView *_iadView;
 	GADBannerView *_gadView;
@@ -25,6 +26,7 @@ extern NSString *const NotificationAdChanged;
 +(void)releaseSharedInstance;
 
 @property (nonatomic, assign) BOOL isAdDisplaying;
+- (void)setupIAD;
 
 
 @end

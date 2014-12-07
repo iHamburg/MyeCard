@@ -36,6 +36,7 @@
 
 - (void)newCardVC;
 
+
 - (void)changeBG:(UIImage*)image;
 
 - (void)loadBG:(NSURL*)url;

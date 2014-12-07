@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>5D82CEA9-F0BB-43E5-BE35-2216A950475E</string>
+	<string>D4DF1F14-E617-49FE-AD96-4BA0EC1C3E0B</string>
 	<key>IDESourceControlProjectName</key>
 	<string>MyeCard</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>D0EF8CE8-E9A0-4DAF-9FC4-F5E4A7BB61C1</key>
+		<key>E6B9EBE02DDE801A420E43BDABFAE082B8849B25</key>
 		<string>https://github.com/iHamburg/MyeCard.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>MyeCard.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>D0EF8CE8-E9A0-4DAF-9FC4-F5E4A7BB61C1</key>
+		<key>E6B9EBE02DDE801A420E43BDABFAE082B8849B25</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/iHamburg/MyeCard.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>D0EF8CE8-E9A0-4DAF-9FC4-F5E4A7BB61C1</string>
+	<string>E6B9EBE02DDE801A420E43BDABFAE082B8849B25</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>D0EF8CE8-E9A0-4DAF-9FC4-F5E4A7BB61C1</string>
+			<string>E6B9EBE02DDE801A420E43BDABFAE082B8849B25</string>
 			<key>IDESourceControlWCCName</key>
 			<string>MyeCard</string>
 		</dict>
