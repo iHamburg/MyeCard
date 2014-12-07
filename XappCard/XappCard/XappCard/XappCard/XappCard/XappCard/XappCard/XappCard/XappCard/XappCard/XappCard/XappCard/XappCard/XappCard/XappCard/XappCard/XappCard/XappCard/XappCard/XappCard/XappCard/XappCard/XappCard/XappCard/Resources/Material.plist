@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Zettel</key>
+	<dict>
+		<key>DE</key>
+		<array>
+			<string>Viel Gesundheit und Freude am Leben, diese Wünsche mag ich dir von Herzen geben.</string>
+			<string>Liebe ist das Gefühl,
+				wenn du das Gefühl fühlst das du noch nie zuvor gefühlt hast.</string>
+			<string>Schöne Feiertage!</string>
+			<string>Gratulieren!</string>
+			<string>Herzlichen Glückwünschen zum Geburtstag!</string>
+		</array>
+		<key>DEFull</key>
+		<array>
+			<dict>
+				<key>Cat</key>
+				<integer>1</integer>
+				<key>Text</key>
+				<string>Die Mitarbeiter sind die Säulen des Betriebs,
+die jedes Erdbeben standhaft zu überstehen haben.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>1</integer>
+				<key>Text</key>
+				<string>Lust und Lieb zu einem Ding macht die schwerste Arbeit gering.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>1</integer>
+				<key>Text</key>
+				<string>Wenn du eine Stunde lang glücklich sein willst, schlafe.
+Wenn du einen Tag glücklich sein willst, geh fischen.
+Wenn du ein Jahr lang glücklich sein willst, habe ein Vermögen.
+Wenn du ein Leben lang glücklich sein willst, liebe deine Arbeit.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>1</integer>
+				<key>Text</key>
+				<string>Schlechte Zeiten waren immer die besten Zeiten für kreative Mitarbeiter und wirkliche Unternehmer.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>2</integer>
+				<key>Text</key>
+				<string>Ich danke allen, die befanden,
+ich hätte alles gut bestanden.
+Ihr habt mich tapfer unterstützt,
+das gute Wünschen hat genützt.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>2</integer>
+				<key>Text</key>
+				<string>Was ihr mir schenktet hatte Stil,
+und hat mich wirklich sehr erfreut,
+war für den Anlass viel zu viel –
+für alles dieses dank ich heut.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>2</integer>
+				<key>Text</key>
+				<string>Die Party in eurem Garten war
+das beste Fest in diesem Jahr.
+Es waren sehr, sehr schöne Stunden,
+für die wir unseren Dank bekunden.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>3</integer>
+				<key>Text</key>
+				<string>Endlich ist es nun geschafft,
+ganz ehrlich, nur mit letzter Kraft.
+Jetzt können wir es erst genießen
+und euch in unserm Haus begrüßen.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>4</integer>
+				<key>Text</key>
+				<string>Kennst du das Land, wo Kohlebecken glühn,
+den Ort der grünen Gartenkolonien,
+den Platz, wo jeder seinen Durst gern stillt?
+Hier ächzt der Tisch beladen schwer mit Würsten
+und Steaks, und hier muss keiner lange dürsten;
+ihr wisst: Am nächsten Samstag wird gegrillt.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>5</integer>
+				<key>Text</key>
+				<string>Mache das Beste aus dir.
+Du bist alles, was du hast.
+				</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>6</integer>
+				<key>Text</key>
+				<string>An diesem Tag, kommt er auch jährlich wieder,
+will ich dir zeigen, dass ich an dich denke.
+Ich sänge, könnt ich singen, Festtagslieder,
+doch besser ist’s ich bleibe still – und schenke.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>6</integer>
+				<key>Text</key>
+				<string>Herzlichen Glückwünschen zum Geburtstag</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>6</integer>
+				<key>Text</key>
+				<string>Um dich zu feiern, steigen Engel nieder,
+die Glocken üben ihren besten Schlag;
+geschieht es zwar auch alle Jahre wieder,
+so ist es doch ein ganz besonderer Tag.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>6</integer>
+				<key>Text</key>
+				<string>Vor allem grüßen Freunde und Bekannte,
+sehr leicht verliert man da den Überblick;
+wenn ich sie auch vielleicht nicht alle nannte,
+so wünschen sie dir alle recht viel Glück.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>6</integer>
+				<key>Text</key>
+				<string>Durchwandle froh und heiter
+dein Leben Jahr für Jahr,
+das Glück sei dein Begleiter,
+dein Himmel ewig klar!</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>7</integer>
+				<key>Text</key>
+				<string>Die Blätter fallen, fallen wie von weit,
+als welkten in den Himmel ferne Gärten;
+sie fallen mit verneinender Gebärde.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>8</integer>
+				<key>Text</key>
+				<string>Mutter, beste Freundin hier auf Erden,
+von all den vielen Grüßen, die du heute
+bekommst, soll mein Gruß dir der Erste werden,
+als ob des Domes Glocke für dich läute.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>9</integer>
+				<key>Text</key>
+				<string>Du kannst auch als erwachsener Mensch
+das Kind in dir entdecken.
+Du musst nur mehr am Osterfest
+ein Osterei verstecken.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>9</integer>
+				<key>Text</key>
+				<string>So zum schönsten der Symbole
+wird das frohe Osterfest,
+dass der Mensch sich Glauben hole,
+wenn ihn Mut und Kraft verlässt.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>10</integer>
+				<key>Text</key>
+				<string>Die Sicherheit der Schule ist vorbei.
+Jetzt liegt das Leben auf der Lauer.
+Der Spaß an unseren Geschenken sei
+noch, hoffentlich, von langer Dauer.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>10</integer>
+				<key>Text</key>
+				<string>Damit sich der Wert des Geldes nicht
+im Laufe der Jahre verliere,
+schenken wir, etwas konservativ,
+dir sichere Wertpapiere.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>10</integer>
+				<key>Text</key>
+				<string>Tüchtigkeit ist intelligente Faulheit.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>11</integer>
+				<key>Text</key>
+				<string>So komme, was da kommen mag!
+Solange du lebest, ist es Tag.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>11</integer>
+				<key>Text</key>
+				<string>Vorbei – verjährt –
+doch nimmer vergessen.
+Ich reise.
+Alles, was lange währt,
+ist leise.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>11</integer>
+				<key>Text</key>
+				<string>Was ist das höchste Erdenglück?
+Und welches sind die schönsten Triebe?
+Sieht vorwärts man, sieht man zurück –
+man findet stets: Es ist die Liebe!</string>
+			</dict>
+		</array>
+		<key>DEFullCat</key>
+		<dict>
+			<key>1</key>
+			<string>Beruf</string>
+			<key>2</key>
+			<string>Danksagungen</string>
+			<key>3</key>
+			<string>Einladung – Haus &amp; Wohnung</string>
+			<key>4</key>
+			<string>Einladung – zum Gartenparty</string>
+			<key>5</key>
+			<string>Freundschaft</string>
+			<key>6</key>
+			<string>Geburtstag</string>
+			<key>7</key>
+			<string>Herbst</string>
+			<key>8</key>
+			<string>Muttertag</string>
+			<key>9</key>
+			<string>Ostern</string>
+			<key>10</key>
+			<string>Schulanfang &amp; Schulabschluss</string>
+			<key>11</key>
+			<string>Valentinstag</string>
+		</dict>
+		<key>ENFullCat</key>
+		<dict>
+			<key>1</key>
+			<string>Birthday</string>
+			<key>2</key>
+			<string>Christmas</string>
+			<key>3</key>
+			<string>Easter</string>
+			<key>4</key>
+			<string>Engagement</string>
+			<key>5</key>
+			<string>Friendship</string>
+			<key>6</key>
+			<string>Mother’s Day</string>
+			<key>7</key>
+			<string>Thank you</string>
+			<key>8</key>
+			<string>Valentine’s Day</string>
+			<key>9</key>
+			<string>Wedding</string>
+		</dict>
+		<key>ENFull</key>
+		<array>
+			<dict>
+				<key>Cat</key>
+				<integer>1</integer>
+				<key>Text</key>
+				<string>Hope all that you do
+Turns out happy for you
+And all that you wish
+Comes your way,
+So each hour will bring
+Every wonderful thing
+You could ask of a wonderful day</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>1</integer>
+				<key>Text</key>
+				<string>May your birthday bring
+You as much happiness
+As you give to everyone
+Who knows you</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>1</integer>
+				<key>Text</key>
+				<string>Happy Birthday</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>2</integer>
+				<key>Text</key>
+				<string>May this Christmas be filled
+With happiness in all that you do
+And may this joy continue
+The whole year through
+Wishing you a Merry Christmas
+And a Happy New Year</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>2</integer>
+				<key>Text</key>
+				<string>May the meaning of Christmas
+be deeper, its friendships stronger,
+and its hopes brighter
+as it comes to you
+this year.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>2</integer>
+				<key>Text</key>
+				<string>Merry Christmas and a Joyous New Year</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>3</integer>
+				<key>Text</key>
+				<string>May the spirit of hope that Easter brings,
+Help you find contentment in little things,
+And restore your faith in the Lord above,
+Who gave His life for the ones He loves.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>3</integer>
+				<key>Text</key>
+				<string>A Very Happy Easter</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>3</integer>
+				<key>Text</key>
+				<string>Easter is a time of reflection and joy.
+When we emerge from our cocoon
+of doubt to fly freely
+on the wings of faith.
+May you be renewed and strengthened...
+...in the promise of our Lord.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>4</integer>
+				<key>Text</key>
+				<string>May your engagement be the beginning
+of a lifetime filled with special
+love and happiness.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>4</integer>
+				<key>Text</key>
+				<string>To a very special couple
+Who make a perfect pair
+This brings a wish for happiness
+In the future you will share.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>5</integer>
+				<key>Text</key>
+				<string>There&apos;s a miracle called Friendship
+That dwells within the heart,
+And you don&apos;t know how it happened
+Or when it get its start.
+But the happiness it brings you
+Always gives a special lift.
+And you realize that friendship
+Is God&apos;s precious gift.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>5</integer>
+				<key>Text</key>
+				<string>You are my friend of friends, my confidant, my closest companion
+You are the one I turn to for comfort when my heart is heavy
+and the first one I run to when I have good news to share.
+Through seasons and years, you&apos;ve grown nearer to my heart,
+and I want you always to know, my friend, how much
+I love you.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>6</integer>
+				<key>Text</key>
+				<string>The heart of a home is a mother
+Whose love is warm and true,
+And home has always been &quot;sweet home&quot;
+With a wonderful mother like you!</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>6</integer>
+				<key>Text</key>
+				<string>Sending this, Mom, especially to say
+Wishing you a happy
+And wonderful day...
+And to tell you this day will always be one
+For remembering the many
+Sweet things you have done!</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>7</integer>
+				<key>Text</key>
+				<string>Many, many thanks to you!
+You brought real delight
+And helped make my day
+More happy and more bright!</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>7</integer>
+				<key>Text</key>
+				<string>You always do such thoughtful things
+That have your special touch.
+It certainly was nice of you,
+Thanks very, very much!</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>7</integer>
+				<key>Text</key>
+				<string>We sincerely appreciate
+and thank you
+for your very lovely
+wedding gift.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>7</integer>
+				<key>Text</key>
+				<string>We both send thanks to you
+for your very lovely gift
+and for your thoughtful
+wishes, too.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>8</integer>
+				<key>Text</key>
+				<string>There&apos;s a special place
+within my heart
+that only you can fill.
+For you had my love
+right from the start
+and I know you always will.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>8</integer>
+				<key>Text</key>
+				<string>Happy Valentine&apos;s Day</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>8</integer>
+				<key>Text</key>
+				<string>It&apos;s not every day that I tell you
+I love you...
+OK, maybe it is,
+but Valentine&apos;s Day
+is still special.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>8</integer>
+				<key>Text</key>
+				<string>Even if the sun refused to shine
+Even if romance ran out of rhyme
+You would still have my heart
+Till the end of time
+I Love You</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>9</integer>
+				<key>Text</key>
+				<string>It&apos;s your Wedding Day
+So perfect and fine,
+With all your friends round you
+To have a good time.
+And we wish you much happiness
+Starting your lives as one,
+Always give love to each other
+With lots of laughter and fun</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>9</integer>
+				<key>Text</key>
+				<string>May you always feel as close as you do this day.
+May your lives be graced with good health.
+May you always find happiness in your home,
+and may it be a refuge from the storms of life.
+May your love grow ever stronger as you share
+your lives together, and may your future be even
+more wonderful than you dreamed possible</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>9</integer>
+				<key>Text</key>
+				<string>Wishing you a happy marriage
+and hoping that your
+life together will be rich
+in joy and love.</string>
+			</dict>
+			<dict>
+				<key>Cat</key>
+				<integer>9</integer>
+				<key>Text</key>
+				<string>May this day you share
+be filled with love and laughter
+May all the days ahead
+be happy ever after!</string>
+			</dict>
+		</array>
+		<key>EN</key>
+		<array>
+			<string>The world means everything to me and you are my world.</string>
+			<string>You are the star of the day!</string>
+			<string>Wishing that your holidays are as special as you are!</string>
+			<string>Here&apos;s a Valentine wishing you love and happiness today and always.</string>
+			<string>Congratulations!</string>
+			<string>Happy Birthday!</string>
+		</array>
+	</dict>
+	<key>Cover_Thanksgiving</key>
+	<array>
+		<string>Thanksgiving_0.jpg</string>
+		<string>Thanksgiving_1.jpg</string>
+		<string>Thanksgiving_2.jpg</string>
+		<string>Thanksgiving_3.jpg</string>
+		<string>Thanksgiving_4.jpg</string>
+		<string>Thanksgiving_5.jpg</string>
+		<string>Thanksgiving_6.jpg</string>
+		<string>Thanksgiving_7.jpg</string>
+		<string>Thanksgiving_8.jpg</string>
+		<string>Thanksgiving_9.jpg</string>
+	</array>
+	<key>Cover_Halloween</key>
+	<array>
+		<string>Halloween_8.jpg</string>
+		<string>Halloween_9.jpg</string>
+		<string>Halloween_6.jpg</string>
+		<string>Halloween_3.jpg</string>
+		<string>Halloween_4.jpg</string>
+		<string>Halloween_5.jpg</string>
+		<string>Halloween_2.jpg</string>
+		<string>Halloween_7.jpg</string>
+		<string>Halloween_0.jpg</string>
+		<string>Halloween_1.jpg</string>
+	</array>
+	<key>Cover_Halloween2013</key>
+	<array>
+		<string>Halloween2013_0.jpg</string>
+		<string>Halloween2013_1.jpg</string>
+		<string>Halloween2013_2.jpg</string>
+		<string>Halloween2013_3.jpg</string>
+		<string>Halloween2013_4.jpg</string>
+		<string>Halloween2013_5.jpg</string>
+		<string>Halloween2013_6.jpg</string>
+		<string>Halloween2013_7.jpg</string>
+		<string>Halloween2013_8.jpg</string>
+		<string>Halloween2013_9.jpg</string>
+	</array>
+	<key>Cover_Christmas2013</key>
+	<array>
+		<string>Christmas2013_2.jpg</string>
+		<string>Christmas2013_3.jpg</string>
+		<string>Christmas2013_4.jpg</string>
+		<string>Christmas2013_5.jpg</string>
+		<string>Christmas2013_6.jpg</string>
+		<string>Christmas2013_8.jpg</string>
+		<string>Christmas2013_10.jpg</string>
+		<string>Christmas2013_11.jpg</string>
+		<string>Christmas2013_12.jpg</string>
+		<string>Christmas2013_1.jpg</string>
+		<string>Christmas2013_9.jpg</string>
+	</array>
+	<key>Cover_Anniversary</key>
+	<array>
+		<string>Anniversary_1.jpg</string>
+		<string>Anniversary_2.jpg</string>
+		<string>Anniversary_3.jpg</string>
+		<string>Anniversary_4.jpg</string>
+		<string>Anniversary_5.jpg</string>
+		<string>Anniversary_6.jpg</string>
+		<string>Anniversary_7.jpg</string>
+		<string>Anniversary_8.jpg</string>
+		<string>Anniversary_9.jpg</string>
+		<string>Anniversary_10.jpg</string>
+	</array>
+	<key>Cover_Christmas</key>
+	<array>
+		<string>Cover_Christmas_1.png</string>
+		<string>Cover_Christmas_2.png</string>
+		<string>Cover_Christmas_3.png</string>
+		<string>Cover_Christmas_4.png</string>
+		<string>Cover_Christmas_5.png</string>
+		<string>Cover_Christmas_6.png</string>
+		<string>Cover_Christmas_7.png</string>
+		<string>Cover_Christmas_8.png</string>
+		<string>Cover_Christmas_9.png</string>
+		<string>Cover_Christmas_10.png</string>
+		<string>Christmas-1.jpg</string>
+		<string>Christmas-2.jpg</string>
+		<string>Christmas-3.jpg</string>
+		<string>Christmas-4.jpg</string>
+		<string>Christmas-5.jpg</string>
+		<string>Christmas-6.jpg</string>
+		<string>Christmas-7.jpg</string>
+		<string>Christmas-8.jpg</string>
+		<string>Christmas-9.jpg</string>
+		<string>Christmas-10.jpg</string>
+	</array>
+	<key>Cover_Valentine</key>
+	<array>
+		<string>V14_0005.jpg</string>
+		<string>V14_0004.jpg</string>
+		<string>V14_0003.jpg</string>
+		<string>V14_0001.jpg</string>
+		<string>V14_0002.jpg</string>
+		<string>Cover_Valentine_1.png</string>
+		<string>Cover_Valentine_2.png</string>
+		<string>Cover_Valentine_3.png</string>
+		<string>Cover_Valentine_5.png</string>
+		<string>Cover_Valentine_6.png</string>
+		<string>Cover_Valentine_7.png</string>
+		<string>love-title-1.jpg</string>
+		<string>love-title-2.jpg</string>
+		<string>valentine-1.jpg</string>
+		<string>valentine-2.jpg</string>
+	</array>
+	<key>Cover_Easter</key>
+	<array>
+		<string>Cover_easter-1.jpg</string>
+		<string>Cover_easter-2.jpg</string>
+		<string>Cover_easter-3.jpg</string>
+		<string>Cover_easter-4.jpg</string>
+		<string>Cover_easter-5.jpg</string>
+		<string>easter-6.png</string>
+		<string>easter-7.png</string>
+		<string>easter-8.png</string>
+		<string>easter-9.png</string>
+		<string>easter-10.png</string>
+		<string>easter-11.png</string>
+		<string>easter-12.png</string>
+	</array>
+	<key>Cover_Muttertag</key>
+	<array>
+		<string>MothersDay_1.jpg</string>
+		<string>MothersDay_10.jpg</string>
+		<string>MothersDay_8.jpg</string>
+		<string>MothersDay_9.jpg</string>
+		<string>MothersDay_5.jpg</string>
+		<string>MothersDay_6.jpg</string>
+		<string>MothersDay_2.png</string>
+		<string>MothersDay_3.png</string>
+		<string>MothersDay_4.png</string>
+		<string>MothersDay_7.png</string>
+	</array>
+	<key>Cover_FathersDay</key>
+	<array>
+		<string>fathersDay1.jpg</string>
+		<string>fathersDay2.jpg</string>
+		<string>fathersDay3.jpg</string>
+		<string>fathersDay4.jpg</string>
+		<string>fathersDay5.jpg</string>
+		<string>fathersDay6.jpg</string>
+		<string>fathersDay7.png</string>
+		<string>fathersDay8.png</string>
+		<string>fathersDay9.png</string>
+		<string>fathersDay10.jpg</string>
+	</array>
+	<key>Cover_Free_3_0</key>
+	<array>
+		<string>birthday1.jpg</string>
+		<string>birthday2.jpg</string>
+		<string>birthday3.jpg</string>
+		<string>other-1.jpg</string>
+		<string>motherday3.jpg</string>
+		<string>holiday-1.jpg</string>
+		<string>holiday-2.jpg</string>
+		<string>halloween.jpg</string>
+		<string>other-2.jpg</string>
+		<string>easter-3.jpg</string>
+		<string>easter-4.jpg</string>
+		<string>easter-5.jpg</string>
+		<string>birthday-3.jpg</string>
+		<string>birthday.jpg</string>
+		<string>birthday-2.jpg</string>
+		<string>motherday1.jpg</string>
+		<string>motherday2.jpg</string>
+		<string>CoverWithLogo1.jpg</string>
+		<string>CoverWithLogo2.png</string>
+		<string>CoverWithLogo3.png</string>
+	</array>
+</dict>
+</plist>
