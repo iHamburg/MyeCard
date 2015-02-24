@@ -11,6 +11,8 @@
 CGFloat _h,_w;
 CGRect _r,_containerRect;
 
+NSString *const NotificationAdChanged=@"ADChanged";
+
 void saveArchived(id obj, NSString *name){
 	
 	NSMutableData *data = [[NSMutableData alloc] init];

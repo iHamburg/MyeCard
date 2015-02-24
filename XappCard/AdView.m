@@ -33,7 +33,7 @@ static NSString *MY_BANNER_UNIT_ID=@"ca-app-pub-6490786775790369/1932214935"; //
 - (void)setIsAdDisplaying:(BOOL)isAdDisplaying_{
     isAdDisplaying = isAdDisplaying_;
     
-    [[NSNotificationCenter defaultCenter]postNotificationName:@"ADChanged" object:self];
+    [[NSNotificationCenter defaultCenter]postNotificationName:NotificationAdChanged object:self];
 }
 
 - (BOOL)bannerLoaded{

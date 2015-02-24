@@ -13,7 +13,6 @@
 #define kKeyPathAdDisplaying @"isAdDisplaying"
 
 
-extern NSString *const NotificationAdChanged;
 
 @interface AdView : UIView<ADBannerViewDelegate>{
 	

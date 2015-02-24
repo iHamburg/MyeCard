@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 
 #import "MERootViewController.h"
-//#import "Flurry.h"
 #import "Controller.h"
 
 
@@ -113,9 +112,7 @@
     /*
      Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
      */
-//	L();
-//	[_viewController initBanner];
-//	L();
+
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
@@ -151,18 +148,14 @@
 - (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
 	 return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight; 
 }
-#pragma mark - Error Handlung
+//#pragma mark - Error Handlung
 //void uncaughtExceptionHandler(NSException *exception) {
 //    [Flurry logError:@"Uncaught" message:@"Crash!" exception:exception];
 //}
 
 
 #pragma mark - Facebook
-// Pre iOS 4.2 support
-- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
-	NSLog(@"handleOpenURL");
-    return [facebook handleOpenURL:url]; 
-}
+
 
 // For iOS 4.2+ support
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url

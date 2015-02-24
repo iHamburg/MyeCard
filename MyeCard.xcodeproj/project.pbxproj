@@ -557,7 +557,6 @@
 		AF5B38ED14BE1C35004D8C74 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5B38EC14BE1C35004D8C74 /* Controller.m */; };
 		AF609E8F1761BBA700ACD599 /* libTapkuLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF609E8C1761BB8A00ACD599 /* libTapkuLibrary.a */; };
 		AF609E921761BBB300ACD599 /* libTapkuLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF609E8C1761BB8A00ACD599 /* libTapkuLibrary.a */; };
-		AF64145516BD18D900A7E2ED /* AdView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF64145416BD18D900A7E2ED /* AdView.m */; };
 		AF64145616BD18D900A7E2ED /* AdView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF64145416BD18D900A7E2ED /* AdView.m */; };
 		AF6571E3149CB4A400066CF4 /* OverlayZettel.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6571E2149CB4A400066CF4 /* OverlayZettel.png */; };
 		AF685299169F5520007D3D2F /* icon_alignCenter.png in Resources */ = {isa = PBXBuildFile; fileRef = AF68528D169F5520007D3D2F /* icon_alignCenter.png */; };
@@ -3519,7 +3518,6 @@
 				260DC29D1807CEBC00E7CADA /* PRootViewController.m in Sources */,
 				AF3E600F169E0AB500474472 /* CoverCategory.m in Sources */,
 				AFD354C4169EF0AC00FCFDA8 /* EcardCoverView.m in Sources */,
-				AF64145516BD18D900A7E2ED /* AdView.m in Sources */,
 				AF385A5216EED5900052EFF3 /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				AF0A18FE1794FC5700DD201D /* ASIAuthenticationDialog.m in Sources */,
 				AF0A19001794FC5700DD201D /* ASIDataCompressor.m in Sources */,

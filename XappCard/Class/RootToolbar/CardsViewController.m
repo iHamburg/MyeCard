@@ -8,7 +8,11 @@
 
 #import "CardsViewController.h"
 #import "DateViewController.h"
-#import "AdView.h"
+
+#ifndef PAID
+    #import "AdView.h"
+#endif
+
 @interface CardsViewController ()
 
 @end
@@ -57,8 +61,6 @@
 	[self.view addSubview:container];
 
 
-
-//	[self setup];
 	
 }
 
@@ -86,8 +88,10 @@
 - (void)viewDidAppear:(BOOL)animated{
 	[super viewDidAppear:animated];
 
-    [self layoutADBanner:[AdView sharedInstance]];
 
+#ifndef PAID
+      [self layoutADBanner:[AdView sharedInstance]];
+#endif
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -138,6 +142,7 @@
 
 - (void)handleAdviewNotification:(NSNotification*)notification{
     [self layoutADBanner:notification.object];
+ 
     
 }
 
@@ -148,24 +153,25 @@
 
 - (void)layoutADBanner:(AdView *)banner{
     
-    L();
+    
     [UIView animateWithDuration:0.25 animations:^{
-		
-		if (banner.isAdDisplaying) { // 从不显示到显示banner
+        
+        if (banner.isAdDisplaying) { // 从不显示到显示banner
             
-			[banner setOrigin:CGPointMake(0, _h - banner.height)];
-			
-			[[[MERootViewController sharedInstance] view] addSubview:banner];
-		}
-		else{
-			[banner setOrigin:CGPointMake(0, _h)];
+            [banner setOrigin:CGPointMake(0, _h - banner.height)];
             
-		}
-		
+            [[[MERootViewController sharedInstance] view] addSubview:banner];
+        }
+        else{
+            [banner setOrigin:CGPointMake(0, _h)];
+            
+        }
+        
     }];
+
+
     
 }
-
 
 
 #pragma mark - CoverFlow

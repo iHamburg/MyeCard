@@ -24,5 +24,7 @@ id loadArchived(NSString*);
 BOOL isPaid(void);
 
 
+extern NSString *const NotificationAdChanged;
+
 NSArray* getAllFontNames(void);
 

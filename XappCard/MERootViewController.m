@@ -1464,8 +1464,10 @@
 	[[SpriteManager sharedInstance]setupCoverImgNames];
 	[coverFlowVC setup];
 	
-
+#ifndef PAID
     [AdView releaseSharedInstance];
+#endif
+    
 	
 }
 - (void)IAPDidRestored{
@@ -1475,16 +1477,24 @@
 	
 	self.card = [[Controller sharedController]firstCard];
 
+    
+#ifndef PAID
     [AdView releaseSharedInstance];
+#endif
+    
 }
 
 
 #pragma mark -  ADView
 
 
-- (void)layoutADBanner:(AdView *)banner{
+- (void)layoutADBanner:(UIView *)b{
     
     L();
+    
+#ifndef PAID
+    
+    AdView *banner = b;
     [UIView animateWithDuration:0.25 animations:^{
 		
 		if (banner.isAdDisplaying) { // 从不显示到显示banner
@@ -1502,6 +1512,7 @@
 		
     }];
     
+#endif
 }
 //
 #pragma mark -
