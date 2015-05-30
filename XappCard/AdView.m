@@ -31,6 +31,7 @@ static NSString *MY_BANNER_UNIT_ID=@"ca-app-pub-6490786775790369/1932214935"; //
 @synthesize isAdDisplaying;
 
 - (void)setIsAdDisplaying:(BOOL)isAdDisplaying_{
+  
     isAdDisplaying = isAdDisplaying_;
     
     [[NSNotificationCenter defaultCenter]postNotificationName:NotificationAdChanged object:self];
@@ -51,8 +52,11 @@ static id sharedInstance;
 
 +(id)sharedInstance{
 
+    // 如果没有购买 iap 才会调用 adview
     if (isPaid() || isIAPFullVersion) {
+       
         return nil;
+    
     }
     
     if (sharedInstance == nil) {
@@ -104,7 +108,7 @@ static id sharedInstance;
 		
 		NSLocale* currentLocale = [NSLocale currentLocale];  // get the current locale.
 		NSString* countryCode = [currentLocale objectForKey:NSLocaleCountryCode];
-		NSLog(@"contryCode # %@",countryCode);
+//		NSLog(@"contryCode # %@",countryCode);
 		
 		if ([supportedCountries containsObject:countryCode]) {
 			_iadAvailable = YES;
@@ -113,8 +117,8 @@ static id sharedInstance;
 			_iadAvailable = NO;
 		}
 		
-		// 优先调用IAD
-		
+		// 优先调用GAD
+        _iadAvailable = NO;
 		
 		if (_iadAvailable) { // iad
 
@@ -133,7 +137,7 @@ static id sharedInstance;
 }
 
 -(void)dealloc{
-    
+    L();
 }
 
 #pragma mark - iAD Banner
@@ -152,7 +156,7 @@ static id sharedInstance;
 - (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
 {
 	//	L();
-	NSLog(@"error # %@",[error localizedDescription]);
+//	NSLog(@"error # %@",[error localizedDescription]);
 
 	self.hidden= YES;
 	
@@ -214,10 +218,6 @@ static id sharedInstance;
 	
 	self.isAdDisplaying = NO;
 	
-//	
-//	if (_iadAvailable) {
-//		[self setupIAD];
-//	}
 
 	///TODO: 当GAD不能调用，继续尝试
 	[self setupGAD];

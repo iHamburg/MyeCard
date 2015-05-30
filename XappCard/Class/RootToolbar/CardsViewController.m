@@ -151,8 +151,11 @@
 #pragma mark -  ADView
 
 
-- (void)layoutADBanner:(AdView *)banner{
-    
+- (void)layoutADBanner:(UIView *)b{
+
+#ifndef PAID
+
+     AdView *banner = (AdView*)b;
     
     [UIView animateWithDuration:0.25 animations:^{
         
@@ -169,7 +172,7 @@
         
     }];
 
-
+#endif
     
 }
 

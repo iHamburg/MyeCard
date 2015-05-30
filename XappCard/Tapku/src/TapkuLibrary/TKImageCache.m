@@ -356,9 +356,11 @@
 	if(error) return;
 	
 	NSMutableArray *ar = [NSMutableArray arrayWithCapacity:files.count];
-	for(NSObject *obj in files)
-		[ar addObject:[NSNull null]];
-	
+    
+    for (int i = 0; i < files.count; i++) {
+        [ar addObject:[NSNull null]];
+    }
+    
 	_diskKeys = [[NSMutableDictionary alloc] initWithObjects:ar forKeys:files];
 	
 	

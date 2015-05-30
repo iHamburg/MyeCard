@@ -997,6 +997,7 @@
 }
 
 - (void)handleAdviewNotification:(NSNotification*)notification{
+   
     [self layoutADBanner:notification.object];
     
 }
@@ -1487,14 +1488,16 @@
 
 #pragma mark -  ADView
 
-
+// 只有没有支付的才会调用 adview
 - (void)layoutADBanner:(UIView *)b{
     
     L();
     
 #ifndef PAID
     
-    AdView *banner = b;
+    
+    AdView *banner = (AdView*)b;
+    
     [UIView animateWithDuration:0.25 animations:^{
 		
 		if (banner.isAdDisplaying) { // 从不显示到显示banner
@@ -1513,7 +1516,9 @@
     }];
     
 #endif
+    
 }
+
 //
 #pragma mark -
 
@@ -1521,13 +1526,6 @@
 
     L();
     
-//    CGRect r = [UIScreen mainScreen].bounds;
-//    NSLog(@"screen # %@",NSStringFromCGRect(r));
-//    r = CGRectApplyAffineTransform(r, CGAffineTransformMakeRotation(90 * M_PI / 180.));
-//        NSLog(@"screen # %@",NSStringFromCGRect(r));
-//    r.origin = CGPointZero;
-//    self.view = [[UIView alloc] initWithFrame:r];
-//    self.view.backgroundColor = [UIColor blackColor];
 
 
 }

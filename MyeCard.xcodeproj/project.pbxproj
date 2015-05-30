@@ -230,6 +230,9 @@
 		26F6E18817F5C1D400E919BD /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26F6E18717F5C1D400E919BD /* Images-2.xcassets */; };
 		3D009F771C894C3D827543E1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA94EF78B9848208C7C95D4 /* libPods.a */; };
 		8503A7581A31F45600C8D876 /* MyeCard Free copy-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8503A7561A31F45100C8D876 /* MyeCard Free copy-Info.plist */; };
+		8591745E1A9C99AB00DE8FEA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8591745D1A9C99AB00DE8FEA /* CoreTelephony.framework */; };
+		859174621A9C9A3A00DE8FEA /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 859174611A9C9A3A00DE8FEA /* EventKit.framework */; };
+		859174641A9C9A4400DE8FEA /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 859174631A9C9A4400DE8FEA /* EventKitUI.framework */; };
 		8599DA001A335030005BAE30 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8599D9FE1A335030005BAE30 /* libGoogleAdMobAds.a */; };
 		8599DA011A335030005BAE30 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8599D9FF1A335030005BAE30 /* README.txt */; };
 		AF039D6815A057B70012719E /* CardCover.m in Sources */ = {isa = PBXBuildFile; fileRef = AF039D6715A057B70012719E /* CardCover.m */; };
@@ -903,13 +906,6 @@
 			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = TapkuLibrary;
 		};
-		AF609E8D1761BB8A00ACD599 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF609E861761BB8900ACD599 /* TapkuLibrary.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3B45DDF1134C736600D24C1A;
-			remoteInfo = LogicTests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -1046,6 +1042,9 @@
 		26F6E18717F5C1D400E919BD /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Images-2.xcassets"; path = "../../MyeCard Pro/Images-2.xcassets"; sourceTree = "<group>"; };
 		4F5615B09E774D51B282E7C8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8503A7561A31F45100C8D876 /* MyeCard Free copy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MyeCard Free copy-Info.plist"; sourceTree = "<group>"; };
+		8591745D1A9C99AB00DE8FEA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		859174611A9C9A3A00DE8FEA /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		859174631A9C9A4400DE8FEA /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		8599D9F21A335030005BAE30 /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
 		8599D9F31A335030005BAE30 /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
 		8599D9F41A335030005BAE30 /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
@@ -1553,6 +1552,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				859174641A9C9A4400DE8FEA /* EventKitUI.framework in Frameworks */,
+				859174621A9C9A3A00DE8FEA /* EventKit.framework in Frameworks */,
+				8591745E1A9C99AB00DE8FEA /* CoreTelephony.framework in Frameworks */,
 				26E17E931828A1C800582CC3 /* libPods.a in Frameworks */,
 				26CDACD217E8820B008F030D /* Security.framework in Frameworks */,
 				AFAADD53179BA1D700B138AC /* CFNetwork.framework in Frameworks */,
@@ -2106,7 +2108,6 @@
 			isa = PBXGroup;
 			children = (
 				AF609E8C1761BB8A00ACD599 /* libTapkuLibrary.a */,
-				AF609E8E1761BB8A00ACD599 /* LogicTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2217,6 +2218,9 @@
 		AF8DB0A81480E97A00C55084 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				859174631A9C9A4400DE8FEA /* EventKitUI.framework */,
+				859174611A9C9A3A00DE8FEA /* EventKit.framework */,
+				8591745D1A9C99AB00DE8FEA /* CoreTelephony.framework */,
 				26E17E921828A1C800582CC3 /* libPods.a */,
 				26CDACD117E8820B008F030D /* Security.framework */,
 				AFB74D38178AFCF400CE87D1 /* CFNetwork.framework */,
@@ -2711,13 +2715,6 @@
 			fileType = archive.ar;
 			path = libTapkuLibrary.a;
 			remoteRef = AF609E8B1761BB8A00ACD599 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AF609E8E1761BB8A00ACD599 /* LogicTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = LogicTests.octest;
-			remoteRef = AF609E8D1761BB8A00ACD599 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -3404,7 +3401,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/Users/Forest/百度云同步盘/MacBook/MyeCard/XappCard/Script.sh";
+			shellScript = "chmod 777 XappCard/Script.sh\nXappCard/Script.sh";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -3903,7 +3900,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XappCard/XappCard-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3927,7 +3923,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "My eCard_F";
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F7A821DF-D70A-4F07-A8AA-58435635076E";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "00156bac-8d90-4aac-b368-deb74c5f35fe";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = armv7;
@@ -3968,7 +3964,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "My eCard";
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EE89E8E2-F9DB-4A6E-8A46-87DFAB8E676C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "39204d98-f9a8-4094-a9f9-6794c6bd55f6";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = armv7;

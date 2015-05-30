@@ -1,6 +1,6 @@
 //
 //  RootViewController.h
-//  iCamAlbum
+//
 //
 //  Created by AppDevelopper on 13-10-11.
 //  Copyright (c) 2013年 Xappsoft. All rights reserved.
@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "InfoViewController.h"
 
-#import "AdView.h"
+#ifndef PAID
+    #import "AdView.h"
+#endif
 
 @interface RootViewController : UIViewController<InfoDelegate,InstructionDelegate> {
     InfoViewController *infoVC;

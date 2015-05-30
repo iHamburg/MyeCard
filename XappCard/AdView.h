@@ -14,7 +14,7 @@
 
 
 
-@interface AdView : UIView<ADBannerViewDelegate>{
+@interface AdView : UIView<ADBannerViewDelegate, GADBannerViewDelegate>{
 	
 	ADBannerView *_iadView;
 	GADBannerView *_gadView;

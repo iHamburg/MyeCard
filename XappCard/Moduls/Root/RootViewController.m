@@ -94,7 +94,6 @@
 		}
         
         
-        
         [self loadAdView];
 	}
 
@@ -153,8 +152,12 @@
 
 - (void)loadAdView {
     
+#ifndef PAID
     ///启动adview
     [AdView sharedInstance];
+    
+#endif
+    
 }
 
 - (void)test{

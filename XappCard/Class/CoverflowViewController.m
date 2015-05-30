@@ -4,7 +4,7 @@
 #import "CoverCategoryScrollView.h"
 #import "CoverPackageViewController.h"
 #import "EcardCoverView.h"
-#import "AdView.h"
+//#import "AdView.h"
 
 @implementation CoverflowViewController
 @synthesize coverVC, coverflow, initialIndex, coverImgName;
@@ -125,9 +125,9 @@
 
     self.view.frame = _r;
 
-    [self layoutADBanner:[AdView sharedInstance]];
+//    [self layoutADBanner:[AdView sharedInstance]];
     
-    NSLog(@"cover flow # %@",self.view);
+//    NSLog(@"cover flow # %@",self.view);
 }
 
 
@@ -169,9 +169,12 @@
 #pragma mark -  ADView
 
 
-- (void)layoutADBanner:(AdView *)banner{
+- (void)layoutADBanner:(UIView *)b{
     
     L();
+#ifndef PAID
+    
+     AdView *banner = (AdView*)b;
     [UIView animateWithDuration:0.25 animations:^{
 		
 		if (banner.isAdDisplaying) { // 从不显示到显示banner
@@ -186,7 +189,8 @@
 		}
 		
     }];
-    
+
+#endif
 }
 
 

@@ -74,16 +74,6 @@
 		3B6EDE2011547C5700E454DA /* TKTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BAC9A3C10953E5200F235F1 /* TKTableViewCell.h */; };
 		3B819B5414601DC500EC0097 /* TKViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B819B5214601DC400EC0097 /* TKViewController.h */; };
 		3B819B5514601DC500EC0097 /* TKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B819B5314601DC500EC0097 /* TKViewController.m */; };
-		3B859EAD134C73D600661088 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BAC995710953DF400F235F1 /* UIKit.framework */; };
-		3B859EAE134C73DE00661088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
-		3B859EAF134C73E500661088 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BAC995910953DF400F235F1 /* MapKit.framework */; };
-		3B859EB0134C73EF00661088 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BAC995810953DF400F235F1 /* QuartzCore.framework */; };
-		3B859EC6134C74D800661088 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B859EC5134C74D800661088 /* SenTestingKit.framework */; };
-		3B859F02134C76C600661088 /* NSArray+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DCEC91289B84400884CDF /* NSArray+TKCategory.m */; };
-		3B859F03134C76C700661088 /* NSDate+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BAC9A2410953E5200F235F1 /* NSDate+TKCategory.m */; };
-		3B859F04134C76C700661088 /* NSDictionary+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE54E7B134548CA00B59702 /* NSDictionary+TKCategory.m */; };
-		3B859F08134C76D500661088 /* NSString+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF000FD10957EE50062DA49 /* NSString+TKCategory.m */; };
-		3B89162B134D93D000BD2B31 /* FoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B89162A134D93D000BD2B31 /* FoundationTests.m */; };
 		3B8F0DF6142AE52B00E3AADE /* TKGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B8F0DF4142AE52B00E3AADE /* TKGradientView.h */; };
 		3B8F0DF7142AE52B00E3AADE /* TKGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F0DF5142AE52B00E3AADE /* TKGradientView.m */; };
 		3B9724BD11C54C5C0027A97F /* TKCalendarMonthView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B9724B911C54C5C0027A97F /* TKCalendarMonthView.h */; };
@@ -131,7 +121,6 @@
 		3B1DCEC91289B84400884CDF /* NSArray+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+TKCategory.m"; sourceTree = "<group>"; };
 		3B4346E212DA6A240076579B /* UIButton+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TKCategory.h"; sourceTree = "<group>"; };
 		3B4346E312DA6A240076579B /* UIButton+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TKCategory.m"; sourceTree = "<group>"; };
-		3B45DDF1134C736600D24C1A /* LogicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B45DDF2134C736600D24C1A /* LogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LogicTests-Info.plist"; sourceTree = "<group>"; };
 		3B560B7014574E30005FBDBF /* TKImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKImageCache.h; sourceTree = "<group>"; };
 		3B560B7114574E30005FBDBF /* TKImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKImageCache.m; sourceTree = "<group>"; };
@@ -235,18 +224,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3B45DDEE134C736600D24C1A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3B859EAD134C73D600661088 /* UIKit.framework in Frameworks */,
-				3B859EAE134C73DE00661088 /* Foundation.framework in Frameworks */,
-				3B859EAF134C73E500661088 /* MapKit.framework in Frameworks */,
-				3B859EB0134C73EF00661088 /* QuartzCore.framework in Frameworks */,
-				3B859EC6134C74D800661088 /* SenTestingKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D2AAC07C0554694100DB518D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -267,7 +244,6 @@
 			isa = PBXGroup;
 			children = (
 				D2AAC07E0554694100DB518D /* libTapkuLibrary.a */,
-				3B45DDF1134C736600D24C1A /* LogicTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -603,24 +579,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3B45DDF0134C736600D24C1A /* LogicTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3B45DDF5134C736600D24C1A /* Build configuration list for PBXNativeTarget "LogicTests" */;
-			buildPhases = (
-				3B45DDEC134C736600D24C1A /* Resources */,
-				3B45DDED134C736600D24C1A /* Sources */,
-				3B45DDEE134C736600D24C1A /* Frameworks */,
-				3B45DDEF134C736600D24C1A /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LogicTests;
-			productName = LogicTests;
-			productReference = 3B45DDF1134C736600D24C1A /* LogicTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 		D2AAC07D0554694100DB518D /* TapkuLibrary */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "TapkuLibrary" */;
@@ -644,7 +602,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastTestingUpgradeCheck = 0510;
+				LastTestingUpgradeCheck = 0610;
 				LastUpgradeCheck = 0500;
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "TapkuLibrary" */;
@@ -664,50 +622,11 @@
 			projectRoot = "";
 			targets = (
 				D2AAC07D0554694100DB518D /* TapkuLibrary */,
-				3B45DDF0134C736600D24C1A /* LogicTests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		3B45DDEC134C736600D24C1A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3B45DDEF134C736600D24C1A /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		3B45DDED134C736600D24C1A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3B859F02134C76C600661088 /* NSArray+TKCategory.m in Sources */,
-				3B859F03134C76C700661088 /* NSDate+TKCategory.m in Sources */,
-				3B859F04134C76C700661088 /* NSDictionary+TKCategory.m in Sources */,
-				3B859F08134C76D500661088 /* NSString+TKCategory.m in Sources */,
-				3B89162B134D93D000BD2B31 /* FoundationTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D2AAC07B0554694100DB518D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -865,66 +784,6 @@
 			};
 			name = Release;
 		};
-		3B45DDF3134C736600D24C1A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "LogicTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					SenTestingKit,
-					"-framework",
-					UIKit,
-				);
-				PRODUCT_NAME = LogicTests;
-				SDKROOT = iphoneos;
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		3B45DDF4134C736600D24C1A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "LogicTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					SenTestingKit,
-					"-framework",
-					UIKit,
-				);
-				PRODUCT_NAME = LogicTests;
-				SDKROOT = iphoneos;
-				WRAPPER_EXTENSION = octest;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -942,15 +801,6 @@
 			buildConfigurations = (
 				1DEB922308733DC00010E9CD /* Debug */,
 				1DEB922408733DC00010E9CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3B45DDF5134C736600D24C1A /* Build configuration list for PBXNativeTarget "LogicTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3B45DDF3134C736600D24C1A /* Debug */,
-				3B45DDF4134C736600D24C1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
