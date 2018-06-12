@@ -176,9 +176,8 @@
 		26DC060517F6FF3F0068C799 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DC05FC17F6FF3F0068C799 /* Default.png */; };
 		26DC060617F6FF3F0068C799 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DC05FD17F6FF3F0068C799 /* Default@2x.png */; };
 		26DC060717F6FF3F0068C799 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DC05FD17F6FF3F0068C799 /* Default@2x.png */; };
-		26E17E931828A1C800582CC3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E17E921828A1C800582CC3 /* libPods.a */; };
-		26E17E941828A2BE00582CC3 /* Pods.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9241A932F614478F80B158BE /* Pods.xcconfig */; };
-		26E17E951828A2BE00582CC3 /* Pods.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9241A932F614478F80B158BE /* Pods.xcconfig */; };
+		26E17E941828A2BE00582CC3 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		26E17E951828A2BE00582CC3 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
 		26E2D11817E81807003C1E11 /* icon_cards.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E2D11717E81807003C1E11 /* icon_cards.png */; };
 		26E2D11917E81807003C1E11 /* icon_cards.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E2D11717E81807003C1E11 /* icon_cards.png */; };
 		26E2D12417E81924003C1E11 /* icon_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E2D11A17E81924003C1E11 /* icon_background@2x.png */; };
@@ -222,7 +221,6 @@
 		26F301641813821C0091B207 /* Halloween2013_9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F301511813821C0091B207 /* Halloween2013_9.jpg */; };
 		26F301651813821C0091B207 /* Halloween2013_9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26F301511813821C0091B207 /* Halloween2013_9.jpg */; };
 		26F6E18817F5C1D400E919BD /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26F6E18717F5C1D400E919BD /* Images-2.xcassets */; };
-		3D009F771C894C3D827543E1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA94EF78B9848208C7C95D4 /* libPods.a */; };
 		AF039D6815A057B70012719E /* CardCover.m in Sources */ = {isa = PBXBuildFile; fileRef = AF039D6715A057B70012719E /* CardCover.m */; };
 		AF05A3A114C5D05A00AD4C61 /* ZettelCardTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05A3A014C5D05A00AD4C61 /* ZettelCardTextView.m */; };
 		AF064E1514D30FFA00F1422A /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF064E1414D30FFA00F1422A /* SettingViewController.m */; };
@@ -905,6 +903,7 @@
 		AFFF4A9F15E4366E000A8F99 /* CoverWithLogo2~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AF10574815A1C9CE00E38125 /* CoverWithLogo2~ipad.png */; };
 		AFFF4AA115E4366E000A8F99 /* CoverWithLogo3~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AF10574A15A1C9CE00E38125 /* CoverWithLogo3~ipad.png */; };
 		AFFF4AA915E4366E000A8F99 /* icon_clock.png in Resources */ = {isa = PBXBuildFile; fileRef = AF0E336715A380060024A7B7 /* icon_clock.png */; };
+		B128E8361476EE6DAF8A20C2 /* libPods-MyeCard Pro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D3712C0560F008C10C7D05 /* libPods-MyeCard Pro.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -925,6 +924,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C10F41420CE4E8D00DE49E9 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		2609D4E71805A78F0019C242 /* BG_pattern_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG_pattern_info.png; sourceTree = "<group>"; };
 		2609D4E81805A78F0019C242 /* Icon_AppstoreDownload@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_AppstoreDownload@2x~ipad.png"; sourceTree = "<group>"; };
 		2609D4E91805A78F0019C242 /* Icon_AppstoreDownload~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_AppstoreDownload~ipad.png"; sourceTree = "<group>"; };
@@ -1062,7 +1062,8 @@
 		26F301501813821C0091B207 /* Halloween2013_8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Halloween2013_8.jpg; sourceTree = "<group>"; };
 		26F301511813821C0091B207 /* Halloween2013_9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Halloween2013_9.jpg; sourceTree = "<group>"; };
 		26F6E18717F5C1D400E919BD /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Images-2.xcassets"; path = "../../MyeCard Pro/Images-2.xcassets"; sourceTree = "<group>"; };
-		9241A932F614478F80B158BE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		69D3712C0560F008C10C7D05 /* libPods-MyeCard Pro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyeCard Pro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88EBBFA64A2D3AAFA752A0A2 /* Pods-MyeCard Pro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyeCard Pro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyeCard Pro/Pods-MyeCard Pro.debug.xcconfig"; sourceTree = "<group>"; };
 		AF039D6615A057B70012719E /* CardCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardCover.h; path = "../View&ViewController/CardCover.h"; sourceTree = "<group>"; };
 		AF039D6715A057B70012719E /* CardCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardCover.m; path = "../View&ViewController/CardCover.m"; sourceTree = "<group>"; };
 		AF05A39F14C5D05A00AD4C61 /* ZettelCardTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZettelCardTextView.h; path = "View&ViewController/ZettelCardTextView.h"; sourceTree = "<group>"; };
@@ -1528,7 +1529,8 @@
 		AFFEBA03174F09DB0075BFA6 /* fathersDay10~ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fathersDay10~ipad.jpg"; sourceTree = "<group>"; };
 		AFFF4AAE15E4366E000A8F99 /* My eCard_F.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My eCard_F.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFF4AB015E4366E000A8F99 /* MyeCard Free copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MyeCard Free copy-Info.plist"; path = "/Users/appdevelopper/Public/WorkProject/MyeCard/Project/MyeCard/MyeCard Free copy-Info.plist"; sourceTree = "<absolute>"; };
-		FDA94EF78B9848208C7C95D4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAF56887F7D5B88818437705 /* Pods-MyeCard Pro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyeCard Pro.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyeCard Pro/Pods-MyeCard Pro.release.xcconfig"; sourceTree = "<group>"; };
+		F2340FA0E12CAFA2482BE0AF /* Pods-MyeCard Pro.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyeCard Pro.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-MyeCard Pro/Pods-MyeCard Pro.adhoc.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1560,7 +1562,7 @@
 				AF8DB0AA1480E97A00C55084 /* UIKit.framework in Frameworks */,
 				AF8DB0AE1480E97A00C55084 /* CoreGraphics.framework in Frameworks */,
 				26CDACCF17E8819C008F030D /* libFlurry_4.2.3.a in Frameworks */,
-				3D009F771C894C3D827543E1 /* libPods.a in Frameworks */,
+				B128E8361476EE6DAF8A20C2 /* libPods-MyeCard Pro.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1568,7 +1570,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26E17E931828A1C800582CC3 /* libPods.a in Frameworks */,
 				26CDACD217E8820B008F030D /* Security.framework in Frameworks */,
 				AFAADD53179BA1D700B138AC /* CFNetwork.framework in Frameworks */,
 				AFAADD52179BA1D300B138AC /* MobileCoreServices.framework in Frameworks */,
@@ -2218,10 +2219,11 @@
 		AF8DB09A1480E97900C55084 = {
 			isa = PBXGroup;
 			children = (
+				1C10F41420CE4E8D00DE49E9 /* Podfile */,
 				AF8DB0AF1480E97A00C55084 /* MyeCard */,
 				AF8DB0A81480E97A00C55084 /* Frameworks */,
 				AF8DB0A61480E97A00C55084 /* Products */,
-				9241A932F614478F80B158BE /* Pods.xcconfig */,
+				F9E2ED2AEF81329BBA3E2FA1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2261,7 +2263,7 @@
 				AF8DB0AB1480E97A00C55084 /* Foundation.framework */,
 				AF8DB0AD1480E97A00C55084 /* CoreGraphics.framework */,
 				AFE3B95714B63B4D0053FD4D /* SenTestingKit.framework */,
-				FDA94EF78B9848208C7C95D4 /* libPods.a */,
+				69D3712C0560F008C10C7D05 /* libPods-MyeCard Pro.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2641,6 +2643,16 @@
 			path = FathersDay;
 			sourceTree = "<group>";
 		};
+		F9E2ED2AEF81329BBA3E2FA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88EBBFA64A2D3AAFA752A0A2 /* Pods-MyeCard Pro.debug.xcconfig */,
+				CAF56887F7D5B88818437705 /* Pods-MyeCard Pro.release.xcconfig */,
+				F2340FA0E12CAFA2482BE0AF /* Pods-MyeCard Pro.adhoc.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2648,12 +2660,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF8DB0C31480E97A00C55084 /* Build configuration list for PBXNativeTarget "MyeCard Pro" */;
 			buildPhases = (
+				F8C65E35B091E142C25166CE /* [CP] Check Pods Manifest.lock */,
 				26DF496E182A54FE00318298 /* ShellScript */,
-				330234C518F341EFB523ED15 /* Check Pods Manifest.lock */,
 				AF8DB0A11480E97900C55084 /* Sources */,
 				AF8DB0A21480E97900C55084 /* Frameworks */,
 				AF8DB0A31480E97900C55084 /* Resources */,
-				34DD0036F81A4AC7A22D9599 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2785,7 +2796,7 @@
 				AF68D2A7151A68D6001BB203 /* Profile_love@3x.png in Resources */,
 				AF9A23C8158BE8C0001CF935 /* FBDialog.bundle in Resources */,
 				AF4A0CB2158E60CA00A81D62 /* facebook.mp3 in Resources */,
-				26E17E951828A2BE00582CC3 /* Pods.xcconfig in Resources */,
+				26E17E951828A2BE00582CC3 /* BuildFile in Resources */,
 				AF2ED376159BD2A700BFFB13 /* Cards.plist in Resources */,
 				2609D5751805A78F0019C242 /* appicon_tinykitchen@2x~ipad.png in Resources */,
 				AF7B5256159C913B005D93BB /* icon_delete.png in Resources */,
@@ -3212,7 +3223,7 @@
 				AF145965161D9A09009107C9 /* motherday1@2x~ipad.jpg in Resources */,
 				AF145968161D9A09009107C9 /* motherday1~ipad.jpg in Resources */,
 				AF14596B161D9A09009107C9 /* motherday2@2x~ipad.jpg in Resources */,
-				26E17E941828A2BE00582CC3 /* Pods.xcconfig in Resources */,
+				26E17E941828A2BE00582CC3 /* BuildFile in Resources */,
 				AF14596E161D9A09009107C9 /* motherday2~ipad.jpg in Resources */,
 				AF145971161D9A09009107C9 /* motherday3@2x~ipad.jpg in Resources */,
 				AF145974161D9A09009107C9 /* motherday3~ipad.jpg in Resources */,
@@ -3385,34 +3396,22 @@
 			shellPath = /bin/sh;
 			shellScript = "echo \"ABC\"";
 		};
-		330234C518F341EFB523ED15 /* Check Pods Manifest.lock */ = {
+		F8C65E35B091E142C25166CE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyeCard Pro-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		34DD0036F81A4AC7A22D9599 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -3754,7 +3753,7 @@
 		};
 		AF8DB0C41480E97A00C55084 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9241A932F614478F80B158BE /* Pods.xcconfig */;
+			baseConfigurationReference = 88EBBFA64A2D3AAFA752A0A2 /* Pods-MyeCard Pro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -3793,7 +3792,7 @@
 		};
 		AF8DB0C51480E97A00C55084 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9241A932F614478F80B158BE /* Pods.xcconfig */;
+			baseConfigurationReference = CAF56887F7D5B88818437705 /* Pods-MyeCard Pro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -3859,7 +3858,7 @@
 		};
 		AFAD5A5D14F2F8C300D54D9B /* Adhoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9241A932F614478F80B158BE /* Pods.xcconfig */;
+			baseConfigurationReference = F2340FA0E12CAFA2482BE0AF /* Pods-MyeCard Pro.adhoc.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -3895,7 +3894,6 @@
 		};
 		AFFF4AAB15E4366E000A8F99 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9241A932F614478F80B158BE /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -3933,7 +3931,6 @@
 		};
 		AFFF4AAC15E4366E000A8F99 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9241A932F614478F80B158BE /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -3970,7 +3967,6 @@
 		};
 		AFFF4AAD15E4366E000A8F99 /* Adhoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9241A932F614478F80B158BE /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
