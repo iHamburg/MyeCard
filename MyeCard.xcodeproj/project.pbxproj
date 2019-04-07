@@ -176,8 +176,8 @@
 		26DC060517F6FF3F0068C799 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DC05FC17F6FF3F0068C799 /* Default.png */; };
 		26DC060617F6FF3F0068C799 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DC05FD17F6FF3F0068C799 /* Default@2x.png */; };
 		26DC060717F6FF3F0068C799 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DC05FD17F6FF3F0068C799 /* Default@2x.png */; };
-		26E17E941828A2BE00582CC3 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
-		26E17E951828A2BE00582CC3 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		26E17E941828A2BE00582CC3 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		26E17E951828A2BE00582CC3 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		26E2D11817E81807003C1E11 /* icon_cards.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E2D11717E81807003C1E11 /* icon_cards.png */; };
 		26E2D11917E81807003C1E11 /* icon_cards.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E2D11717E81807003C1E11 /* icon_cards.png */; };
 		26E2D12417E81924003C1E11 /* icon_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E2D11A17E81924003C1E11 /* icon_background@2x.png */; };
@@ -924,7 +924,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C10F41420CE4E8D00DE49E9 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		2609D4E71805A78F0019C242 /* BG_pattern_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG_pattern_info.png; sourceTree = "<group>"; };
 		2609D4E81805A78F0019C242 /* Icon_AppstoreDownload@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_AppstoreDownload@2x~ipad.png"; sourceTree = "<group>"; };
 		2609D4E91805A78F0019C242 /* Icon_AppstoreDownload~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_AppstoreDownload~ipad.png"; sourceTree = "<group>"; };
@@ -2219,7 +2218,6 @@
 		AF8DB09A1480E97900C55084 = {
 			isa = PBXGroup;
 			children = (
-				1C10F41420CE4E8D00DE49E9 /* Podfile */,
 				AF8DB0AF1480E97A00C55084 /* MyeCard */,
 				AF8DB0A81480E97A00C55084 /* Frameworks */,
 				AF8DB0A61480E97A00C55084 /* Products */,
@@ -2796,7 +2794,7 @@
 				AF68D2A7151A68D6001BB203 /* Profile_love@3x.png in Resources */,
 				AF9A23C8158BE8C0001CF935 /* FBDialog.bundle in Resources */,
 				AF4A0CB2158E60CA00A81D62 /* facebook.mp3 in Resources */,
-				26E17E951828A2BE00582CC3 /* BuildFile in Resources */,
+				26E17E951828A2BE00582CC3 /* (null) in Resources */,
 				AF2ED376159BD2A700BFFB13 /* Cards.plist in Resources */,
 				2609D5751805A78F0019C242 /* appicon_tinykitchen@2x~ipad.png in Resources */,
 				AF7B5256159C913B005D93BB /* icon_delete.png in Resources */,
@@ -3223,7 +3221,7 @@
 				AF145965161D9A09009107C9 /* motherday1@2x~ipad.jpg in Resources */,
 				AF145968161D9A09009107C9 /* motherday1~ipad.jpg in Resources */,
 				AF14596B161D9A09009107C9 /* motherday2@2x~ipad.jpg in Resources */,
-				26E17E941828A2BE00582CC3 /* BuildFile in Resources */,
+				26E17E941828A2BE00582CC3 /* (null) in Resources */,
 				AF14596E161D9A09009107C9 /* motherday2~ipad.jpg in Resources */,
 				AF145971161D9A09009107C9 /* motherday3@2x~ipad.jpg in Resources */,
 				AF145974161D9A09009107C9 /* motherday3~ipad.jpg in Resources */,

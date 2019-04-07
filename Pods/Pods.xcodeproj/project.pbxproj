@@ -30,10 +30,10 @@
 		3AA6F82563EAFFE6F05F9A59F20A78D9 /* Pods-MyeCard Pro.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyeCard Pro.adhoc.xcconfig"; sourceTree = "<group>"; };
 		437B3B1A1C3C5E287D04D5FC9C6EBD31 /* FXLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FXLabel.h; path = FXLabel/FXLabel.h; sourceTree = "<group>"; };
 		5B6E9E7F968F5241E2626ECDEE6FB6C9 /* Pods-MyeCard Pro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyeCard Pro.release.xcconfig"; sourceTree = "<group>"; };
-		602C8980B701E813A6397DBDBB4061C3 /* libPods-MyeCard Pro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MyeCard Pro.a"; path = "libPods-MyeCard Pro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		602C8980B701E813A6397DBDBB4061C3 /* libPods-MyeCard Pro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyeCard Pro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF4E3C2D0BC08EC13EE3DE018E8F2F6 /* FXLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FXLabel.xcconfig; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AC6B298BD3C4D1E219E628FCCBA76880 /* libFXLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFXLabel.a; path = libFXLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; };
+		AC6B298BD3C4D1E219E628FCCBA76880 /* libFXLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFXLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4EB69D6FE17A3C8F8686F95A53EB75 /* FXLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FXLabel-prefix.pch"; sourceTree = "<group>"; };
 		AE30D38EE88F12FD355B52ECE8A98C12 /* FXLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FXLabel.m; path = FXLabel/FXLabel.m; sourceTree = "<group>"; };
 		B53AE0E86B515933B11226B12C062513 /* Pods-MyeCard Pro-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyeCard Pro-dummy.m"; sourceTree = "<group>"; };
@@ -85,7 +85,6 @@
 				AE30D38EE88F12FD355B52ECE8A98C12 /* FXLabel.m */,
 				B307FB31458BA674AC57C5CEB09EE1ED /* Support Files */,
 			);
-			name = FXLabel;
 			path = FXLabel;
 			sourceTree = "<group>";
 		};
