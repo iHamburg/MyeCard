@@ -13,7 +13,7 @@
 #import "Protocols.h"
 
 #import "FBViewController.h" //Facebook
-#import "Flurry.h"  //Flurry
+//#import "Flurry.h"  //Flurry
 
 extern CGFloat _h,_w;
 extern CGRect _r,_containerRect;

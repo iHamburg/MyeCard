@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 
 #import "MERootViewController.h"
-#import "Flurry.h"
+//#import "Flurry.h"
 #import "Controller.h"
 
 
@@ -158,7 +158,7 @@
 }
 #pragma mark - Error Handlung
 void uncaughtExceptionHandler(NSException *exception) {
-    [Flurry logError:@"Uncaught" message:@"Crash!" exception:exception];
+//    [Flurry logError:@"Uncaught" message:@"Crash!" exception:exception];
 }
 
 

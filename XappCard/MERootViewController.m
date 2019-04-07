@@ -952,7 +952,7 @@
 		};
 		
 		
-		[Flurry logEvent:@"Share Card" withParameters:dict];
+//		[Flurry logEvent:@"Share Card" withParameters:dict];
 		
 	}
 	else if(actionSheet == cameraSheet){
