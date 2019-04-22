@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C3D786F2259F30500D85DAB /* libPods-MyeCard Pro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C3D786E2259F30500D85DAB /* libPods-MyeCard Pro.a */; };
 		2609D5211805A78F0019C242 /* BG_pattern_info.png in Resources */ = {isa = PBXBuildFile; fileRef = 2609D4E71805A78F0019C242 /* BG_pattern_info.png */; };
 		2609D5221805A78F0019C242 /* BG_pattern_info.png in Resources */ = {isa = PBXBuildFile; fileRef = 2609D4E71805A78F0019C242 /* BG_pattern_info.png */; };
 		2609D5231805A78F0019C242 /* Icon_AppstoreDownload@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2609D4E81805A78F0019C242 /* Icon_AppstoreDownload@2x~ipad.png */; };
@@ -123,8 +124,6 @@
 		261B92281810FDB00085FC3C /* LandScapeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 261B92261810FDB00085FC3C /* LandScapeNavigationController.m */; };
 		261B922D181100690085FC3C /* METextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 261B922C181100690085FC3C /* METextViewController.m */; };
 		261B922E181100690085FC3C /* METextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 261B922C181100690085FC3C /* METextViewController.m */; };
-		26476DC117F6BA71000E533D /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26476DC017F6BA71000E533D /* libGoogleAdMobAds.a */; };
-		26476DC217F6BA72000E533D /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26476DC017F6BA71000E533D /* libGoogleAdMobAds.a */; };
 		26476DC417F6BFAD000E533D /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26F6E18717F5C1D400E919BD /* Images-2.xcassets */; };
 		2663B044180AAD1400F785A6 /* ExportController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2663B043180AAD1400F785A6 /* ExportController.m */; };
 		2663B045180AAD1400F785A6 /* ExportController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2663B043180AAD1400F785A6 /* ExportController.m */; };
@@ -162,8 +161,6 @@
 		26BDF0EE1810EEAF00B09C74 /* TextSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BDF0E01810EEAF00B09C74 /* TextSettingViewController.m */; };
 		26BDF0EF1810EEAF00B09C74 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BDF0E21810EEAF00B09C74 /* TextViewController.m */; };
 		26BDF0F01810EEAF00B09C74 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BDF0E21810EEAF00B09C74 /* TextViewController.m */; };
-		26CDACCF17E8819C008F030D /* libFlurry_4.2.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CDACCE17E8819C008F030D /* libFlurry_4.2.3.a */; };
-		26CDACD017E8819C008F030D /* libFlurry_4.2.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CDACCE17E8819C008F030D /* libFlurry_4.2.3.a */; };
 		26CDACD217E8820B008F030D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CDACD117E8820B008F030D /* Security.framework */; };
 		26CDACD317E88213008F030D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CDACD117E8820B008F030D /* Security.framework */; };
 		26DC05FE17F6FF3F0068C799 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DC05F917F6FF3F0068C799 /* Default-568h@2x.png */; };
@@ -176,8 +173,6 @@
 		26DC060517F6FF3F0068C799 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DC05FC17F6FF3F0068C799 /* Default.png */; };
 		26DC060617F6FF3F0068C799 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DC05FD17F6FF3F0068C799 /* Default@2x.png */; };
 		26DC060717F6FF3F0068C799 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DC05FD17F6FF3F0068C799 /* Default@2x.png */; };
-		26E17E941828A2BE00582CC3 /* (null) in Resources */ = {isa = PBXBuildFile; };
-		26E17E951828A2BE00582CC3 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		26E2D11817E81807003C1E11 /* icon_cards.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E2D11717E81807003C1E11 /* icon_cards.png */; };
 		26E2D11917E81807003C1E11 /* icon_cards.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E2D11717E81807003C1E11 /* icon_cards.png */; };
 		26E2D12417E81924003C1E11 /* icon_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E2D11A17E81924003C1E11 /* icon_background@2x.png */; };
@@ -558,8 +553,6 @@
 		AF5B38ED14BE1C35004D8C74 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5B38EC14BE1C35004D8C74 /* Controller.m */; };
 		AF609E8F1761BBA700ACD599 /* libTapkuLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF609E8C1761BB8A00ACD599 /* libTapkuLibrary.a */; };
 		AF609E921761BBB300ACD599 /* libTapkuLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF609E8C1761BB8A00ACD599 /* libTapkuLibrary.a */; };
-		AF64145516BD18D900A7E2ED /* AdView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF64145416BD18D900A7E2ED /* AdView.m */; };
-		AF64145616BD18D900A7E2ED /* AdView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF64145416BD18D900A7E2ED /* AdView.m */; };
 		AF6571E3149CB4A400066CF4 /* OverlayZettel.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6571E2149CB4A400066CF4 /* OverlayZettel.png */; };
 		AF685299169F5520007D3D2F /* icon_alignCenter.png in Resources */ = {isa = PBXBuildFile; fileRef = AF68528D169F5520007D3D2F /* icon_alignCenter.png */; };
 		AF68529A169F5520007D3D2F /* icon_alignCenter.png in Resources */ = {isa = PBXBuildFile; fileRef = AF68528D169F5520007D3D2F /* icon_alignCenter.png */; };
@@ -924,6 +917,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C3D76A02259F0A900D85DAB /* libPods-MyeCard Pro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-MyeCard Pro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C3D786C2259F15E00D85DAB /* MyeCard Pro copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MyeCard Pro copy-Info.plist"; path = "/Users/zhangyiqing/iOSProjects/MyeCard/MyeCard Pro copy-Info.plist"; sourceTree = "<absolute>"; };
+		1C3D786E2259F30500D85DAB /* libPods-MyeCard Pro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-MyeCard Pro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2609D4E71805A78F0019C242 /* BG_pattern_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG_pattern_info.png; sourceTree = "<group>"; };
 		2609D4E81805A78F0019C242 /* Icon_AppstoreDownload@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_AppstoreDownload@2x~ipad.png"; sourceTree = "<group>"; };
 		2609D4E91805A78F0019C242 /* Icon_AppstoreDownload~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_AppstoreDownload~ipad.png"; sourceTree = "<group>"; };
@@ -1309,8 +1305,6 @@
 		AF5B38EB14BE1C35004D8C74 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Controller.h; path = DataModel/Controller.h; sourceTree = "<group>"; };
 		AF5B38EC14BE1C35004D8C74 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Controller.m; path = DataModel/Controller.m; sourceTree = "<group>"; };
 		AF609E861761BB8900ACD599 /* TapkuLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TapkuLibrary.xcodeproj; path = XappCard/Tapku/src/TapkuLibrary.xcodeproj; sourceTree = "<group>"; };
-		AF64145316BD18D900A7E2ED /* AdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdView.h; path = ../../AdView.h; sourceTree = "<group>"; };
-		AF64145416BD18D900A7E2ED /* AdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdView.m; path = ../../AdView.m; sourceTree = "<group>"; };
 		AF6571E2149CB4A400066CF4 /* OverlayZettel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OverlayZettel.png; sourceTree = "<group>"; };
 		AF68528D169F5520007D3D2F /* icon_alignCenter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_alignCenter.png; sourceTree = "<group>"; };
 		AF68528E169F5520007D3D2F /* icon_alignLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_alignLeft.png; sourceTree = "<group>"; };
@@ -1554,13 +1548,11 @@
 				AF373FBE1496CC5F000BD135 /* MediaPlayer.framework in Frameworks */,
 				AF5181E91494030D00A1348C /* MessageUI.framework in Frameworks */,
 				AF8DB0AC1480E97A00C55084 /* Foundation.framework in Frameworks */,
-				26476DC117F6BA71000E533D /* libGoogleAdMobAds.a in Frameworks */,
 				AFBDC58B14891EB700059D6A /* AssetsLibrary.framework in Frameworks */,
 				AFC984391486D4F4004E3B02 /* MapKit.framework in Frameworks */,
 				AFC984371486D4EB004E3B02 /* QuartzCore.framework in Frameworks */,
 				AF8DB0AA1480E97A00C55084 /* UIKit.framework in Frameworks */,
 				AF8DB0AE1480E97A00C55084 /* CoreGraphics.framework in Frameworks */,
-				26CDACCF17E8819C008F030D /* libFlurry_4.2.3.a in Frameworks */,
 				B128E8361476EE6DAF8A20C2 /* libPods-MyeCard Pro.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1569,6 +1561,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C3D786F2259F30500D85DAB /* libPods-MyeCard Pro.a in Frameworks */,
 				26CDACD217E8820B008F030D /* Security.framework in Frameworks */,
 				AFAADD53179BA1D700B138AC /* CFNetwork.framework in Frameworks */,
 				AFAADD52179BA1D300B138AC /* MobileCoreServices.framework in Frameworks */,
@@ -1586,13 +1579,11 @@
 				AFFF4A5B15E4366E000A8F99 /* MediaPlayer.framework in Frameworks */,
 				AFFF4A5C15E4366E000A8F99 /* MessageUI.framework in Frameworks */,
 				AFFF4A5D15E4366E000A8F99 /* Foundation.framework in Frameworks */,
-				26476DC217F6BA72000E533D /* libGoogleAdMobAds.a in Frameworks */,
 				AFFF4A5E15E4366E000A8F99 /* AssetsLibrary.framework in Frameworks */,
 				AFFF4A6015E4366E000A8F99 /* MapKit.framework in Frameworks */,
 				AFFF4A6115E4366E000A8F99 /* QuartzCore.framework in Frameworks */,
 				AFFF4A6215E4366E000A8F99 /* UIKit.framework in Frameworks */,
 				AFFF4A6315E4366E000A8F99 /* CoreGraphics.framework in Frameworks */,
-				26CDACD017E8819C008F030D /* libFlurry_4.2.3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1605,7 +1596,6 @@
 				2663B042180AAD1400F785A6 /* ExportController.h */,
 				2663B043180AAD1400F785A6 /* ExportController.m */,
 				260DC2941807CEBC00E7CADA /* Root */,
-				AF7C304516BDA48E0002F3BA /* AdView */,
 				2609D4E51805A78F0019C242 /* InfoVC */,
 				2609D51A1805A78F0019C242 /* Instruction */,
 			);
@@ -2192,16 +2182,6 @@
 			path = icon;
 			sourceTree = "<group>";
 		};
-		AF7C304516BDA48E0002F3BA /* AdView */ = {
-			isa = PBXGroup;
-			children = (
-				AF64145316BD18D900A7E2ED /* AdView.h */,
-				AF64145416BD18D900A7E2ED /* AdView.m */,
-			);
-			name = AdView;
-			path = ../Utilities/AdView;
-			sourceTree = "<group>";
-		};
 		AF853776161CAC0F004351D4 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
@@ -2222,6 +2202,7 @@
 				AF8DB0A81480E97A00C55084 /* Frameworks */,
 				AF8DB0A61480E97A00C55084 /* Products */,
 				F9E2ED2AEF81329BBA3E2FA1 /* Pods */,
+				1C3D786C2259F15E00D85DAB /* MyeCard Pro copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2237,6 +2218,8 @@
 		AF8DB0A81480E97A00C55084 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1C3D786E2259F30500D85DAB /* libPods-MyeCard Pro.a */,
+				1C3D76A02259F0A900D85DAB /* libPods-MyeCard Pro.a */,
 				26E17E921828A1C800582CC3 /* libPods.a */,
 				26CDACD117E8820B008F030D /* Security.framework */,
 				AFB74D38178AFCF400CE87D1 /* CFNetwork.framework */,
@@ -2673,9 +2656,9 @@
 			productReference = AF8DB0A51480E97A00C55084 /* My eCard_P.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AFFF4A0115E4366E000A8F99 /* MyeCard Free */ = {
+		AFFF4A0115E4366E000A8F99 /* MyeCard_Free */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFFF4AAA15E4366E000A8F99 /* Build configuration list for PBXNativeTarget "MyeCard Free" */;
+			buildConfigurationList = AFFF4AAA15E4366E000A8F99 /* Build configuration list for PBXNativeTarget "MyeCard_Free" */;
 			buildPhases = (
 				AFFF4A0415E4366E000A8F99 /* Sources */,
 				AFFF4A5615E4366E000A8F99 /* Frameworks */,
@@ -2685,7 +2668,7 @@
 			);
 			dependencies = (
 			);
-			name = "MyeCard Free";
+			name = MyeCard_Free;
 			productName = XappCard;
 			productReference = AFFF4AAE15E4366E000A8F99 /* My eCard_F.app */;
 			productType = "com.apple.product-type.application";
@@ -2696,18 +2679,24 @@
 		AF8DB09C1480E97900C55084 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 1020;
 				TargetAttributes = {
+					AF8DB0A41480E97900C55084 = {
+						DevelopmentTeam = S4552Q6J8R;
+						ProvisioningStyle = Automatic;
+					};
 					AFFF4A0115E4366E000A8F99 = {
-						DevelopmentTeam = 5PNFAQX9NQ;
+						DevelopmentTeam = S4552Q6J8R;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = AF8DB09F1480E97900C55084 /* Build configuration list for PBXProject "MyeCard" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				de,
 				"zh-Hans",
@@ -2724,7 +2713,7 @@
 			projectRoot = "";
 			targets = (
 				AF8DB0A41480E97900C55084 /* MyeCard Pro */,
-				AFFF4A0115E4366E000A8F99 /* MyeCard Free */,
+				AFFF4A0115E4366E000A8F99 /* MyeCard_Free */,
 			);
 		};
 /* End PBXProject section */
@@ -2794,7 +2783,6 @@
 				AF68D2A7151A68D6001BB203 /* Profile_love@3x.png in Resources */,
 				AF9A23C8158BE8C0001CF935 /* FBDialog.bundle in Resources */,
 				AF4A0CB2158E60CA00A81D62 /* facebook.mp3 in Resources */,
-				26E17E951828A2BE00582CC3 /* (null) in Resources */,
 				AF2ED376159BD2A700BFFB13 /* Cards.plist in Resources */,
 				2609D5751805A78F0019C242 /* appicon_tinykitchen@2x~ipad.png in Resources */,
 				AF7B5256159C913B005D93BB /* icon_delete.png in Resources */,
@@ -3221,7 +3209,6 @@
 				AF145965161D9A09009107C9 /* motherday1@2x~ipad.jpg in Resources */,
 				AF145968161D9A09009107C9 /* motherday1~ipad.jpg in Resources */,
 				AF14596B161D9A09009107C9 /* motherday2@2x~ipad.jpg in Resources */,
-				26E17E941828A2BE00582CC3 /* (null) in Resources */,
 				AF14596E161D9A09009107C9 /* motherday2~ipad.jpg in Resources */,
 				AF145971161D9A09009107C9 /* motherday3@2x~ipad.jpg in Resources */,
 				AF145974161D9A09009107C9 /* motherday3~ipad.jpg in Resources */,
@@ -3392,7 +3379,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"ABC\"";
+			shellScript = "echo \"ABC\"\n";
 		};
 		F8C65E35B091E142C25166CE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3524,7 +3511,6 @@
 				260DC29D1807CEBC00E7CADA /* PRootViewController.m in Sources */,
 				AF3E600F169E0AB500474472 /* CoverCategory.m in Sources */,
 				AFD354C4169EF0AC00FCFDA8 /* EcardCoverView.m in Sources */,
-				AF64145516BD18D900A7E2ED /* AdView.m in Sources */,
 				AF385A5216EED5900052EFF3 /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				AF0A18FE1794FC5700DD201D /* ASIAuthenticationDialog.m in Sources */,
 				AF0A19001794FC5700DD201D /* ASIDataCompressor.m in Sources */,
@@ -3644,7 +3630,6 @@
 				2609D5861805A78F0019C242 /* VerticalSwipeInstructionViewController.m in Sources */,
 				AF3E6010169E0AB500474472 /* CoverCategory.m in Sources */,
 				AFD354C5169EF0AC00FCFDA8 /* EcardCoverView.m in Sources */,
-				AF64145616BD18D900A7E2ED /* AdView.m in Sources */,
 				AF385A5316EED5900052EFF3 /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				AF0A18FF1794FC5700DD201D /* ASIAuthenticationDialog.m in Sources */,
 				2609D5821805A78F0019C242 /* InstructionViewController.m in Sources */,
@@ -3689,16 +3674,31 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -3713,7 +3713,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = mh_bundle;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -3724,15 +3725,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
@@ -3741,7 +3756,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = mh_bundle;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -3755,8 +3771,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Xin Chen (2JS83C3H44)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S4552Q6J8R;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XappCard/XappCard-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3772,16 +3790,15 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "XappCard/MyeCard-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(SRCROOT)/XappCard/Utilities/AdView/Admob/**",
-					"$(SRCROOT)/XappCard/Utilities/Flurry/**",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = de.xappsoft.myecardpro23;
 				PRODUCT_NAME = "My eCard_P";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0C88246A-C510-4EA5-8F0C-C323E63CE0FA";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -3794,8 +3811,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Xin Chen";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xin Chen";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S4552Q6J8R;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XappCard/XappCard-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "PAID=1";
@@ -3808,17 +3827,16 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "XappCard/MyeCard-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(SRCROOT)/XappCard/Utilities/AdView/Admob/**",
-					"$(SRCROOT)/XappCard/Utilities/Flurry/**",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = de.xappsoft.myecardpro23;
 				PRODUCT_NAME = "My eCard";
-				PROVISIONING_PROFILE = "D6E01E46-F91D-46FE-BED4-134E1BC62F87";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4F18FA7A-8E36-4CBF-8D7B-03A5F23CBDC9";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -3829,15 +3847,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
@@ -3846,7 +3878,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = mh_bundle;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -3860,8 +3893,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xin Chen";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S4552Q6J8R;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XappCard/XappCard-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "PAID=1";
@@ -3874,16 +3909,15 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "XappCard/MyeCard-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(SRCROOT)/XappCard/Utilities/AdView/Admob/**",
-					"$(SRCROOT)/XappCard/Utilities/Flurry/**",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = de.xappsoft.myecardpro23;
 				PRODUCT_NAME = "My eCard";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1B170487-E8BF-4B76-9EF9-15C7B1D1221C";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -3892,11 +3926,13 @@
 		};
 		AFFF4AAB15E4366E000A8F99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88EBBFA64A2D3AAFA752A0A2 /* Pods-MyeCard Pro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Xin Chen (2JS83C3H44)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S4552Q6J8R;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XappCard/XappCard-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3911,16 +3947,17 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "MyeCard Free copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(SRCROOT)/XappCard/Utilities/AdView/Admob/**",
-					"$(SRCROOT)/XappCard/Utilities/Flurry/**",
 				);
+				MACH_O_TYPE = mh_execute;
 				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = de.xappsoft.myecardfree246;
 				PRODUCT_NAME = "My eCard_F";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CC672C02-81A3-4DB0-9290-AFC30B6B4EAD";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -3934,6 +3971,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xin Chen";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S4552Q6J8R;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XappCard/XappCard-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "IAP=1";
@@ -3945,18 +3984,18 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "MyeCard Free copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(SRCROOT)/XappCard/Utilities/AdView/Admob/**",
-					"$(SRCROOT)/XappCard/Utilities/Flurry/**",
 				);
+				MACH_O_TYPE = mh_execute;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = de.xappsoft.myecardfree246;
 				PRODUCT_NAME = "My eCard";
-				PROVISIONING_PROFILE = "28300ACC-89F4-4FFA-8C45-DA6554ED3830";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9DC6691B-17A9-4106-A1DC-46A9C3C65D18";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -3970,6 +4009,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xin Chen";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S4552Q6J8R;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XappCard/XappCard-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "IAP=1";
@@ -3981,16 +4022,17 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "MyeCard Free copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(SRCROOT)/XappCard/Utilities/AdView/Admob/**",
-					"$(SRCROOT)/XappCard/Utilities/Flurry/**",
 				);
+				MACH_O_TYPE = mh_execute;
 				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = de.xappsoft.myecardfree246;
 				PRODUCT_NAME = "My eCard";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AD7CDC01-E7DD-44C4-8F8C-CA4BC7D46C1E";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -4020,7 +4062,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFFF4AAA15E4366E000A8F99 /* Build configuration list for PBXNativeTarget "MyeCard Free" */ = {
+		AFFF4AAA15E4366E000A8F99 /* Build configuration list for PBXNativeTarget "MyeCard_Free" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFFF4AAB15E4366E000A8F99 /* Debug */,

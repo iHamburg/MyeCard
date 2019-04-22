@@ -8,7 +8,7 @@
 
 #import "CardsViewController.h"
 #import "DateViewController.h"
-#import "AdView.h"
+//#import "AdView.h"
 @interface CardsViewController ()
 
 @end
@@ -86,7 +86,7 @@
 - (void)viewDidAppear:(BOOL)animated{
 	[super viewDidAppear:animated];
 
-    [self layoutADBanner:[AdView sharedInstance]];
+//    [self layoutADBanner:[AdView sharedInstance]];
 
 }
 
@@ -128,43 +128,43 @@
 }
 #pragma mark - Notification
 
-- (void)registerNotifications
-{
-    
-    
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleAdviewNotification:) name:NotificationAdChanged object:nil];
-    
-}
-
-- (void)handleAdviewNotification:(NSNotification*)notification{
-    [self layoutADBanner:notification.object];
-    
-}
+//- (void)registerNotifications
+//{
+//
+//
+//    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleAdviewNotification:) name:NotificationAdChanged object:nil];
+//
+//}
+//
+//- (void)handleAdviewNotification:(NSNotification*)notification{
+//    [self layoutADBanner:notification.object];
+//
+//}
 
 
 
 #pragma mark -  ADView
 
-
-- (void)layoutADBanner:(AdView *)banner{
-    
-    L();
-    [UIView animateWithDuration:0.25 animations:^{
-		
-		if (banner.isAdDisplaying) { // 从不显示到显示banner
-            
-			[banner setOrigin:CGPointMake(0, _h - banner.height)];
-			
-			[[[MERootViewController sharedInstance] view] addSubview:banner];
-		}
-		else{
-			[banner setOrigin:CGPointMake(0, _h)];
-            
-		}
-		
-    }];
-    
-}
+//
+//- (void)layoutADBanner:(AdView *)banner{
+//
+//    L();
+//    [UIView animateWithDuration:0.25 animations:^{
+//
+//        if (banner.isAdDisplaying) { // 从不显示到显示banner
+//
+//            [banner setOrigin:CGPointMake(0, _h - banner.height)];
+//
+//            [[[MERootViewController sharedInstance] view] addSubview:banner];
+//        }
+//        else{
+//            [banner setOrigin:CGPointMake(0, _h)];
+//
+//        }
+//
+//    }];
+//
+//}
 
 
 

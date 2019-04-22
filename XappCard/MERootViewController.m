@@ -996,15 +996,15 @@
 												 name:UIApplicationWillResignActiveNotification
 											   object: [UIApplication sharedApplication]];
     
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleAdviewNotification:) name:NotificationAdChanged object:nil];
+//    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleAdviewNotification:) name:NotificationAdChanged object:nil];
     
 	[[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleDidBecomeActive:) name:UIApplicationDidBecomeActiveNotification object:[UIApplication sharedApplication]];
 }
 
-- (void)handleAdviewNotification:(NSNotification*)notification{
-    [self layoutADBanner:notification.object];
-    
-}
+//- (void)handleAdviewNotification:(NSNotification*)notification{
+//    [self layoutADBanner:notification.object];
+//
+//}
 
 - (void)handleNotificationOpenTextViewController: (NSNotification*)notification{
 	L();
@@ -1474,7 +1474,7 @@
 	[coverFlowVC setup];
 	
 
-    [AdView releaseSharedInstance];
+//    [AdView releaseSharedInstance];
 	
 }
 - (void)IAPDidRestored{
@@ -1484,34 +1484,34 @@
 	
 	self.card = [[Controller sharedController]firstCard];
 
-    [AdView releaseSharedInstance];
+//    [AdView releaseSharedInstance];
 }
 
 
 #pragma mark -  ADView
 
-
-- (void)layoutADBanner:(AdView *)banner{
-    
-    L();
-    [UIView animateWithDuration:0.25 animations:^{
-		
-		if (banner.isAdDisplaying) { // 从不显示到显示banner
-            
-			[banner setOrigin:CGPointMake(0, _h - banner.height)];
-			container.frame = containerWithBannerRect;
-			toolbar.frame = toolbarWithBannerRect;
-			[self.view addSubview:banner];
-		}
-		else{
-			[banner setOrigin:CGPointMake(0, _h)];
-            container.frame = containerRect;
-			toolbar.frame = toolbarRect;
-		}
-		
-    }];
-    
-}
+//
+//- (void)layoutADBanner:(AdView *)banner{
+//
+//    L();
+//    [UIView animateWithDuration:0.25 animations:^{
+//
+//		if (banner.isAdDisplaying) { // 从不显示到显示banner
+//
+//			[banner setOrigin:CGPointMake(0, _h - banner.height)];
+//			container.frame = containerWithBannerRect;
+//			toolbar.frame = toolbarWithBannerRect;
+//			[self.view addSubview:banner];
+//		}
+//		else{
+//			[banner setOrigin:CGPointMake(0, _h)];
+//            container.frame = containerRect;
+//			toolbar.frame = toolbarRect;
+//		}
+//
+//    }];
+//
+//}
 
 
 #pragma mark - UpdateAlert

@@ -1,3 +1,11 @@
+NOTE about iOS 7
+-----------------
+
+iOS 7 introduced TextKit a new, more powerful text rendering framework that makes much of FXLabel's drawing API and rendering system obsolete. FXLabel deliberately maintains the same rendering behavior as iOS 6 for backwards compatibility reasons, but unless you still need to support iOS 6, it would be better to create text effects on top of TextKit instead.
+
+FXLabel also does not support attributed strings / rich text, introduced to UILabel in iOS 6.
+
+
 Purpose
 --------------
 
@@ -5,12 +13,14 @@ The standard iOS UILabel is fairly limited in terms of visual customisation; You
 
 FXLabel improves upon the standard UILabel by providing a subclass that supports soft shadows, inner shadow and gradient fill, and which can easily be used in place of any standard UILabel.
 
+FXLabel also provides more control over layout options such as leading (line spacing) and kerning (letter spacing) and automatic avoidance of orphans (words left on their own on the last line of a multi-line label).
+
 
 Supported iOS & SDK Versions
 -----------------------------
 
-* Supported build target - iOS 6.1 (Xcode 4.6.2, Apple LLVM compiler 4.2)
-* Earliest supported deployment target - iOS 5.0
+* Supported build target - iOS 9.3 (Xcode 7.3, Apple LLVM compiler 7.1)
+* Earliest supported deployment target - iOS 7.0
 * Earliest compatible deployment target - iOS 4.3
 
 NOTE: 'Supported' means that the library has been tested with this version. 'Compatible' means that the library should work on this iOS version (i.e. it doesn't rely on any unavailable SDK features) but is no longer being tested for compatibility and may require tweaking or bug fixes to run correctly.
@@ -162,8 +172,145 @@ Notes
 
 FXLabels have a nice additional layout feature, which is that (unlike UILabels) they respect the contentMode property with regard to vertical layout. Setting the contentMode to top, center or bottom will vertically align the text to the top, center or bottom of the view respectively. Note however that for horizontal alignment, the FXLabel ignores contentMode in favour of the textAlignment property.
 
-FXLabels are slower to draw than UILabels, so be wary of overusing them, especially for text that needs to be resized or animated.
-
 FXLabel effects cannot be drawn outside of the bounds of the label view. For labels with shadowBlur or shadowOffset values, you will need to increase the size of the label frame to prevent the shadow being cropped. If your text is not center-aligned, you will also need to make use of the textInsets property to inset the text from the edge of the view so the text effects are not cropped.
 
 The gradientColor properties do not support patterned, indexed or HSV colours.
+
+
+Release notes:
+-------------------
+
+Version 1.5.9
+
+- Fixed warnings on Xcode 7.3
+- Added IB_DESIGNABLE annotation
+- Added nullability and lightweight generics
+
+Version 1.5.8
+
+- Fixed autoshrink when targeting iOS 7 or higher
+
+Version 1.5.7
+
+- Fixed some additional warnings under iOS 7.1
+
+Version 1.5.6
+
+- Fixed performance regression introduced in version 1.5.5
+- Reverted fix for translucent overlapping text for performance reasons 
+- Improved performance when using a background color on the label
+
+Version 1.5.5
+
+- Fixed infinite loop when targeting iOS7+
+- Fixed text color bug when targeting iOS7+
+- Fixed linewrapping and clipping issues when targeting iOS7+
+- Translucent text is no longer rendered incorrectly if it overlaps itself due to tight kerning
+- Baseline adjustment now works correctly if not using custom linespacing
+- Now conforms to -Weverything warning level
+
+Version 1.5.4
+
+- Fixed distortion when using textInset with gradient
+
+Version 1.5.3
+ 
+- Fixed line wrap issue when using character wrap
+- Now compiles for iOS 7+ without deprecation warnings
+- Now complies with -Wall and -WExtra warning levels
+
+Version 1.5.2
+
+- Fixed a bug in the autoshrink logic when creating labels programatically (as opposed to using a nib)
+
+Version 1.5.1
+
+- Fixed rounding error that caused layout for multiline labels to not work correctly
+
+Version 1.5
+
+- Added innerShadowBlur property
+- Added characterSpacing property
+- Added kerningTable property for per-character spacing
+- Added baselineOffset property
+- LineSpacing property is now relative to pointSize
+
+Version 1.4.2
+
+- Fixed crash when calling sizeToFit or sizeThatFits: methods
+- Fixed crash when label height is less than the height of a single line
+- Fixed bug with text alignment for multiline labels
+
+Version 1.4.1
+
+- Fixed a bug when deployment target < 6.0
+- Made setUp method public to aid subclassing.
+
+Version 1.4
+
+- FXLabel now requires ARC (see README for details)
+- It is now possible to control line spacing for multiline labels
+- FXLabel can now automatically avoid orphans (a single word left alone on the last line of a label)
+- Improved layout algorithm to more closely match UILabel behaviour for single-line labels
+- sizeToFit method now takes textInsets into account
+
+Version 1.3.7
+
+- Moved ARCHelper macros out of .h file so they do not affect non-ARC code in other classes
+
+Version 1.3.6
+
+- Fixed bug with baseline alignment when text is autoshrunk
+- Fixed bug when using textInset property that could result in text appearing squashed or stretched
+
+Version 1.3.5
+
+- Fixed deprecation warnings under iOS 6
+- Updated ARC Helper to version 2.1
+
+Version 1.3.4
+
+- Updated ARC Helper to version 1.3
+- Fixed warning under Apple LLVM compiler 4.0
+
+Version 1.3.3
+
+- Fixed ARC crash introduced in version 1.3.2
+
+Version 1.3.2
+
+- Fixed bug when using non RGB blending colors (e.g. [UIColor blackColor])
+- Fixed issue where inner shadow is applied to the label frame when background color is not transparent
+
+Version 1.3.1
+
+- Added automatic support for ARC compile targets
+- Now requires Apple LLVM compiler 3.0 target
+
+Version 1.3
+
+- Added new gradientColors array for specifying multi-part gradients
+- Added new textInsets property to prevent effects being truncated
+- Fixed bug where multi-line fields were truncated to a single line
+- Highlighted color is now respected when highlighted property is set
+- Replaced oversample property with oversampling property that allows the developer to specify the degree of oversampling required
+- Added additional example projects
+
+Version 1.2
+
+- Added oversample property to improve drawing quality for some effects.
+- Fixed issue where labels without any effects or shadow were not drawn.
+
+Version 1.1
+
+- Added gradientStartPoint and gradientEndPoint properties.
+- Gradient colours now support monochromatic colours and colour constants (e.g. [UIColor whiteColor]).
+- Eliminated spurious coloured halo around gradient fonts by pre-blending gradient colours with text colour prior to drawing.
+- Shadow opacity is now more consistent for different font settings.
+- Fixed drawing glitch for fonts without an inner shadow.
+- Fixed some memory leaks.
+- Slightly improved performance by reducing overdraw.
+
+Version 1.0
+
+- Initial release

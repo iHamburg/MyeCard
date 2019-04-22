@@ -1,5 +1,5 @@
 PODS:
-  - FXLabel (1.5.2)
+  - FXLabel (1.5.9)
 
 DEPENDENCIES:
   - FXLabel
@@ -9,7 +9,7 @@ SPEC REPOS:
     - FXLabel
 
 SPEC CHECKSUMS:
-  FXLabel: 4b3810e5724dc349c0a51ae6e6b5a5a06ea17fd9
+  FXLabel: 877f56a3e0ef76b223c67dea3f442c12d3a1d55c
 
 PODFILE CHECKSUM: 656ed5cb6cf7686ad32013d6c6df695df4b48376
 

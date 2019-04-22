@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "InfoViewController.h"
-#import "AdView.h"
+//#import "AdView.h"
 
 @interface RootViewController : UIViewController<InfoDelegate,InstructionDelegate> {
     InfoViewController *infoVC;

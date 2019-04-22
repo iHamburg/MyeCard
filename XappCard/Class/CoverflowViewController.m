@@ -4,7 +4,7 @@
 #import "CoverCategoryScrollView.h"
 #import "CoverPackageViewController.h"
 #import "EcardCoverView.h"
-#import "AdView.h"
+//#import "AdView.h"
 
 @implementation CoverflowViewController
 @synthesize coverVC, coverflow, initialIndex, coverImgName;
@@ -107,7 +107,7 @@
 	[super viewDidAppear:animated];
 	self.view.frame = _r;
 
-    [self layoutADBanner:[AdView sharedInstance]];
+//    [self layoutADBanner:[AdView sharedInstance]];
 }
 
 
@@ -135,40 +135,40 @@
 {
     
     
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleAdviewNotification:) name:NotificationAdChanged object:nil];
+//    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleAdviewNotification:) name:NotificationAdChanged object:nil];
   
 }
-
-- (void)handleAdviewNotification:(NSNotification*)notification{
-    [self layoutADBanner:notification.object];
-    
-}
+//
+//- (void)handleAdviewNotification:(NSNotification*)notification{
+//    [self layoutADBanner:notification.object];
+//
+//}
 
 
 
 #pragma mark -  ADView
-
-
-- (void)layoutADBanner:(AdView *)banner{
-    
-    L();
-    [UIView animateWithDuration:0.25 animations:^{
-		
-		if (banner.isAdDisplaying) { // 从不显示到显示banner
-            
-			[banner setOrigin:CGPointMake(0, _h - banner.height)];
-			
-			[[[MERootViewController sharedInstance] view] addSubview:banner];
-		}
-		else{
-			[banner setOrigin:CGPointMake(0, _h)];
-
-		}
-		
-    }];
-    
-}
-
+//
+//
+//- (void)layoutADBanner:(AdView *)banner{
+//
+//    L();
+//    [UIView animateWithDuration:0.25 animations:^{
+//
+//		if (banner.isAdDisplaying) { // 从不显示到显示banner
+//
+//			[banner setOrigin:CGPointMake(0, _h - banner.height)];
+//
+//			[[[MERootViewController sharedInstance] view] addSubview:banner];
+//		}
+//		else{
+//			[banner setOrigin:CGPointMake(0, _h)];
+//
+//		}
+//
+//    }];
+//
+//}
+//
 
 #pragma mark - IBAction
 

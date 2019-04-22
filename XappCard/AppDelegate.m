@@ -39,7 +39,7 @@
 //		flurryKey = @"WM5K3RC9BSBH92XZNKPC";
 //	}
 
-	[Flurry startSession:@"WM5K3RC9BSBH92XZNKPC"];  // 如果不是测试版本，激活flurry
+//	[Flurry startSession:@"WM5K3RC9BSBH92XZNKPC"];  // 如果不是测试版本，激活flurry
 	
 #endif
 	
